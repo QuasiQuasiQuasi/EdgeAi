@@ -1,3 +1,6 @@
+THIS README WAS NOT CHANGED FROM THE ORIGIN REPO
+
+
 # Edge AI Movement Tracker: Fitting a Neural Network into a tiny device
 
 Welcome to the companion repository for our video: **https://youtu.be/7ECAZgulMkc**.
