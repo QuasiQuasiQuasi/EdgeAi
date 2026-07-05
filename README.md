@@ -1,5 +1,6 @@
 THIS README WAS NOT CHANGED FROM THE ORIGIN REPO
 
+To use the esp-idf toolchain it has to be installed with 'install.sh'.
 
 # Edge AI Movement Tracker: Fitting a Neural Network into a tiny device
 
