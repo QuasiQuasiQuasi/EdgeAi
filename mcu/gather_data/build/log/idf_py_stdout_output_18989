@@ -1,0 +1,279 @@
+Command: ninja all
+[0/1] Re-running CMake...
+-- Component directory /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/idf_test does not contain a CMakeLists.txt file. No component will be added
+-- Minimal build - OFF
+-- esp-idf-configdep will be used for faster recompilation
+-- Compiler launcher chain: esp-idf-configdep
+-- Building ESP-IDF components for target esp32
+-- ESP-TEE is currently supported only on the esp32c6;esp32h2;esp32c5;esp32c61 SoCs
+-- KCONFIG_REPORT_VERBOSITY not set, using default
+-- Project sdkconfig file /home/finja/Documents/Diplomarbeit/EdgeAI/mcu/gather_data/sdkconfig
+-- Compiler supported targets: xtensa-esp-elf
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- App "gather_data" version: 105bc28-dirty
+-- Setting up mbedtls configuration
+-- Linkage type is PUBLIC
+-- Adding linker script /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_system/ld/esp32/memory.ld.in
+--   -> Preprocessing .in script: /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_system/ld/esp32/memory.ld.in
+-- Adding linker script /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_system/ld/esp32/sections.ld.in
+--   -> Preprocessing .in script: /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_system/ld/esp32/sections.ld.in
+--   -> Applying ldgen processing: /home/finja/Documents/Diplomarbeit/EdgeAI/mcu/gather_data/build/esp-idf/esp_system/ld/sections.ld.in
+-- Adding linker script /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_rom/esp32/ld/esp32.rom.ld
+-- Adding linker script /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_rom/esp32/ld/esp32.rom.api.ld
+-- Adding linker script /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_rom/esp32/ld/esp32.rom.libgcc.ld
+-- Adding linker script /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_rom/esp32/ld/esp32.rom.libc-funcs.ld
+-- Adding linker script /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/soc/esp32/ld/esp32.peripherals.ld
+-- Adding linker script /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_hal_regi2c/esp32/rom.regi2c.ld
+-- Component idf::esp_trace will be linked with -Wl,--whole-archive
+-- Components: app_trace app_update bootloader bootloader_support bt cmock console cxx driver efuse esp-tls esp_adc esp_app_format esp_asrc_adapter esp_blockdev esp_blockdev_util esp_bootloader_format esp_coex esp_common esp_driver_ana_cmpr esp_driver_bitscrambler esp_driver_cam esp_driver_cordic esp_driver_dac esp_driver_dma esp_driver_gpio esp_driver_gptimer esp_driver_i2c esp_driver_i2s esp_driver_i3c esp_driver_isp esp_driver_jpeg esp_driver_ledc esp_driver_mcpwm esp_driver_parlio esp_driver_pcnt esp_driver_ppa esp_driver_rmt esp_driver_sd_intf esp_driver_sdio esp_driver_sdm esp_driver_sdmmc esp_driver_sdspi esp_driver_spi esp_driver_touch_sens esp_driver_tsens esp_driver_twai esp_driver_uart esp_driver_usb_serial_jtag esp_eth esp_event esp_gdbstub esp_hal_ana_cmpr esp_hal_ana_conv esp_hal_asrc esp_hal_cam esp_hal_clock esp_hal_cordic esp_hal_dma esp_hal_emac esp_hal_gpio esp_hal_gpspi esp_hal_i2c esp_hal_i2s esp_hal_i3c esp_hal_ieee802154 esp_hal_jpeg esp_hal_lcd esp_hal_ledc esp_hal_mcpwm esp_hal_mspi esp_hal_parlio esp_hal_pcnt esp_hal_pmu esp_hal_ppa esp_hal_regi2c esp_hal_rmt esp_hal_rtc_timer esp_hal_sd esp_hal_security esp_hal_systimer esp_hal_timg esp_hal_touch_sens esp_hal_twai esp_hal_uart esp_hal_usb esp_hal_wdt esp_hid esp_http_client esp_http_server esp_https_ota esp_https_server esp_hw_support esp_lcd esp_libc esp_local_ctrl esp_mm esp_netif esp_netif_stack esp_partition esp_phy esp_pm esp_psram esp_ringbuf esp_rom esp_security esp_stdio esp_system esp_timer esp_trace esp_usb_cdc_rom_console esp_wifi espcoredump esptool_py fatfs freertos hal heap http_parser ieee802154 log lwip main mbedtls nvs_flash nvs_sec_provider openthread partition_table perfmon protobuf-c protocomm pthread rt sdmmc soc spi_flash spiffs tcp_transport ulp unity vfs wear_levelling wpa_supplicant xtensa
+-- Component paths: /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/app_trace /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/app_update /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/bootloader /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/bootloader_support /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/bt /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/cmock /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/console /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/cxx /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/driver /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/efuse /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp-tls /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_adc /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_app_format /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_asrc_adapter /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_blockdev /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_blockdev_util /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_bootloader_format /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_coex /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_common /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_driver_ana_cmpr /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_driver_bitscrambler /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_driver_cam /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_driver_cordic /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_driver_dac /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_driver_dma /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_driver_gpio /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_driver_gptimer /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_driver_i2c /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_driver_i2s /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_driver_i3c /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_driver_isp /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_driver_jpeg /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_driver_ledc /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_driver_mcpwm /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_driver_parlio /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_driver_pcnt /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_driver_ppa /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_driver_rmt /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_driver_sd_intf /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_driver_sdio /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_driver_sdm /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_driver_sdmmc /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_driver_sdspi /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_driver_spi /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_driver_touch_sens /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_driver_tsens /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_driver_twai /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_driver_uart /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_driver_usb_serial_jtag /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_eth /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_event /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_gdbstub /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_hal_ana_cmpr /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_hal_ana_conv /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_hal_asrc /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_hal_cam /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_hal_clock /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_hal_cordic /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_hal_dma /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_hal_emac /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_hal_gpio /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_hal_gpspi /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_hal_i2c /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_hal_i2s /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_hal_i3c /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_hal_ieee802154 /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_hal_jpeg /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_hal_lcd /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_hal_ledc /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_hal_mcpwm /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_hal_mspi /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_hal_parlio /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_hal_pcnt /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_hal_pmu /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_hal_ppa /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_hal_regi2c /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_hal_rmt /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_hal_rtc_timer /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_hal_sd /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_hal_security /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_hal_systimer /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_hal_timg /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_hal_touch_sens /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_hal_twai /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_hal_uart /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_hal_usb /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_hal_wdt /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_hid /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_http_client /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_http_server /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_https_ota /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_https_server /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_hw_support /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_lcd /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_libc /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_local_ctrl /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_mm /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_netif /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_netif_stack /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_partition /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_phy /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_pm /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_psram /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_ringbuf /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_rom /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_security /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_stdio /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_system /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_timer /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_trace /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_usb_cdc_rom_console /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_wifi /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/espcoredump /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esptool_py /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/fatfs /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/freertos /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/hal /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/heap /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/http_parser /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/ieee802154 /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/log /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/lwip /home/finja/Documents/Diplomarbeit/EdgeAI/mcu/gather_data/main /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/mbedtls /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/nvs_flash /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/nvs_sec_provider /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/openthread /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/partition_table /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/perfmon /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/protobuf-c /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/protocomm /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/pthread /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/rt /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/sdmmc /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/soc /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/spi_flash /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/spiffs /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/tcp_transport /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/ulp /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/unity /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/vfs /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/wear_levelling /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/wpa_supplicant /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/xtensa
+-- Configuring done (13.5s)
+-- Generating done (0.7s)
+-- Build files have been written to: /home/finja/Documents/Diplomarbeit/EdgeAI/mcu/gather_data/build
+[1/181] Preprocessing linker script /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_system/ld/esp32/sections.ld.in -> /home/finja/Documents/Diplomarbeit/EdgeAI/mcu/gather_data/build/esp-idf/esp_system/ld/sections.ld.in
+[2/181] Preprocessing linker script /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_system/ld/esp32/memory.ld.in -> /home/finja/Documents/Diplomarbeit/EdgeAI/mcu/gather_data/build/esp-idf/esp_system/ld/memory.ld
+[3/181] Building ASM object esp-idf/freertos/CMakeFiles/__idf_freertos.dir/FreeRTOS-Kernel/portable/xtensa/portasm.S.obj
+[4/181] Linking C static library esp-idf/freertos/libfreertos.a
+[5/181] Building ASM object esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_longjmp.S.obj
+[6/181] Linking C static library esp-idf/esp_rom/libesp_rom.a
+[7/181] Building ASM object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/arch/xtensa/esp_ipc_isr_routines.S.obj
+[8/181] Building ASM object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/arch/xtensa/esp_ipc_isr_handler.S.obj
+[9/181] Building ASM object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/arch/xtensa/panic_handler_asm.S.obj
+[10/181] Building ASM object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/soc/esp32/highint_hdl.S.obj
+[11/181] Linking C static library esp-idf/esp_system/libesp_system.a
+[12/181] Building ASM object esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/xtensa_context.S.obj
+[13/181] Building ASM object esp-idf/esp_gdbstub/CMakeFiles/__idf_esp_gdbstub.dir/src/port/xtensa/gdbstub-entry.S.obj
+[14/181] Building ASM object esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/xtensa_intr_asm.S.obj
+[15/181] Building ASM object esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/xtensa_vectors.S.obj
+[16/181] Linking C static library esp-idf/xtensa/libxtensa.a
+[17/181] Linking C static library esp-idf/esp_gdbstub/libesp_gdbstub.a
+[18/181] Building C object esp-idf/bt/CMakeFiles/__idf_bt.dir/common/osi/allocator.c.obj
+[19/181] Building C object esp-idf/bt/CMakeFiles/__idf_bt.dir/common/osi/buffer.c.obj
+[20/181] Building C object esp-idf/bt/CMakeFiles/__idf_bt.dir/common/btc/core/btc_manage.c.obj
+[21/181] Building C object esp-idf/bt/CMakeFiles/__idf_bt.dir/common/btc/profile/esp/blufi/blufi_protocol.c.obj
+[22/181] Building C object esp-idf/bt/CMakeFiles/__idf_bt.dir/common/hci_log/bt_hci_log.c.obj
+[23/181] Building C object esp-idf/bt/CMakeFiles/__idf_bt.dir/common/btc/core/btc_task.c.obj
+[24/181] Building C object esp-idf/bt/CMakeFiles/__idf_bt.dir/common/hci_log/bt_hci_log_insights.c.obj
+[25/181] Building C object esp-idf/bt/CMakeFiles/__idf_bt.dir/common/btc/profile/esp/blufi/blufi_prf.c.obj
+[26/181] Building C object esp-idf/bt/CMakeFiles/__idf_bt.dir/common/osi/hash_functions.c.obj
+[27/181] Building C object esp-idf/bt/CMakeFiles/__idf_bt.dir/common/osi/fixed_queue.c.obj
+[28/181] Building C object esp-idf/bt/CMakeFiles/__idf_bt.dir/common/btc/core/btc_alarm.c.obj
+[29/181] Building C object esp-idf/bt/CMakeFiles/__idf_bt.dir/common/api/esp_blufi_api.c.obj
+[30/181] Building C object esp-idf/bt/CMakeFiles/__idf_bt.dir/common/osi/pkt_queue.c.obj
+[31/181] Building C object esp-idf/bt/CMakeFiles/__idf_bt.dir/common/osi/fixed_pkt_queue.c.obj
+[32/181] Building C object esp-idf/bt/CMakeFiles/__idf_bt.dir/common/osi/hash_map.c.obj
+[33/181] Building C object esp-idf/bt/CMakeFiles/__idf_bt.dir/common/osi/future.c.obj
+[34/181] Building C object esp-idf/bt/CMakeFiles/__idf_bt.dir/common/osi/alarm.c.obj
+[35/181] Building C object esp-idf/bt/CMakeFiles/__idf_bt.dir/common/osi/osi.c.obj
+[36/181] Building C object esp-idf/bt/CMakeFiles/__idf_bt.dir/common/tinycrypt/src/utils.c.obj
+[37/181] Building C object esp-idf/bt/CMakeFiles/__idf_bt.dir/common/tinycrypt/src/ctr_mode.c.obj
+[38/181] Building C object esp-idf/bt/CMakeFiles/__idf_bt.dir/common/osi/mutex.c.obj
+[39/181] Building C object esp-idf/bt/CMakeFiles/__idf_bt.dir/common/osi/config.c.obj
+[40/181] Building C object esp-idf/bt/CMakeFiles/__idf_bt.dir/common/osi/list.c.obj
+[41/181] Building C object esp-idf/bt/CMakeFiles/__idf_bt.dir/common/tinycrypt/src/ctr_prng.c.obj
+[42/181] Building C object esp-idf/bt/CMakeFiles/__idf_bt.dir/common/tinycrypt/src/sha256.c.obj
+[43/181] Building C object esp-idf/bt/CMakeFiles/__idf_bt.dir/common/tinycrypt/src/ecc_platform_specific.c.obj
+[44/181] Building C object esp-idf/bt/CMakeFiles/__idf_bt.dir/common/osi/thread.c.obj
+[45/181] Building C object esp-idf/bt/CMakeFiles/__idf_bt.dir/common/tinycrypt/src/aes_decrypt.c.obj
+[46/181] Building C object esp-idf/bt/CMakeFiles/__idf_bt.dir/common/osi/semaphore.c.obj
+[47/181] Building C object esp-idf/bt/CMakeFiles/__idf_bt.dir/common/tinycrypt/src/cmac_mode.c.obj
+[48/181] Building C object esp-idf/bt/CMakeFiles/__idf_bt.dir/common/tinycrypt/src/aes_encrypt.c.obj
+[49/181] Building C object esp-idf/bt/CMakeFiles/__idf_bt.dir/common/tinycrypt/src/ecc_dh.c.obj
+[50/181] Building C object esp-idf/bt/CMakeFiles/__idf_bt.dir/common/tinycrypt/src/ccm_mode.c.obj
+[51/181] Building C object esp-idf/bt/CMakeFiles/__idf_bt.dir/common/tinycrypt/src/ecc_dsa.c.obj
+[52/181] Building C object esp-idf/bt/CMakeFiles/__idf_bt.dir/common/tinycrypt/src/hmac.c.obj
+[53/181] Building C object esp-idf/bt/CMakeFiles/__idf_bt.dir/common/tinycrypt/src/hmac_prng.c.obj
+[54/181] Building C object esp-idf/bt/CMakeFiles/__idf_bt.dir/common/ble_log/deprecated/ble_log_spi_out.c.obj
+[55/181] Building C object esp-idf/bt/CMakeFiles/__idf_bt.dir/common/tinycrypt/port/esp_tinycrypt_port.c.obj
+[56/181] Building ASM object esp-idf/bt/CMakeFiles/__idf_bt.dir/controller/esp32/hli_vectors.S.obj
+[57/181] Building C object esp-idf/bt/CMakeFiles/__idf_bt.dir/common/tinycrypt/src/cbc_mode.c.obj
+[58/181] Building C object esp-idf/bt/CMakeFiles/__idf_bt.dir/common/tinycrypt/src/ecc.c.obj
+[59/181] Building C object esp-idf/bt/CMakeFiles/__idf_bt.dir/host/nimble/nimble/nimble/host/util/src/addr.c.obj
+[60/181] Building C object esp-idf/bt/CMakeFiles/__idf_bt.dir/controller/esp32/hli_api.c.obj
+[61/181] Building C object esp-idf/bt/CMakeFiles/__idf_bt.dir/host/nimble/nimble/nimble/transport/src/transport.c.obj
+[62/181] Building C object esp-idf/bt/CMakeFiles/__idf_bt.dir/host/nimble/nimble/nimble/host/services/ans/src/ble_svc_ans.c.obj
+[63/181] Building C object esp-idf/bt/CMakeFiles/__idf_bt.dir/host/nimble/nimble/nimble/host/services/tps/src/ble_svc_tps.c.obj
+[64/181] Building C object esp-idf/bt/CMakeFiles/__idf_bt.dir/host/nimble/nimble/nimble/host/services/ias/src/ble_svc_ias.c.obj
+[65/181] Building C object esp-idf/bt/CMakeFiles/__idf_bt.dir/host/nimble/nimble/nimble/host/services/hr/src/ble_svc_hr.c.obj
+[66/181] Building C object esp-idf/bt/CMakeFiles/__idf_bt.dir/host/nimble/nimble/nimble/host/services/htp/src/ble_svc_htp.c.obj
+[67/181] Building C object esp-idf/bt/CMakeFiles/__idf_bt.dir/host/nimble/nimble/nimble/host/services/gatt/src/ble_svc_gatt.c.obj
+[68/181] Building C object esp-idf/bt/CMakeFiles/__idf_bt.dir/host/nimble/nimble/nimble/host/services/bas/src/ble_svc_bas.c.obj
+[69/181] Building C object esp-idf/bt/CMakeFiles/__idf_bt.dir/host/nimble/nimble/nimble/host/services/ipss/src/ble_svc_ipss.c.obj
+[70/181] Building C object esp-idf/bt/CMakeFiles/__idf_bt.dir/host/nimble/nimble/nimble/host/services/hid/src/ble_svc_hid.c.obj
+[71/181] Building C object esp-idf/bt/CMakeFiles/__idf_bt.dir/host/nimble/nimble/nimble/host/services/gap/src/ble_svc_gap.c.obj
+[72/181] Building C object esp-idf/bt/CMakeFiles/__idf_bt.dir/host/nimble/nimble/nimble/host/src/ble_cs.c.obj
+[73/181] Building C object esp-idf/bt/CMakeFiles/__idf_bt.dir/host/nimble/nimble/nimble/host/src/ble_hs_shutdown.c.obj
+[74/181] Building C object esp-idf/bt/CMakeFiles/__idf_bt.dir/host/nimble/nimble/nimble/host/services/cte/src/ble_svc_cte.c.obj
+[75/181] Building C object esp-idf/bt/CMakeFiles/__idf_bt.dir/host/nimble/nimble/nimble/host/services/lls/src/ble_svc_lls.c.obj
+[76/181] Building C object esp-idf/bt/CMakeFiles/__idf_bt.dir/host/nimble/nimble/nimble/host/services/sps/src/ble_svc_sps.c.obj
+[77/181] Building C object esp-idf/bt/CMakeFiles/__idf_bt.dir/host/nimble/nimble/nimble/host/services/prox/src/ble_svc_prox.c.obj
+[78/181] Building C object esp-idf/bt/CMakeFiles/__idf_bt.dir/host/nimble/nimble/nimble/host/services/dis/src/ble_svc_dis.c.obj
+[79/181] Building C object esp-idf/bt/CMakeFiles/__idf_bt.dir/host/nimble/nimble/nimble/host/services/cts/src/ble_svc_cts.c.obj
+[80/181] Building C object esp-idf/bt/CMakeFiles/__idf_bt.dir/controller/esp32/bt.c.obj
+[81/181] Building C object esp-idf/bt/CMakeFiles/__idf_bt.dir/host/nimble/nimble/nimble/host/services/ras/src/ble_svc_ras.c.obj
+[82/181] Building C object esp-idf/bt/CMakeFiles/__idf_bt.dir/host/nimble/nimble/nimble/host/src/ble_store_util.c.obj
+[83/181] Building C object esp-idf/bt/CMakeFiles/__idf_bt.dir/host/nimble/nimble/nimble/host/src/ble_hs_conn.c.obj
+[84/181] Building C object esp-idf/bt/CMakeFiles/__idf_bt.dir/host/nimble/nimble/nimble/host/src/ble_hs_hci_cmd.c.obj
+[85/181] Building C object esp-idf/bt/CMakeFiles/__idf_bt.dir/host/nimble/nimble/nimble/host/src/ble_l2cap_sig_cmd.c.obj
+[86/181] Building C object esp-idf/bt/CMakeFiles/__idf_bt.dir/host/nimble/nimble/nimble/host/src/ble_gatts_lcl.c.obj
+[87/181] Building C object esp-idf/bt/CMakeFiles/__idf_bt.dir/host/nimble/nimble/nimble/host/src/ble_ibeacon.c.obj
+[88/181] Building C object esp-idf/bt/CMakeFiles/__idf_bt.dir/host/nimble/nimble/nimble/host/src/ble_hs_atomic.c.obj
+[89/181] Building C object esp-idf/bt/CMakeFiles/__idf_bt.dir/host/nimble/nimble/nimble/host/src/ble_hs_id.c.obj
+[90/181] Building C object esp-idf/bt/CMakeFiles/__idf_bt.dir/host/nimble/nimble/nimble/host/src/ble_hs_stop.c.obj
+[91/181] Building C object esp-idf/bt/CMakeFiles/__idf_bt.dir/host/nimble/nimble/nimble/host/src/ble_sm_alg.c.obj
+[92/181] Building C object esp-idf/bt/CMakeFiles/__idf_bt.dir/host/nimble/nimble/nimble/host/src/ble_hs_periodic_sync.c.obj
+[93/181] Building C object esp-idf/bt/CMakeFiles/__idf_bt.dir/host/nimble/nimble/nimble/host/src/ble_hs_mqueue.c.obj
+[94/181] Building C object esp-idf/bt/CMakeFiles/__idf_bt.dir/host/nimble/nimble/nimble/host/src/ble_hs_hci_evt.c.obj
+[95/181] Building C object esp-idf/bt/CMakeFiles/__idf_bt.dir/host/nimble/nimble/nimble/host/src/ble_att.c.obj
+[96/181] Building C object esp-idf/bt/CMakeFiles/__idf_bt.dir/host/nimble/nimble/nimble/host/src/ble_ead.c.obj
+[97/181] Building C object esp-idf/bt/CMakeFiles/__idf_bt.dir/host/nimble/nimble/nimble/host/src/ble_hs_cfg.c.obj
+[98/181] Building C object esp-idf/bt/CMakeFiles/__idf_bt.dir/host/nimble/nimble/nimble/host/src/ble_hs.c.obj
+[99/181] Building C object esp-idf/bt/CMakeFiles/__idf_bt.dir/host/nimble/nimble/nimble/host/src/ble_sm_lgcy.c.obj
+[100/181] Building C object esp-idf/bt/CMakeFiles/__idf_bt.dir/host/nimble/nimble/nimble/host/src/ble_aes_ccm.c.obj
+[101/181] Building C object esp-idf/bt/CMakeFiles/__idf_bt.dir/host/nimble/nimble/nimble/host/src/ble_l2cap_coc.c.obj
+[102/181] Building C object esp-idf/bt/CMakeFiles/__idf_bt.dir/host/nimble/nimble/nimble/host/src/ble_store.c.obj
+[103/181] Building C object esp-idf/bt/CMakeFiles/__idf_bt.dir/host/nimble/nimble/nimble/host/src/ble_hs_mbuf.c.obj
+[104/181] Building C object esp-idf/bt/CMakeFiles/__idf_bt.dir/host/nimble/nimble/nimble/host/src/ble_hs_log.c.obj
+[105/181] Building C object esp-idf/bt/CMakeFiles/__idf_bt.dir/host/nimble/nimble/nimble/host/src/ble_sm.c.obj
+[106/181] Building C object esp-idf/bt/CMakeFiles/__idf_bt.dir/host/nimble/nimble/nimble/host/src/ble_hs_startup.c.obj
+[107/181] Building C object esp-idf/bt/CMakeFiles/__idf_bt.dir/host/nimble/nimble/nimble/host/src/ble_eddystone.c.obj
+[108/181] Building C object esp-idf/bt/CMakeFiles/__idf_bt.dir/host/nimble/nimble/nimble/host/src/ble_att_svr.c.obj
+[109/181] Building C object esp-idf/bt/CMakeFiles/__idf_bt.dir/host/nimble/nimble/nimble/host/src/ble_att_clt.c.obj
+[110/181] Building C object esp-idf/bt/CMakeFiles/__idf_bt.dir/host/nimble/nimble/nimble/host/src/ble_att_cmd.c.obj
+[111/181] Building C object esp-idf/bt/CMakeFiles/__idf_bt.dir/host/nimble/nimble/nimble/host/src/ble_uuid.c.obj
+[112/181] Building C object esp-idf/bt/CMakeFiles/__idf_bt.dir/host/nimble/nimble/nimble/host/src/ble_sm_cmd.c.obj
+[113/181] Building C object esp-idf/bt/CMakeFiles/__idf_bt.dir/host/nimble/nimble/nimble/host/src/ble_hs_pvcy.c.obj
+[114/181] Building C object esp-idf/bt/CMakeFiles/__idf_bt.dir/host/nimble/nimble/nimble/host/src/ble_l2cap.c.obj
+[115/181] Building C object esp-idf/bt/CMakeFiles/__idf_bt.dir/host/nimble/nimble/nimble/host/src/ble_l2cap_sig.c.obj
+[116/181] Building C object esp-idf/bt/CMakeFiles/__idf_bt.dir/host/nimble/nimble/nimble/host/src/ble_hs_misc.c.obj
+[117/181] Building C object esp-idf/bt/CMakeFiles/__idf_bt.dir/host/nimble/nimble/nimble/host/src/ble_hs_flow.c.obj
+[118/181] Building C object esp-idf/bt/CMakeFiles/__idf_bt.dir/host/nimble/nimble/nimble/host/store/config/src/ble_store_nvs.c.obj
+[119/181] Building C object esp-idf/bt/CMakeFiles/__idf_bt.dir/host/nimble/nimble/nimble/host/src/ble_eatt.c.obj
+[120/181] Building C object esp-idf/bt/CMakeFiles/__idf_bt.dir/host/nimble/nimble/nimble/host/src/ble_sm_sc.c.obj
+[121/181] Building C object esp-idf/bt/CMakeFiles/__idf_bt.dir/host/nimble/nimble/nimble/host/src/ble_hs_hci.c.obj
+[122/181] Building C object esp-idf/bt/CMakeFiles/__idf_bt.dir/host/nimble/nimble/nimble/host/store/ram/src/ble_store_ram.c.obj
+[123/181] Building C object esp-idf/bt/CMakeFiles/__idf_bt.dir/host/nimble/port/src/nvs_port.c.obj
+[124/181] Building C object esp-idf/bt/CMakeFiles/__idf_bt.dir/host/nimble/nimble/nimble/host/src/ble_gattc_cache_conn.c.obj
+[125/181] Building C object esp-idf/bt/CMakeFiles/__idf_bt.dir/host/nimble/nimble/nimble/host/src/ble_hs_adv.c.obj
+[126/181] Building C object esp-idf/bt/CMakeFiles/__idf_bt.dir/host/nimble/nimble/nimble/host/src/ble_gattc_cache.c.obj
+[127/181] Building C object esp-idf/bt/CMakeFiles/__idf_bt.dir/host/nimble/nimble/nimble/host/src/ble_hs_hci_util.c.obj
+[128/181] Building C object esp-idf/bt/CMakeFiles/__idf_bt.dir/host/nimble/port/src/esp_nimble_mem.c.obj
+[129/181] Building C object esp-idf/bt/CMakeFiles/__idf_bt.dir/host/nimble/nimble/porting/nimble/src/nimble_port.c.obj
+[130/181] Building C object esp-idf/bt/CMakeFiles/__idf_bt.dir/host/nimble/nimble/porting/nimble/src/endian.c.obj
+[131/181] Building C object esp-idf/bt/CMakeFiles/__idf_bt.dir/host/nimble/nimble/porting/npl/freertos/src/nimble_port_freertos.c.obj
+[132/181] Building C object esp-idf/bt/CMakeFiles/__idf_bt.dir/common/btc/profile/esp/blufi/nimble_host/esp_blufi.c.obj
+[133/181] Building C object esp-idf/bt/CMakeFiles/__idf_bt.dir/host/nimble/nimble/nimble/host/src/ble_gattc.c.obj
+[134/181] Building C object esp-idf/bt/CMakeFiles/__idf_bt.dir/host/nimble/nimble/nimble/host/src/ble_gatts.c.obj
+[135/181] Building C object esp-idf/bt/CMakeFiles/__idf_bt.dir/host/nimble/nimble/nimble/transport/esp_ipc_legacy/src/hci_esp_ipc_legacy.c.obj
+[136/181] Building C object esp-idf/bt/CMakeFiles/__idf_bt.dir/host/nimble/nimble/nimble/host/store/config/src/ble_store_config.c.obj
+[137/181] Building C object esp-idf/bt/CMakeFiles/__idf_bt.dir/host/nimble/nimble/nimble/host/src/ble_gap.c.obj
+[138/181] Building C object esp-idf/bt/CMakeFiles/__idf_bt.dir/host/nimble/nimble/porting/nimble/src/mem.c.obj
+[139/181] Linking C static library esp-idf/esp_https_ota/libesp_https_ota.a
+[140/181] Building C object esp-idf/bt/CMakeFiles/__idf_bt.dir/host/nimble/nimble/nimble/host/src/ble_hs_resolv.c.obj
+[141/181] Building C object esp-idf/bt/CMakeFiles/__idf_bt.dir/porting/mem/os_mempool.c.obj
+[142/181] Building C object esp-idf/bt/CMakeFiles/__idf_bt.dir/host/nimble/esp-hci/src/esp_nimble_hci.c.obj
+[143/181] Building C object esp-idf/protocomm/CMakeFiles/__idf_protocomm.dir/proto-c/constants.pb-c.c.obj
+[144/181] Building C object esp-idf/esp_hid/CMakeFiles/__idf_esp_hid.dir/src/esp_hidd.c.obj
+[145/181] Building C object esp-idf/esp_hid/CMakeFiles/__idf_esp_hid.dir/src/esp_hid_common.c.obj
+[146/181] Building C object esp-idf/esp_hid/CMakeFiles/__idf_esp_hid.dir/src/nimble_hidh.c.obj
+[147/181] Building C object esp-idf/bt/CMakeFiles/__idf_bt.dir/host/nimble/nimble/porting/nimble/src/os_msys_init.c.obj
+[148/181] Building C object esp-idf/esp_hid/CMakeFiles/__idf_esp_hid.dir/src/nimble_hidd.c.obj
+[149/181] Building C object esp-idf/protocomm/CMakeFiles/__idf_protocomm.dir/proto-c/session.pb-c.c.obj
+[150/181] Building C object esp-idf/protocomm/CMakeFiles/__idf_protocomm.dir/proto-c/sec0.pb-c.c.obj
+[151/181] Building C object esp-idf/protocomm/CMakeFiles/__idf_protocomm.dir/proto-c/sec1.pb-c.c.obj
+[152/181] Building C object esp-idf/protocomm/CMakeFiles/__idf_protocomm.dir/proto-c/sec2.pb-c.c.obj
+[153/181] Building C object esp-idf/protocomm/CMakeFiles/__idf_protocomm.dir/src/common/protocomm.c.obj
+[154/181] Building C object esp-idf/esp_hid/CMakeFiles/__idf_esp_hid.dir/src/esp_hidh.c.obj
+[155/181] Building C object esp-idf/protocomm/CMakeFiles/__idf_protocomm.dir/src/crypto/srp6a/esp_srp_mpi.c.obj
+[156/181] Building C object esp-idf/bt/CMakeFiles/__idf_bt.dir/host/nimble/nimble/porting/nimble/src/os_mbuf.c.obj
+[157/181] Building C object esp-idf/protocomm/CMakeFiles/__idf_protocomm.dir/src/transports/protocomm_console.c.obj
+[158/181] Building C object esp-idf/bt/CMakeFiles/__idf_bt.dir/host/nimble/nimble/porting/npl/freertos/src/npl_os_freertos.c.obj
+[159/181] Building C object esp-idf/protocomm/CMakeFiles/__idf_protocomm.dir/src/transports/protocomm_httpd.c.obj
+[160/181] Building C object esp-idf/esp_local_ctrl/CMakeFiles/__idf_esp_local_ctrl.dir/proto-c/esp_local_ctrl.pb-c.c.obj
+[161/181] Building C object esp-idf/esp_local_ctrl/CMakeFiles/__idf_esp_local_ctrl.dir/src/esp_local_ctrl_transport_ble.c.obj
+[162/181] Building C object esp-idf/esp_local_ctrl/CMakeFiles/__idf_esp_local_ctrl.dir/src/esp_local_ctrl_handler.c.obj
+[163/181] Building C object esp-idf/esp_local_ctrl/CMakeFiles/__idf_esp_local_ctrl.dir/src/esp_local_ctrl_transport_httpd.c.obj
+[164/181] Building C object esp-idf/protocomm/CMakeFiles/__idf_protocomm.dir/src/crypto/srp6a/esp_srp.c.obj
+[165/181] Building C object esp-idf/esp_local_ctrl/CMakeFiles/__idf_esp_local_ctrl.dir/src/esp_local_ctrl.c.obj
+[166/181] Building C object esp-idf/protocomm/CMakeFiles/__idf_protocomm.dir/src/security/security2.c.obj
+[167/181] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/gather_data.c.obj
+[168/181] Linking C static library esp-idf/bt/libbt.a
+[169/181] Building C object esp-idf/protocomm/CMakeFiles/__idf_protocomm.dir/src/transports/protocomm_nimble.c.obj
+[170/181] Linking C static library esp-idf/esp_hid/libesp_hid.a
+[171/181] Linking C static library esp-idf/protocomm/libprotocomm.a
+[172/181] Linking C static library esp-idf/esp_local_ctrl/libesp_local_ctrl.a
+[173/181] Linking C static library esp-idf/main/libmain.a
+[174/181] Performing build step for 'bootloader'
+[0/1] Re-running CMake...
+-- Component directory /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/idf_test does not contain a CMakeLists.txt file. No component will be added
+-- Minimal build - OFF
+-- No compiler launcher chain will be used.
+-- Building ESP-IDF components for target esp32
+-- ESP-TEE is currently supported only on the esp32c6;esp32h2;esp32c5;esp32c61 SoCs
+-- KCONFIG_REPORT_VERBOSITY not set, using default
+-- Project sdkconfig file /home/finja/Documents/Diplomarbeit/EdgeAI/mcu/gather_data/sdkconfig
+Configuration Report                                                            
+ ────────────────────────────────────────────────────────────────────────────── 
+   Parser Version: 1                                                            
+   Verbosity: default                                                           
+   Defaults policy: sdkconfig                                                   
+   Status: Finished with notifications                                          
+                                                                                
+  Default Value Mismatch                                                        
+   ──────────────────────────────────────────────────────────────────────────   
+    Using sdkconfig default values                                              
+    Choice symbols with different default selection between sdkconfig and       
+    Kconfig                                                                     
+    ESP_SYSTEM_CHECK_INT_LEVEL: Kconfig default selection:                      
+    ESP_SYSTEM_CHECK_INT_LEVEL_4, sdkconfig default selection:                  
+    ESP_SYSTEM_CHECK_INT_LEVEL_5                                                
+   ──────────────────────────────────────────────────────────────────────────   
+ ────────────────────────────────────────────────────────────────────────────── 
+-- Compiler supported targets: xtensa-esp-elf
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Adding linker script /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/soc/esp32/ld/esp32.peripherals.ld
+-- Adding linker script /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_hal_regi2c/esp32/rom.regi2c.ld
+-- Bootloader project name: "bootloader" version: 1
+-- Adding linker script /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_rom/esp32/ld/esp32.rom.ld
+-- Adding linker script /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_rom/esp32/ld/esp32.rom.api.ld
+-- Adding linker script /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_rom/esp32/ld/esp32.rom.libgcc.ld
+-- Adding linker script /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_rom/esp32/ld/esp32.rom.libc-funcs.ld
+-- Components: bootloader bootloader_support efuse esp_app_format esp_blockdev esp_bootloader_format esp_common esp_hal_ana_conv esp_hal_clock esp_hal_dma esp_hal_gpio esp_hal_gpspi esp_hal_i2s esp_hal_mspi esp_hal_pmu esp_hal_regi2c esp_hal_rtc_timer esp_hal_security esp_hal_systimer esp_hal_timg esp_hal_uart esp_hal_usb esp_hal_wdt esp_hw_support esp_libc esp_rom esp_security esp_stdio esp_system esptool_py freertos hal log main micro-ecc partition_table soc spi_flash xtensa
+-- Component paths: /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/bootloader /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/bootloader_support /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/efuse /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_app_format /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_blockdev /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_bootloader_format /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_common /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_hal_ana_conv /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_hal_clock /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_hal_dma /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_hal_gpio /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_hal_gpspi /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_hal_i2s /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_hal_mspi /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_hal_pmu /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_hal_regi2c /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_hal_rtc_timer /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_hal_security /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_hal_systimer /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_hal_timg /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_hal_uart /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_hal_usb /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_hal_wdt /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_hw_support /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_libc /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_rom /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_security /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_stdio /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_system /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esptool_py /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/freertos /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/hal /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/log /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/bootloader/subproject/main /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/bootloader/subproject/components/micro-ecc /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/partition_table /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/soc /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/spi_flash /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/xtensa
+-- Adding linker script /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/bootloader/subproject/main/ld/esp32/bootloader.memory.ld.in
+--   -> Preprocessing .in script: /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/bootloader/subproject/main/ld/esp32/bootloader.memory.ld.in
+-- Adding linker script /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/bootloader/subproject/main/ld/esp32/bootloader.sections.ld.in
+--   -> Preprocessing .in script: /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/bootloader/subproject/main/ld/esp32/bootloader.sections.ld.in
+-- Configuring done (5.7s)
+-- Generating done (0.1s)
+-- Build files have been written to: /home/finja/Documents/Diplomarbeit/EdgeAI/mcu/gather_data/build/bootloader
+[1/1] cd /home/finja/Documents/Diplomarbeit/EdgeAI/mcu/gather_data/build/bootloader && /home/finja/.espressif/python_env/idf6.2_py3.12_env/bin/python /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /home/finja/Documents/Diplomarbeit/EdgeAI/mcu/gather_data/build/bootloader/bootloader.bin
+Bootloader binary size 0x65e0 bytes. 0xa20 bytes (9%) free.
+[175/181] No install step for 'bootloader'
+[176/181] Completed 'bootloader'
+[177/181] Generating esp-idf/esp_system/ld/sections.ld
+[178/181] Building C object CMakeFiles/gather_data.elf.dir/project_elf_src_esp32.c.obj
+[179/181] Linking CXX executable gather_data.elf
+[180/181] Generating binary image from built executable
+esptool v5.3.1
+Creating ESP32 image...
+Merged 3 ELF sections.
+Successfully created ESP32 image.
+Generated /home/finja/Documents/Diplomarbeit/EdgeAI/mcu/gather_data/build/gather_data.bin
+[181/181] cd /home/finja/Documents/Diplomarbeit/EdgeAI/mcu/gather_data/build && /home/finja/.espressif/python_env/idf6.2_py3.12_env/bin/python /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/finja/Documents/Diplomarbeit/EdgeAI/mcu/gather_data/build/partition_table/partition-table.bin /home/finja/Documents/Diplomarbeit/EdgeAI/mcu/gather_data/build/gather_data.bin
+gather_data.bin binary size 0x6e240 bytes. Smallest app partition is 0x100000 
+bytes. 0x91dc0 bytes (57%) free.

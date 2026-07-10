@@ -1,0 +1,245 @@
+Command: /home/finja/.espressif/python_env/idf6.2_py3.12_env/bin/python /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/tools/idf_monitor.py -p /dev/ttyACM0 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32h2 --revision 0 --decode-panic backtrace /home/finja/Documents/Diplomarbeit/EdgeAI/mcu/device/build/device.elf /home/finja/Documents/Diplomarbeit/EdgeAI/mcu/device/build/bootloader/bootloader.elf -m '/home/finja/.espressif/python_env/idf6.2_py3.12_env/bin/python' '/home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/tools/idf.py'
+[0;32mI (133) esp_image: segment 3: paddr=0003a6c0 vaddr=40806448 sizeESP-ROM:esp32h2-eco5-20240613[0m
+Build:Jun 13 2024
+rst:0x15 (USB_UART_HPSYS),boot:0x1c (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40804ac8
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x408460f0,len:0x1664
+load:0x4083c2d0,len:0xef8
+load:0x4083efd0,len:0x2fb0
+entry 0x4083c2da
+[0;32mI (23) boot: ESP-IDF v6.1-dev-6126-ge9da155a726 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Jul  8 2026 15:17:08[0m
+[0;32mI (25) boot: chip revision: v1.2[0m
+[0;32mI (25) boot: efuse block revision: v0.3[0m
+[0;32mI (29) boot.esp32h2: SPI Speed      : 64MHz[0m
+[0;32mI (33) boot.esp32h2: SPI Mode       : DIO[0m
+[0;32mI (36) boot.esp32h2: SPI Flash Size : 2MB[0m
+[0;32mI (40) boot: Enabling RNG early entropy source...[0m
+[0;32mI (45) boot: Partition Table:[0m
+[0;32mI (47) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (53) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (60) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (66) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (73) boot: End of partition table[0m
+[0;32mI (76) esp_image: segment 0: paddr=00010020 vaddr=42020020 size=09ba8h ( 39848) map[0m
+[0;32mI (94) esp_image: segment 1: paddr=00019bd0 vaddr=40800000 size=06448h ( 25672) load[0m
+[0;32mI (103) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=1a698h (108184) map[0m
+[0;32mI (133) esp_image: segment 3: paddr=0003a6c0 vaddr=40806448 size=07280h ( 29312) load[0m
+[0;32mI (146) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (147) boot: Disabling RNG early entropy source...[0m
+[0;32mI (157) cpu_start: Unicore app[0m
+[0;32mI (165) cpu_start: GPIO 23 and 24 are used as console UART I/O pins[0m
+[0;32mI (166) cpu_start: Pro cpu start user code[0m
+[0;32mI (167) cpu_start: cpu freq: 96000000 Hz[0m
+[0;32mI (168) app_init: Application information:[0m
+[0;32mI (171) app_init: Project name:     device[0m
+[0;32mI (175) app_init: App version:      526bfce-dirty[0m
+[0;32mI (180) app_init: Compile time:     Jul  8 2026 15:17:16[0m
+[0;32mI (185) app_init: ELF file SHA256:  558850198...[0m
+[0;32mI (189) app_init: ESP-IDF:          v6.1-dev-6126-ge9da155a726[0m
+[0;32mI (195) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (198) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (202) efuse_init: Chip rev:         v1.2[0m
+[0;32mI (206) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (212) heap_init: At 4080F760 len 0003DC20 (247 KiB): RAM[0m
+[0;32mI (218) heap_init: At 4084D380 len 00002B60 (10 KiB): RAM[0m
+[0;32mI (223) heap_init: At 50000000 len 00000FE8 (3 KiB): RTCRAM[0m
+[0;32mI (229) spi_flash: detected chip: gd[0m
+[0;32mI (231) spi_flash: flash io: dio[0m
+[0;33mW (234) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (247) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (253) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (260) main_task: Started on CPU0[0m
+[0;32mI (260) main_task: Calling app_main()[0m
+[0;32mI (280) phy: phy_version: 324,5, 0d8cd71, Apr 10 2026, 13:58:46[0m
+[0;32mI (280) phy: libbtbb version: 8db04ea, Apr 10 2026, 13:58:59[0m
+[0;32mI (280) ieee802154: Ready, panId=0x6767, channel=12, myAddr=0xc9e6[0m
+[0;32mI (290) DEVICE: tx sfd done[0m
+[0;32mI (290) DEVICE: tx OK, sent 19 bytes, ack 0[0m
+[0;32mI (6780) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (6780) DEVICE: rx OK, received 19 bytes[0m
+
+abort() was called at PC 0x40801c4b on core 0
+Core  0 register dump:
+MEPC    : 0x408065a0  RA      : 0x4080655e  SP      : 0x4080de40  GP      : 0x4080b8b4  
+TP      : 0x40812f70  T0      : 0x37363534  T1      : 0x7271706f  T2      : 0x33323130  
+S0/FP   : 0x00000004  S1      : 0x4080dea4  A0      : 0x4080de6c  A1      : 0x4080dea2  
+A2      : 0x00000000  A3      : 0x4080de99  A4      : 0x00000001  A5      : 0x4080f000  
+A6      : 0x00000000  A7      : 0x76757473  S2      : 0xffffffff  S3      : 0x4080df0c  
+S4      : 0x600c2000  S5      : 0x4080e090  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x6e6d6c6b  T4      : 0x6a696867  T5      : 0x66656463  T6      : 0x62613938  
+MSTATUS : 0x00001881  MTVEC   : 0x40800001  MCAUSE  : 0x00000002  MTVAL   : 0x00000000  
+MHARTID : 0x00000000  
+
+add symbol table from file "/home/finja/Documents/Diplomarbeit/EdgeAI/mcu/device/build/bootloader/bootloader.elf"
+panic_abort (details=details@entry=0x4080de6c <xIsrStack+572> "abort() was called at PC 0x40801c4b on core 0") at /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_system/panic.c:496
+496	    asm("unimp");   // should be an invalid operation on RISC-V targets
+#0  panic_abort (details=details@entry=0x4080de6c <xIsrStack+572> "abort() was called at PC 0x40801c4b on core 0") at /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_system/panic.c:496
+#1  0x4080655e in esp_system_abort (details=details@entry=0x4080de6c <xIsrStack+572> "abort() was called at PC 0x40801c4b on core 0") at /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_system/port/esp_system_chip.c:87
+#2  0x40805d86 in abort () at /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_libc/src/abort.c:38
+#3  0x40801c4e in lock_acquire_generic (lock=lock@entry=0x4080df0c <xIsrStack+732>, delay=delay@entry=4294967295, mutex_type=mutex_type@entry=4 '\004') at /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_libc/src/locks.c:145
+#4  0x40801da8 in _lock_acquire_recursive (lock=lock@entry=0x4080df0c <xIsrStack+732>) at /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_libc/src/locks.c:174
+#5  0x40801e7e in __retarget_lock_acquire_recursive (lock=<optimized out>) at /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_libc/src/locks.c:333
+#6  0x42015c8a in vfprintf ()
+Backtrace stopped: frame did not save the PC
+
+
+
+ELF file SHA256: 558850198
+
+Rebooting...
+ESP-ROM:esp32h2-eco5-20240613
+Build:Jun 13 2024
+rst:0xc (SW_CPU),boot:0x1c (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40003318
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x408460f0,len:0x1664
+load:0x4083c2d0,len:0xef8
+load:0x4083efd0,len:0x2fb0
+entry 0x4083c2da
+[0;32mI (22) boot: ESP-IDF v6.1-dev-6126-ge9da155a726 2nd stage bootloader[0m
+[0;32mI (23) boot: compile time Jul  8 2026 15:17:08[0m
+[0;32mI (25) boot: chip revision: v1.2[0m
+[0;32mI (26) boot: efuse block revision: v0.3[0m
+[0;32mI (28) boot.esp32h2: SPI Speed      : 64MHz[0m
+[0;32mI (32) boot.esp32h2: SPI Mode       : DIO[0m
+[0;32mI (35) boot.esp32h2: SPI Flash Size : 2MB[0m
+[0;32mI (39) boot: Enabling RNG early entropy source...[0m
+[0;32mI (44) boot: Partition Table:[0m
+[0;32mI (46) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (52) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (59) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (65) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (72) boot: End of partition table[0m
+[0;32mI (75) esp_image: segment 0: paddr=00010020 vaddr=42020020 size=09ba8h ( 39848) map[0m
+[0;32mI (100) esp_image: segment 1: paddr=00019bd0 vaddr=40800000 size=06448h ( 25672) load[0m
+[0;32mI (114) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=1a698h (108184) map[0m
+[0;32mI (161) esp_image: segment 3: paddr=0003a6c0 vaddr=40806448 size=07280h ( 29312) load[0m
+[0;32mI (183) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (184) boot: Disabling RNG early entropy source...[0m
+[0;32mI (194) cpu_start: Unicore app[0m
+[0;32mI (203) cpu_start: GPIO 23 and 24 are used as console UART I/O pins[0m
+[0;32mI (203) cpu_start: Pro cpu start user code[0m
+[0;32mI (204) cpu_start: cpu freq: 96000000 Hz[0m
+[0;32mI (205) app_init: Application information:[0m
+[0;32mI (209) app_init: Project name:     device[0m
+[0;32mI (212) app_init: App version:      526bfce-dirty[0m
+[0;32mI (217) app_init: Compile time:     Jul  8 2026 15:17:16[0m
+[0;32mI (222) app_init: ELF file SHA256:  558850198...[0m
+[0;32mI (226) app_init: ESP-IDF:          v6.1-dev-6126-ge9da155a726[0m
+[0;32mI (232) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (236) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (240) efuse_init: Chip rev:         v1.2[0m
+[0;32mI (244) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (250) heap_init: At 4080F760 len 0003DC20 (247 KiB): RAM[0m
+[0;32mI (255) heap_init: At 4084D380 len 00002B60 (10 KiB): RAM[0m
+[0;32mI (260) heap_init: At 50000000 len 00000FE8 (3 KiB): RTCRAM[0m
+[0;32mI (267) spi_flash: detected chip: gd[0m
+[0;32mI (269) spi_flash: flash io: dio[0m
+[0;33mW (272) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (285) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (290) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (297) main_task: Started on CPU0[0m
+[0;32mI (297) main_task: Calling app_main()[0m
+[0;32mI (307) phy: phy_version: 324,5, 0d8cd71, Apr 10 2026, 13:58:46[0m
+[0;32mI (307) phy: libbtbb version: 8db04ea, Apr 10 2026, 13:58:59[0m
+[0;32mI (317) ieee802154: Ready, panId=0x6767, channel=12, myAddr=0xc9e6[0m
+[0;32mI (317) DEVICE: tx sfd done[0m
+[0;32mI (317) DEVICE: tx OK, sent 19 bytes, ack 0[0m
+[0;32mI (4327) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (4327) DEVICE: rx OK, received 19 bytes[0m
+
+abort() was called at PC 0x40801c4b on core 0
+Core  0 register dump:
+MEPC    : 0x408065a0  RA      : 0x4080655e  SP      : 0x4080de40  GP      : 0x4080b8b4  
+TP      : 0x40812f70  T0      : 0x37363534  T1      : 0x7271706f  T2      : 0x33323130  
+S0/FP   : 0x00000004  S1      : 0x4080dea4  A0      : 0x4080de6c  A1      : 0x4080dea2  
+A2      : 0x00000000  A3      : 0x4080de99  A4      : 0x00000001  A5      : 0x4080f000  
+A6      : 0x00000000  A7      : 0x76757473  S2      : 0xffffffff  S3      : 0x4080df0c  
+S4      : 0x600c2000  S5      : 0x4080e090  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x6e6d6c6b  T4      : 0x6a696867  T5      : 0x66656463  T6      : 0x62613938  
+MSTATUS : 0x00001881  MTVEC   : 0x40800001  MCAUSE  : 0x00000002  MTVAL   : 0x00000000  
+MHARTID : 0x00000000  
+
+add symbol table from file "/home/finja/Documents/Diplomarbeit/EdgeAI/mcu/device/build/bootloader/bootloader.elf"
+panic_abort (details=details@entry=0x4080de6c <xIsrStack+572> "abort() was called at PC 0x40801c4b on core 0") at /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_system/panic.c:496
+496	    asm("unimp");   // should be an invalid operation on RISC-V targets
+#0  panic_abort (details=details@entry=0x4080de6c <xIsrStack+572> "abort() was called at PC 0x40801c4b on core 0") at /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_system/panic.c:496
+#1  0x4080655e in esp_system_abort (details=details@entry=0x4080de6c <xIsrStack+572> "abort() was called at PC 0x40801c4b on core 0") at /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_system/port/esp_system_chip.c:87
+#2  0x40805d86 in abort () at /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_libc/src/abort.c:38
+#3  0x40801c4e in lock_acquire_generic (lock=lock@entry=0x4080df0c <xIsrStack+732>, delay=delay@entry=4294967295, mutex_type=mutex_type@entry=4 '\004') at /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_libc/src/locks.c:145
+#4  0x40801da8 in _lock_acquire_recursive (lock=lock@entry=0x4080df0c <xIsrStack+732>) at /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_libc/src/locks.c:174
+#5  0x40801e7e in __retarget_lock_acquire_recursive (lock=<optimized out>) at /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/esp_libc/src/locks.c:333
+#6  0x42015c8a in vfprintf ()
+Backtrace stopped: frame did not save the PC
+
+
+
+ELF file SHA256: 558850198
+
+Rebooting...
+ESP-ROM:esp32h2-eco5-20240613
+Build:Jun 13 2024
+rst:0xc (SW_CPU),boot:0x1c (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40003318
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x408460f0,len:0x1664
+load:0x4083c2d0,len:0xef8
+load:0x4083efd0,len:0x2fb0
+entry 0x4083c2da
+[0;32mI (22) boot: ESP-IDF v6.1-dev-6126-ge9da155a726 2nd stage bootloader[0m
+[0;32mI (23) boot: compile time Jul  8 2026 15:17:08[0m
+[0;32mI (25) boot: chip revision: v1.2[0m
+[0;32mI (26) boot: efuse block revision: v0.3[0m
+[0;32mI (28) boot.esp32h2: SPI Speed      : 64MHz[0m
+[0;32mI (32) boot.esp32h2: SPI Mode       : DIO[0m
+[0;32mI (35) boot.esp32h2: SPI Flash Size : 2MB[0m
+[0;32mI (39) boot: Enabling RNG early entropy source...[0m
+[0;32mI (44) boot: Partition Table:[0m
+[0;32mI (46) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (52) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (59) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (65) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (72) boot: End of partition table[0m
+[0;32mI (75) esp_image: segment 0: paddr=00010020 vaddr=42020020 size=09ba8h ( 39848) map[0m
+[0;32mI (100) esp_image: segment 1: paddr=00019bd0 vaddr=40800000 size=06448h ( 25672) load[0m
+[0;32mI (114) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=1a698h (108184) map[0m
+[0;32mI (161) esp_image: segment 3: paddr=0003a6c0 vaddr=40806448 size=07280h ( 29312) load[0m
+[0;32mI (183) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (184) boot: Disabling RNG early entropy source...[0m
+[0;32mI (194) cpu_start: Unicore app[0m
+[0;32mI (203) cpu_start: GPIO 23 and 24 are used as console UART I/O pins[0m
+[0;32mI (203) cpu_start: Pro cpu start user code[0m
+[0;32mI (204) cpu_start: cpu freq: 96000000 Hz[0m
+[0;32mI (205) app_init: Application information:[0m
+[0;32mI (209) app_init: Project name:     device[0m
+[0;32mI (212) app_init: App version:      526bfce-dirty[0m
+[0;32mI (217) app_init: Compile time:     Jul  8 2026 15:17:16[0m
+[0;32mI (222) app_init: ELF file SHA256:  558850198...[0m
+[0;32mI (226) app_init: ESP-IDF:          v6.1-dev-6126-ge9da155a726[0m
+[0;32mI (232) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (236) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (240) efuse_init: Chip rev:         v1.2[0m
+[0;32mI (244) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (250) heap_init: At 4080F760 len 0003DC20 (247 KiB): RAM[0m
+[0;32mI (255) heap_init: At 4084D380 len 00002B60 (10 KiB): RAM[0m
+[0;32mI (260) heap_init: At 50000000 len 00000FE8 (3 KiB): RTCRAM[0m
+[0;32mI (267) spi_flash: detected chip: gd[0m
+[0;32mI (269) spi_flash: flash io: dio[0m
+[0;33mW (272) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (285) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (290) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (297) main_task: Started on CPU0[0m
+[0;32mI (297) main_task: Calling app_main()[0m
+[0;32mI (307) phy: phy_version: 324,5, 0d8cd71, Apr 10 2026, 13:58:46[0m
+[0;32mI (307) phy: libbtbb version: 8db04ea, Apr 10 2026, 13:58:59[0m
+[0;32mI (307) ieee802154: Ready, panId=0x6767, channel=12, myAddr=0xc9e6[0m
+[0;32mI (317) DEVICE: tx sfd done[0m
+[0;32mI (317) DEVICE: tx OK, sent 19 bytes, ack 0[0m
+[0;32mI (10427) DEVICE: rx sfd done, Radio state: 3[0m

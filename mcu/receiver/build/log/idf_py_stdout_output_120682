@@ -1,0 +1,3520 @@
+Command: /home/finja/.espressif/python_env/idf6.2_py3.12_env/bin/python /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/tools/idf_monitor.py -p /dev/ttyACM2 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32h2 --revision 0 --decode-panic backtrace /home/finja/Documents/Diplomarbeit/EdgeAI/mcu/receiver/build/receiver.elf /home/finja/Documents/Diplomarbeit/EdgeAI/mcu/receiver/build/bootloader/bootloader.elf -m '/home/finja/.espressif/python_env/idf6.2_py3.12_env/bin/python' '/home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/tools/idf.py'
+ESP-ROM:esp32h2-eco5-20240613
+Build:Jun 13 2024
+rst:0x15 (USB_UART_HPSYS),boot:0xc (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40804ac8
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x408460f0,len:0x1664
+load:0x4083c2d0,len:0xef8
+load:0x4083efd0,len:0x2fb0
+entry 0x4083c2da
+[0;32mI (23) boot: ESP-IDF v6.1-dev-6126-ge9da155a726 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Jul 10 2026 10:46:54[0m
+[0;32mI (26) boot: chip revision: v1.2[0m
+[0;32mI (26) boot: efuse block revision: v0.3[0m
+[0;32mI (29) boot.esp32h2: SPI Speed      : 64MHz[0m
+[0;32mI (32) boot.esp32h2: SPI Mode       : DIO[0m
+[0;32mI (36) boot.esp32h2: SPI Flash Size : 2MB[0m
+[0;32mI (40) boot: Enabling RNG early entropy source...[0m
+[0;32mI (44) boot: Partition Table:[0m
+[0;32mI (47) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (53) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (60) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (66) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (73) boot: End of partition table[0m
+[0;32mI (76) esp_image: segment 0: paddr=00010020 vaddr=42020020 size=09984h ( 39300) map[0m
+[0;32mI (94) esp_image: segment 1: paddr=000199ac vaddr=40800000 size=0666ch ( 26220) load[0m
+[0;32mI (103) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=1a348h (107336) map[0m
+[0;32mI (133) esp_image: segment 3: paddr=0003a370 vaddr=4080666c size=04c18h ( 19480) load[0m
+[0;32mI (140) esp_image: segment 4: paddr=0003ef90 vaddr=4080b290 size=025e4h (  9700) load[0m
+[0;32mI (147) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (148) boot: Disabling RNG early entropy source...[0m
+[0;32mI (158) cpu_start: Unicore app[0m
+[0;32mI (167) cpu_start: GPIO 23 and 24 are used as console UART I/O pins[0m
+[0;32mI (168) cpu_start: Pro cpu start user code[0m
+[0;32mI (168) cpu_start: cpu freq: 96000000 Hz[0m
+[0;32mI (169) app_init: Application information:[0m
+[0;32mI (173) app_init: Project name:     receiver[0m
+[0;32mI (177) app_init: App version:      526bfce-dirty[0m
+[0;32mI (181) app_init: Compile time:     Jul 10 2026 10:47:03[0m
+[0;32mI (186) app_init: ELF file SHA256:  8d442a5b5...[0m
+[0;32mI (191) app_init: ESP-IDF:          v6.1-dev-6126-ge9da155a726[0m
+[0;32mI (196) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (200) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (204) efuse_init: Chip rev:         v1.2[0m
+[0;32mI (208) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (214) heap_init: At 4080F920 len 0003DA60 (246 KiB): RAM[0m
+[0;32mI (219) heap_init: At 4084D380 len 00002B60 (10 KiB): RAM[0m
+[0;32mI (224) heap_init: At 50000000 len 00000FE8 (3 KiB): RTCRAM[0m
+[0;32mI (231) spi_flash: detected chip: gd[0m
+[0;32mI (233) spi_flash: flash io: dio[0m
+[0;33mW (236) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (249) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (254) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (262) main_task: Started on CPU0[0m
+[0;32mI (262) main_task: Calling app_main()[0m
+[0;32mI (272) phy: phy_version: 324,5, 0d8cd71, Apr 10 2026, 13:58:46[0m
+[0;32mI (272) phy: libbtbb version: 8db04ea, Apr 10 2026, 13:58:59[0m
+[0;32mI (292) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (302) DEVICE: X: 1644, Y: 1645[0m
+[0;32mI (312) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (322) DEVICE: X: 1644, Y: 1648[0m
+[0;32mI (332) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (342) DEVICE: X: 1642, Y: 1647[0m
+[0;32mI (352) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (362) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (372) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (382) DEVICE: X: 1643, Y: 1647[0m
+[0;32mI (392) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (402) DEVICE: X: 1645, Y: 1649[0m
+[0;32mI (412) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (422) DEVICE: X: 1642, Y: 1644[0m
+[0;32mI (432) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (442) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (452) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (462) DEVICE: X: 1644, Y: 1646[0m
+[0;32mI (472) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (482) DEVICE: X: 1645, Y: 1648[0m
+[0;32mI (492) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (502) DEVICE: X: 1641, Y: 1645[0m
+[0;32mI (512) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (522) DEVICE: X: 1643, Y: 1647[0m
+[0;32mI (532) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (542) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (552) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (562) DEVICE: X: 1645, Y: 1648[0m
+[0;32mI (572) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (582) DEVICE: X: 1643, Y: 1645[0m
+[0;32mI (592) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (602) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (612) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (622) DEVICE: X: 1641, Y: 1646[0m
+[0;32mI (632) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (642) DEVICE: X: 1646, Y: 1647[0m
+[0;32mI (652) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (662) DEVICE: X: 1643, Y: 1648[0m
+[0;32mI (672) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (682) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (692) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (702) DEVICE: X: 1642, Y: 1645[0m
+[0;32mI (712) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (722) DEVICE: X: 1646, Y: 1647[0m
+[0;32mI (732) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (742) DEVICE: X: 1643, Y: 1644[0m
+[0;32mI (752) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (762) DEVICE: X: 1642, Y: 1647[0m
+[0;32mI (772) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (782) DEVICE: X: 1641, Y: 1645[0m
+[0;32mI (792) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (802) DEVICE: X: 1645, Y: 1648[0m
+[0;32mI (812) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (822) DEVICE: X: 1641, Y: 1645[0m
+[0;32mI (832) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (842) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (852) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (862) DEVICE: X: 1643, Y: 1647[0m
+[0;32mI (872) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (882) DEVICE: X: 1646, Y: 1648[0m
+[0;32mI (892) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (902) DEVICE: X: 1641, Y: 1647[0m
+[0;32mI (912) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (922) DEVICE: X: 1642, Y: 1649[0m
+[0;32mI (932) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (942) DEVICE: X: 1641, Y: 1646[0m
+[0;32mI (952) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (962) DEVICE: X: 1646, Y: 1648[0m
+[0;32mI (972) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (982) DEVICE: X: 1641, Y: 1646[0m
+[0;32mI (992) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (1002) DEVICE: X: 1644, Y: 1647[0m
+[0;32mI (1012) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (1022) DEVICE: X: 1644, Y: 1645[0m
+[0;32mI (1032) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (1042) DEVICE: X: 1648, Y: 1648[0m
+[0;32mI (1052) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (1062) DEVICE: X: 1644, Y: 1648[0m
+[0;32mI (1072) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (1082) DEVICE: X: 1644, Y: 1645[0m
+[0;32mI (1092) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (1102) DEVICE: X: 1642, Y: 1643[0m
+[0;32mI (1112) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (1122) DEVICE: X: 1643, Y: 1647[0m
+[0;32mI (1132) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (1142) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (1152) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (1162) DEVICE: X: 1642, Y: 1647[0m
+[0;32mI (1172) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (1182) DEVICE: X: 1641, Y: 1646[0m
+[0;32mI (1192) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (1202) DEVICE: X: 1646, Y: 1649[0m
+[0;32mI (1212) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (1222) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (1232) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (1242) DEVICE: X: 1643, Y: 1648[0m
+[0;32mI (1252) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (1262) DEVICE: X: 1644, Y: 1646[0m
+[0;32mI (1272) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (1272) DEVICE: X: 1642, Y: 1647[0m
+[0;32mI (1292) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (1302) DEVICE: X: 1639, Y: 1644[0m
+[0;32mI (1312) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (1322) DEVICE: X: 1643, Y: 1644[0m
+[0;32mI (1332) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (1342) DEVICE: X: 1641, Y: 1646[0m
+[0;32mI (1352) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (1362) DEVICE: X: 1645, Y: 1649[0m
+[0;32mI (1372) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (1382) DEVICE: X: 1643, Y: 1648[0m
+[0;32mI (1392) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (1402) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (1412) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (1422) DEVICE: X: 1642, Y: 1645[0m
+[0;32mI (1432) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (1442) DEVICE: X: 1647, Y: 1648[0m
+[0;32mI (1452) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (1462) DEVICE: X: 1644, Y: 1646[0m
+[0;32mI (1472) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (1482) DEVICE: X: 1640, Y: 1647[0m
+[0;32mI (1492) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (1502) DEVICE: X: 1643, Y: 1645[0m
+[0;32mI (1512) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (1522) DEVICE: X: 1646, Y: 1649[0m
+[0;32mI (1532) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (1542) DEVICE: X: 1643, Y: 1645[0m
+[0;32mI (1552) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (1562) DEVICE: X: 1641, Y: 1647[0m
+[0;32mI (1572) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (1582) DEVICE: X: 1642, Y: 1645[0m
+[0;32mI (1592) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (1602) DEVICE: X: 1646, Y: 1649[0m
+[0;32mI (1612) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (1622) DEVICE: X: 1645, Y: 1647[0m
+[0;32mI (1632) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (1642) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (1652) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (1662) DEVICE: X: 1643, Y: 1645[0m
+[0;32mI (1672) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (1682) DEVICE: X: 1647, Y: 1647[0m
+[0;32mI (1692) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (1702) DEVICE: X: 1641, Y: 1646[0m
+[0;32mI (1712) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (1722) DEVICE: X: 1641, Y: 1646[0m
+[0;32mI (1732) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (1742) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (1752) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (1762) DEVICE: X: 1647, Y: 1649[0m
+[0;32mI (1772) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (1782) DEVICE: X: 1643, Y: 1645[0m
+[0;32mI (1792) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (1802) DEVICE: X: 1645, Y: 1646[0m
+[0;32mI (1812) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (1822) DEVICE: X: 1643, Y: 1645[0m
+[0;32mI (1832) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (1842) DEVICE: X: 1643, Y: 1647[0m
+[0;32mI (1852) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (1862) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (1872) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (1882) DEVICE: X: 1644, Y: 1650[0m
+[0;32mI (1892) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (1902) DEVICE: X: 1641, Y: 1646[0m
+[0;32mI (1912) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (1922) DEVICE: X: 1646, Y: 1648[0m
+[0;32mI (1932) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (1942) DEVICE: X: 1642, Y: 1647[0m
+[0;32mI (1952) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (1962) DEVICE: X: 1641, Y: 1646[0m
+[0;32mI (1972) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (1982) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (1992) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (2002) DEVICE: X: 1645, Y: 1648[0m
+[0;32mI (2012) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (2022) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (2032) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (2042) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (2052) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (2062) DEVICE: X: 1643, Y: 1645[0m
+[0;32mI (2072) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (2082) DEVICE: X: 1645, Y: 1646[0m
+[0;32mI (2092) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (2102) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (2112) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (2122) DEVICE: X: 1644, Y: 1647[0m
+[0;32mI (2132) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (2142) DEVICE: X: 1640, Y: 1646[0m
+[0;32mI (2152) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (2162) DEVICE: X: 1645, Y: 1649[0m
+[0;32mI (2172) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (2182) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (2192) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (2202) DEVICE: X: 1643, Y: 1647[0m
+[0;32mI (2212) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (2222) DEVICE: X: 1644, Y: 1647[0m
+[0;32mI (2232) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (2242) DEVICE: X: 1643, Y: 1648[0m
+[0;32mI (2252) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (2262) DEVICE: X: 1645, Y: 1648[0m
+[0;32mI (2272) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (2272) DEVICE: X: 1644, Y: 1646[0m
+[0;32mI (2292) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (2302) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (2312) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (2322) DEVICE: X: 1645, Y: 1647[0m
+[0;32mI (2332) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (2342) DEVICE: X: 1644, Y: 1647[0m
+[0;32mI (2352) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (2362) DEVICE: X: 1643, Y: 1647[0m
+[0;32mI (2372) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (2382) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (2392) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (2402) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (2412) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (2422) DEVICE: X: 1643, Y: 1645[0m
+[0;32mI (2432) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (2442) DEVICE: X: 1644, Y: 1646[0m
+[0;32mI (2452) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (2462) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (2472) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (2482) DEVICE: X: 1647, Y: 1648[0m
+[0;32mI (2492) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (2502) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (2512) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (2522) DEVICE: X: 1643, Y: 1647[0m
+[0;32mI (2532) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (2542) DEVICE: X: 1640, Y: 1647[0m
+[0;32mI (2552) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (2562) DEVICE: X: 1647, Y: 1646[0m
+[0;32mI (2572) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (2582) DEVICE: X: 1642, Y: 1644[0m
+[0;32mI (2592) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (2602) DEVICE: X: 1644, Y: 1647[0m
+[0;32mI (2612) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (2622) DEVICE: X: 1643, Y: 1648[0m
+[0;32mI (2632) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (2642) DEVICE: X: 1644, Y: 1648[0m
+[0;32mI (2652) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (2662) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (2672) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (2682) DEVICE: X: 1643, Y: 1648[0m
+[0;32mI (2692) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (2702) DEVICE: X: 1640, Y: 1645[0m
+[0;32mI (2712) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (2722) DEVICE: X: 1646, Y: 1648[0m
+[0;32mI (2732) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (2742) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (2752) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (2762) DEVICE: X: 1641, Y: 1646[0m
+[0;32mI (2772) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (2782) DEVICE: X: 1641, Y: 1647[0m
+[0;32mI (2792) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (2802) DEVICE: X: 1644, Y: 1648[0m
+[0;32mI (2812) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (2822) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (2832) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (2842) DEVICE: X: 1643, Y: 1647[0m
+[0;32mI (2852) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (2862) DEVICE: X: 1643, Y: 1648[0m
+[0;32mI (2872) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (2882) DEVICE: X: 1646, Y: 1646[0m
+[0;32mI (2892) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (2902) DEVICE: X: 1644, Y: 1645[0m
+[0;32mI (2912) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (2922) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (2932) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (2942) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (2952) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (2962) DEVICE: X: 1646, Y: 1649[0m
+[0;32mI (2972) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (2982) DEVICE: X: 1640, Y: 1645[0m
+[0;32mI (2992) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (3002) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (3012) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (3022) DEVICE: X: 1644, Y: 1646[0m
+[0;32mI (3032) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (3042) DEVICE: X: 1645, Y: 1649[0m
+[0;32mI (3052) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (3062) DEVICE: X: 1641, Y: 1646[0m
+[0;32mI (3072) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (3082) DEVICE: X: 1640, Y: 1648[0m
+[0;32mI (3092) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (3102) DEVICE: X: 1643, Y: 1645[0m
+[0;32mI (3112) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (3122) DEVICE: X: 1645, Y: 1650[0m
+[0;32mI (3132) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (3142) DEVICE: X: 1641, Y: 1646[0m
+[0;32mI (3152) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (3162) DEVICE: X: 1641, Y: 1647[0m
+[0;32mI (3172) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (3182) DEVICE: X: 1641, Y: 1646[0m
+[0;32mI (3192) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (3202) DEVICE: X: 1645, Y: 1649[0m
+[0;32mI (3212) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (3222) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (3232) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (3242) DEVICE: X: 1640, Y: 1646[0m
+[0;32mI (3252) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (3262) DEVICE: X: 1641, Y: 1646[0m
+[0;32mI (3272) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (3272) DEVICE: X: 1645, Y: 1650[0m
+[0;32mI (3292) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (3302) DEVICE: X: 1641, Y: 1645[0m
+[0;32mI (3312) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (3322) DEVICE: X: 1642, Y: 1647[0m
+[0;32mI (3332) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (3342) DEVICE: X: 1643, Y: 1645[0m
+[0;32mI (3352) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (3362) DEVICE: X: 1646, Y: 1649[0m
+[0;32mI (3372) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (3382) DEVICE: X: 1642, Y: 1645[0m
+[0;32mI (3392) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (3402) DEVICE: X: 1642, Y: 1647[0m
+[0;32mI (3412) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (3422) DEVICE: X: 1645, Y: 1647[0m
+[0;32mI (3432) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (3442) DEVICE: X: 1644, Y: 1649[0m
+[0;32mI (3452) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (3462) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (3472) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (3482) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (3492) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (3502) DEVICE: X: 1644, Y: 1644[0m
+[0;32mI (3512) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (3522) DEVICE: X: 1645, Y: 1648[0m
+[0;32mI (3532) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (3542) DEVICE: X: 1643, Y: 1647[0m
+[0;32mI (3552) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (3562) DEVICE: X: 1641, Y: 1645[0m
+[0;32mI (3572) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (3582) DEVICE: X: 1642, Y: 1645[0m
+[0;32mI (3592) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (3602) DEVICE: X: 1643, Y: 1648[0m
+[0;32mI (3612) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (3622) DEVICE: X: 1644, Y: 1648[0m
+[0;32mI (3632) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (3642) DEVICE: X: 1644, Y: 1644[0m
+[0;32mI (3652) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (3662) DEVICE: X: 1643, Y: 1647[0m
+[0;32mI (3672) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (3682) DEVICE: X: 1644, Y: 1649[0m
+[0;32mI (3692) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (3702) DEVICE: X: 1641, Y: 1646[0m
+[0;32mI (3712) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (3722) DEVICE: X: 1646, Y: 1646[0m
+[0;32mI (3732) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (3742) DEVICE: X: 1643, Y: 1647[0m
+[0;32mI (3752) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (3762) DEVICE: X: 1643, Y: 1649[0m
+[0;32mI (3772) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (3782) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (3792) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (3802) DEVICE: X: 1641, Y: 1645[0m
+[0;32mI (3812) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (3822) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (3832) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (3842) DEVICE: X: 1646, Y: 1647[0m
+[0;32mI (3852) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (3862) DEVICE: X: 1644, Y: 1647[0m
+[0;32mI (3872) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (3882) DEVICE: X: 1643, Y: 1645[0m
+[0;32mI (3892) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (3902) DEVICE: X: 1642, Y: 1649[0m
+[0;32mI (3912) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (3922) DEVICE: X: 1644, Y: 1647[0m
+[0;32mI (3932) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (3942) DEVICE: X: 1641, Y: 1645[0m
+[0;32mI (3952) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (3962) DEVICE: X: 1641, Y: 1647[0m
+[0;32mI (3972) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (3982) DEVICE: X: 1641, Y: 1645[0m
+[0;32mI (3992) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (4002) DEVICE: X: 1645, Y: 1649[0m
+[0;32mI (4012) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (4022) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (4032) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (4042) DEVICE: X: 1643, Y: 1647[0m
+[0;32mI (4052) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (4062) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (4072) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (4082) DEVICE: X: 1646, Y: 1649[0m
+[0;32mI (4092) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (4102) DEVICE: X: 1645, Y: 1646[0m
+[0;32mI (4112) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (4122) DEVICE: X: 1644, Y: 1647[0m
+[0;32mI (4132) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (4142) DEVICE: X: 1644, Y: 1645[0m
+[0;32mI (4152) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (4162) DEVICE: X: 1649, Y: 1647[0m
+[0;32mI (4172) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (4182) DEVICE: X: 1642, Y: 1648[0m
+[0;32mI (4192) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (4202) DEVICE: X: 1642, Y: 1643[0m
+[0;32mI (4212) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (4222) DEVICE: X: 1641, Y: 1647[0m
+[0;32mI (4232) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (4242) DEVICE: X: 1646, Y: 1648[0m
+[0;32mI (4252) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (4262) DEVICE: X: 1644, Y: 1643[0m
+[0;32mI (4272) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (4272) DEVICE: X: 1643, Y: 1645[0m
+[0;32mI (4292) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (4302) DEVICE: X: 1642, Y: 1647[0m
+[0;32mI (4312) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (4322) DEVICE: X: 1645, Y: 1647[0m
+[0;32mI (4332) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (4342) DEVICE: X: 1644, Y: 1647[0m
+[0;32mI (4352) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (4362) DEVICE: X: 1643, Y: 1647[0m
+[0;32mI (4372) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (4382) DEVICE: X: 1641, Y: 1648[0m
+[0;32mI (4392) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (4402) DEVICE: X: 1647, Y: 1646[0m
+[0;32mI (4412) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (4422) DEVICE: X: 1643, Y: 1647[0m
+[0;32mI (4432) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (4442) DEVICE: X: 1644, Y: 1648[0m
+[0;32mI (4452) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (4462) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (4472) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (4482) DEVICE: X: 1646, Y: 1647[0m
+[0;32mI (4492) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (4502) DEVICE: X: 1642, Y: 1648[0m
+[0;32mI (4512) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (4522) DEVICE: X: 1641, Y: 1647[0m
+[0;32mI (4532) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (4542) DEVICE: X: 1643, Y: 1645[0m
+[0;32mI (4552) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (4562) DEVICE: X: 1646, Y: 1647[0m
+[0;32mI (4572) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (4582) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (4592) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (4602) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (4612) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (4622) DEVICE: X: 1642, Y: 1645[0m
+[0;32mI (4632) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (4642) DEVICE: X: 1646, Y: 1648[0m
+[0;32mI (4652) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (4662) DEVICE: X: 1643, Y: 1647[0m
+[0;32mI (4672) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (4682) DEVICE: X: 1643, Y: 1647[0m
+[0;32mI (4692) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (4702) DEVICE: X: 1644, Y: 1646[0m
+[0;32mI (4712) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (4722) DEVICE: X: 1646, Y: 1646[0m
+[0;32mI (4732) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (4742) DEVICE: X: 1641, Y: 1647[0m
+[0;32mI (4752) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (4762) DEVICE: X: 1645, Y: 1647[0m
+[0;32mI (4772) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (4782) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (4792) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (4802) DEVICE: X: 1645, Y: 1648[0m
+[0;32mI (4812) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (4822) DEVICE: X: 1644, Y: 1645[0m
+[0;32mI (4832) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (4842) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (4852) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (4862) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (4872) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (4882) DEVICE: X: 1647, Y: 1649[0m
+[0;32mI (4892) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (4902) DEVICE: X: 1641, Y: 1644[0m
+[0;32mI (4912) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (4922) DEVICE: X: 1641, Y: 1646[0m
+[0;32mI (4932) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (4942) DEVICE: X: 1642, Y: 1647[0m
+[0;32mI (4952) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (4962) DEVICE: X: 1646, Y: 1648[0m
+[0;32mI (4972) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (4982) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (4992) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (5002) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (5012) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (5022) DEVICE: X: 1641, Y: 1644[0m
+[0;32mI (5032) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (5042) DEVICE: X: 1645, Y: 1647[0m
+[0;32mI (5052) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (5062) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (5072) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (5082) DEVICE: X: 1644, Y: 1645[0m
+[0;32mI (5092) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (5102) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (5112) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (5122) DEVICE: X: 1647, Y: 1649[0m
+[0;32mI (5132) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (5142) DEVICE: X: 1641, Y: 1646[0m
+[0;32mI (5152) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (5162) DEVICE: X: 1642, Y: 1645[0m
+[0;32mI (5172) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (5182) DEVICE: X: 1644, Y: 1646[0m
+[0;32mI (5192) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (5202) DEVICE: X: 1646, Y: 1649[0m
+[0;32mI (5212) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (5222) DEVICE: X: 1641, Y: 1645[0m
+[0;32mI (5232) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (5242) DEVICE: X: 1645, Y: 1648[0m
+[0;32mI (5252) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (5262) DEVICE: X: 1643, Y: 1648[0m
+[0;32mI (5272) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (5272) DEVICE: X: 1645, Y: 1651[0m
+[0;32mI (5292) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (5302) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (5312) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (5322) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (5332) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (5342) DEVICE: X: 1642, Y: 1645[0m
+[0;32mI (5352) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (5362) DEVICE: X: 1645, Y: 1649[0m
+[0;32mI (5372) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (5382) DEVICE: X: 1642, Y: 1644[0m
+[0;32mI (5392) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (5402) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (5412) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (5422) DEVICE: X: 1644, Y: 1646[0m
+[0;32mI (5432) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (5442) DEVICE: X: 1646, Y: 1648[0m
+[0;32mI (5452) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (5462) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (5472) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (5482) DEVICE: X: 1642, Y: 1645[0m
+[0;32mI (5492) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (5502) DEVICE: X: 1644, Y: 1646[0m
+[0;32mI (5512) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (5522) DEVICE: X: 1644, Y: 1655[0m
+[0;32mI (5532) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (5542) DEVICE: X: 1643, Y: 1647[0m
+[0;32mI (5552) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (5562) DEVICE: X: 1642, Y: 1647[0m
+[0;32mI (5572) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (5582) DEVICE: X: 1642, Y: 1647[0m
+[0;32mI (5592) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (5602) DEVICE: X: 1645, Y: 1645[0m
+[0;32mI (5612) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (5622) DEVICE: X: 1641, Y: 1645[0m
+[0;32mI (5632) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (5642) DEVICE: X: 1642, Y: 1645[0m
+[0;32mI (5652) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (5662) DEVICE: X: 1641, Y: 1646[0m
+[0;32mI (5672) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (5682) DEVICE: X: 1644, Y: 1649[0m
+[0;32mI (5692) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (5702) DEVICE: X: 1643, Y: 1645[0m
+[0;32mI (5712) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (5722) DEVICE: X: 1643, Y: 1647[0m
+[0;32mI (5732) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (5742) DEVICE: X: 1643, Y: 1647[0m
+[0;32mI (5752) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (5762) DEVICE: X: 1642, Y: 1650[0m
+[0;32mI (5772) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (5782) DEVICE: X: 1642, Y: 1642[0m
+[0;32mI (5792) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (5802) DEVICE: X: 1644, Y: 1646[0m
+[0;32mI (5812) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (5822) DEVICE: X: 1643, Y: 1648[0m
+[0;32mI (5832) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (5842) DEVICE: X: 1646, Y: 1648[0m
+[0;32mI (5852) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (5862) DEVICE: X: 1641, Y: 1647[0m
+[0;32mI (5872) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (5882) DEVICE: X: 1643, Y: 1645[0m
+[0;32mI (5892) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (5902) DEVICE: X: 1644, Y: 1649[0m
+[0;32mI (5912) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (5922) DEVICE: X: 1644, Y: 1644[0m
+[0;32mI (5932) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (5942) DEVICE: X: 1642, Y: 1647[0m
+[0;32mI (5952) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (5962) DEVICE: X: 1641, Y: 1647[0m
+[0;32mI (5972) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (5982) DEVICE: X: 1642, Y: 1648[0m
+[0;32mI (5992) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (6002) DEVICE: X: 1645, Y: 1650[0m
+[0;32mI (6012) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (6022) DEVICE: X: 1642, Y: 1647[0m
+[0;32mI (6032) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (6042) DEVICE: X: 1642, Y: 1644[0m
+[0;32mI (6052) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (6062) DEVICE: X: 1642, Y: 1645[0m
+[0;32mI (6072) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (6082) DEVICE: X: 1644, Y: 1649[0m
+[0;32mI (6092) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (6102) DEVICE: X: 1643, Y: 1647[0m
+[0;32mI (6112) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (6122) DEVICE: X: 1640, Y: 1645[0m
+[0;32mI (6132) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (6142) DEVICE: X: 1645, Y: 1647[0m
+[0;32mI (6152) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (6162) DEVICE: X: 1646, Y: 1651[0m
+[0;32mI (6172) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (6182) DEVICE: X: 1643, Y: 1644[0m
+[0;32mI (6192) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (6202) DEVICE: X: 1643, Y: 1649[0m
+[0;32mI (6212) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (6222) DEVICE: X: 1639, Y: 1648[0m
+[0;32mI (6232) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (6242) DEVICE: X: 1641, Y: 1642[0m
+[0;32mI (6252) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (6262) DEVICE: X: 1641, Y: 1645[0m
+[0;32mI (6272) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (6272) DEVICE: X: 1639, Y: 1645[0m
+[0;32mI (6292) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (6302) DEVICE: X: 1643, Y: 1645[0m
+[0;32mI (6312) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (6322) DEVICE: X: 1645, Y: 1646[0m
+[0;32mI (6332) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (6342) DEVICE: X: 1643, Y: 1645[0m
+[0;32mI (6352) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (6362) DEVICE: X: 1643, Y: 1648[0m
+[0;32mI (6372) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (6382) DEVICE: X: 1641, Y: 1648[0m
+[0;32mI (6392) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (6402) DEVICE: X: 1643, Y: 1648[0m
+[0;32mI (6412) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (6422) DEVICE: X: 1644, Y: 1649[0m
+[0;32mI (6432) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (6442) DEVICE: X: 1643, Y: 1647[0m
+[0;32mI (6452) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (6462) DEVICE: X: 1640, Y: 1647[0m
+[0;32mI (6472) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (6482) DEVICE: X: 1644, Y: 1649[0m
+[0;32mI (6492) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (6502) DEVICE: X: 1641, Y: 1647[0m
+[0;32mI (6512) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (6522) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (6532) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (6542) DEVICE: X: 1642, Y: 1644[0m
+[0;32mI (6552) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (6562) DEVICE: X: 1646, Y: 1649[0m
+[0;32mI (6572) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (6582) DEVICE: X: 1642, Y: 1645[0m
+[0;32mI (6592) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (6602) DEVICE: X: 1643, Y: 1647[0m
+[0;32mI (6612) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (6622) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (6632) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (6642) DEVICE: X: 1646, Y: 1646[0m
+[0;32mI (6652) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (6662) DEVICE: X: 1644, Y: 1646[0m
+[0;32mI (6672) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (6682) DEVICE: X: 1642, Y: 1647[0m
+[0;32mI (6692) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (6702) DEVICE: X: 1642, Y: 1647[0m
+[0;32mI (6712) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (6722) DEVICE: X: 1644, Y: 1647[0m
+[0;32mI (6732) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (6742) DEVICE: X: 1643, Y: 1647[0m
+[0;32mI (6752) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (6762) DEVICE: X: 1642, Y: 1645[0m
+[0;32mI (6772) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (6782) DEVICE: X: 1642, Y: 1647[0m
+[0;32mI (6792) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (6802) DEVICE: X: 1645, Y: 1649[0m
+[0;32mI (6812) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (6822) DEVICE: X: 1643, Y: 1647[0m
+[0;32mI (6832) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (6842) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (6852) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (6862) DEVICE: X: 1644, Y: 1646[0m
+[0;32mI (6872) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (6882) DEVICE: X: 1646, Y: 1648[0m
+[0;32mI (6892) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (6902) DEVICE: X: 1641, Y: 1646[0m
+[0;32mI (6912) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (6922) DEVICE: X: 1643, Y: 1647[0m
+[0;32mI (6932) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (6942) DEVICE: X: 1640, Y: 1646[0m
+[0;32mI (6952) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (6962) DEVICE: X: 1644, Y: 1648[0m
+[0;32mI (6972) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (6982) DEVICE: X: 1643, Y: 1645[0m
+[0;32mI (6992) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (7002) DEVICE: X: 1641, Y: 1648[0m
+[0;32mI (7012) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (7022) DEVICE: X: 1641, Y: 1645[0m
+[0;32mI (7032) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (7042) DEVICE: X: 1647, Y: 1644[0m
+[0;32mI (7052) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (7062) DEVICE: X: 1641, Y: 1646[0m
+[0;32mI (7072) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (7082) DEVICE: X: 1644, Y: 1646[0m
+[0;32mI (7092) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (7102) DEVICE: X: 1641, Y: 1647[0m
+[0;32mI (7112) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (7122) DEVICE: X: 1645, Y: 1648[0m
+[0;32mI (7132) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (7142) DEVICE: X: 1640, Y: 1645[0m
+[0;32mI (7152) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (7162) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (7172) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (7182) DEVICE: X: 1642, Y: 1645[0m
+[0;32mI (7192) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (7202) DEVICE: X: 1644, Y: 1647[0m
+[0;32mI (7212) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (7222) DEVICE: X: 1642, Y: 1648[0m
+[0;32mI (7232) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (7242) DEVICE: X: 1641, Y: 1646[0m
+[0;32mI (7252) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (7262) DEVICE: X: 1643, Y: 1647[0m
+[0;32mI (7272) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (7272) DEVICE: X: 1647, Y: 1647[0m
+[0;32mI (7292) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (7302) DEVICE: X: 1641, Y: 1647[0m
+[0;32mI (7312) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (7322) DEVICE: X: 1642, Y: 1645[0m
+[0;32mI (7332) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (7342) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (7352) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (7362) DEVICE: X: 1647, Y: 1648[0m
+[0;32mI (7372) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (7382) DEVICE: X: 1644, Y: 1647[0m
+[0;32mI (7392) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (7402) DEVICE: X: 1639, Y: 1646[0m
+[0;32mI (7412) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (7422) DEVICE: X: 1404, Y: 1648[0m
+[0;32mI (7432) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (7442) DEVICE: X: 1051, Y: 1645[0m
+[0;32mI (7452) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (7462) DEVICE: X: 551, Y: 1647[0m
+[0;32mI (7472) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (7482) DEVICE: X: 128, Y: 1647[0m
+[0;32mI (7492) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (7502) DEVICE: X: 0, Y: 1645[0m
+[0;32mI (7512) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (7522) DEVICE: X: 0, Y: 1649[0m
+[0;32mI (7532) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (7542) DEVICE: X: 0, Y: 1645[0m
+[0;32mI (7552) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (7562) DEVICE: X: 0, Y: 1645[0m
+[0;32mI (7572) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (7582) DEVICE: X: 0, Y: 1645[0m
+[0;32mI (7592) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (7602) DEVICE: X: 0, Y: 1647[0m
+[0;32mI (7612) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (7622) DEVICE: X: 0, Y: 1646[0m
+[0;32mI (7632) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (7642) DEVICE: X: 0, Y: 1647[0m
+[0;32mI (7652) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (7662) DEVICE: X: 0, Y: 1645[0m
+[0;32mI (7672) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (7682) DEVICE: X: 0, Y: 1648[0m
+[0;32mI (7692) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (7702) DEVICE: X: 0, Y: 1646[0m
+[0;32mI (7712) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (7722) DEVICE: X: 0, Y: 1645[0m
+[0;32mI (7732) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (7742) DEVICE: X: 0, Y: 1646[0m
+[0;32mI (7752) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (7762) DEVICE: X: 0, Y: 1647[0m
+[0;32mI (7772) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (7782) DEVICE: X: 0, Y: 1643[0m
+[0;32mI (7792) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (7802) DEVICE: X: 0, Y: 1646[0m
+[0;32mI (7812) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (7822) DEVICE: X: 0, Y: 1645[0m
+[0;32mI (7832) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (7842) DEVICE: X: 0, Y: 1647[0m
+[0;32mI (7852) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (7862) DEVICE: X: 0, Y: 1645[0m
+[0;32mI (7872) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (7882) DEVICE: X: 0, Y: 1646[0m
+[0;32mI (7892) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (7902) DEVICE: X: 0, Y: 1646[0m
+[0;32mI (7912) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (7922) DEVICE: X: 0, Y: 1647[0m
+[0;32mI (7932) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (7942) DEVICE: X: 0, Y: 1644[0m
+[0;32mI (7952) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (7962) DEVICE: X: 0, Y: 1645[0m
+[0;32mI (7972) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (7982) DEVICE: X: 0, Y: 1646[0m
+[0;32mI (7992) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (8002) DEVICE: X: 0, Y: 1648[0m
+[0;32mI (8012) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (8022) DEVICE: X: 0, Y: 1645[0m
+[0;32mI (8032) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (8042) DEVICE: X: 0, Y: 1648[0m
+[0;32mI (8052) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (8062) DEVICE: X: 0, Y: 1644[0m
+[0;32mI (8072) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (8082) DEVICE: X: 0, Y: 1649[0m
+[0;32mI (8092) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (8102) DEVICE: X: 0, Y: 1647[0m
+[0;32mI (8112) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (8122) DEVICE: X: 0, Y: 1647[0m
+[0;32mI (8132) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (8142) DEVICE: X: 0, Y: 1644[0m
+[0;32mI (8152) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (8162) DEVICE: X: 0, Y: 1648[0m
+[0;32mI (8172) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (8182) DEVICE: X: 0, Y: 1646[0m
+[0;32mI (8192) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (8202) DEVICE: X: 0, Y: 1645[0m
+[0;32mI (8212) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (8222) DEVICE: X: 0, Y: 1647[0m
+[0;32mI (8232) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (8242) DEVICE: X: 0, Y: 1649[0m
+[0;32mI (8252) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (8262) DEVICE: X: 0, Y: 1646[0m
+[0;32mI (8272) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (8272) DEVICE: X: 0, Y: 1646[0m
+[0;32mI (8292) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (8302) DEVICE: X: 0, Y: 1646[0m
+[0;32mI (8312) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (8322) DEVICE: X: 0, Y: 1648[0m
+[0;32mI (8332) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (8342) DEVICE: X: 0, Y: 1644[0m
+[0;32mI (8352) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (8362) DEVICE: X: 0, Y: 1645[0m
+[0;32mI (8372) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (8382) DEVICE: X: 0, Y: 1642[0m
+[0;32mI (8392) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (8402) DEVICE: X: 0, Y: 1648[0m
+[0;32mI (8412) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (8422) DEVICE: X: 0, Y: 1647[0m
+[0;32mI (8432) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (8442) DEVICE: X: 0, Y: 1648[0m
+[0;32mI (8452) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (8462) DEVICE: X: 0, Y: 1646[0m
+[0;32mI (8472) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (8482) DEVICE: X: 999, Y: 1648[0m
+[0;32mI (8492) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (8502) DEVICE: X: 1642, Y: 1645[0m
+[0;32mI (8512) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (8522) DEVICE: X: 1643, Y: 1645[0m
+[0;32mI (8532) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (8542) DEVICE: X: 1642, Y: 1645[0m
+[0;32mI (8552) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (8562) DEVICE: X: 1647, Y: 1646[0m
+[0;32mI (8572) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (8582) DEVICE: X: 1642, Y: 1644[0m
+[0;32mI (8592) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (8602) DEVICE: X: 1644, Y: 1645[0m
+[0;32mI (8612) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (8622) DEVICE: X: 1646, Y: 1645[0m
+[0;32mI (8632) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (8642) DEVICE: X: 1644, Y: 1650[0m
+[0;32mI (8652) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (8662) DEVICE: X: 1641, Y: 1645[0m
+[0;32mI (8672) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (8682) DEVICE: X: 1645, Y: 1648[0m
+[0;32mI (8692) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (8702) DEVICE: X: 1642, Y: 1644[0m
+[0;32mI (8712) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (8722) DEVICE: X: 1645, Y: 1648[0m
+[0;32mI (8732) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (8742) DEVICE: X: 1643, Y: 1645[0m
+[0;32mI (8752) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (8762) DEVICE: X: 1641, Y: 1646[0m
+[0;32mI (8772) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (8782) DEVICE: X: 1641, Y: 1645[0m
+[0;32mI (8792) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (8802) DEVICE: X: 1644, Y: 1649[0m
+[0;32mI (8812) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (8822) DEVICE: X: 1640, Y: 1645[0m
+[0;32mI (8832) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (8842) DEVICE: X: 1641, Y: 1648[0m
+[0;32mI (8852) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (8862) DEVICE: X: 1737, Y: 1645[0m
+[0;32mI (8872) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (8882) DEVICE: X: 2336, Y: 1651[0m
+[0;32mI (8892) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (8902) DEVICE: X: 3149, Y: 1647[0m
+[0;32mI (8912) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (8922) DEVICE: X: 3295, Y: 1446[0m
+[0;32mI (8932) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (8942) DEVICE: X: 3296, Y: 1164[0m
+[0;32mI (8952) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (8962) DEVICE: X: 3302, Y: 1120[0m
+[0;32mI (8972) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (8982) DEVICE: X: 3296, Y: 1122[0m
+[0;32mI (8992) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (9002) DEVICE: X: 3296, Y: 1121[0m
+[0;32mI (9012) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (9022) DEVICE: X: 3297, Y: 1123[0m
+[0;32mI (9032) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (9042) DEVICE: X: 3300, Y: 1125[0m
+[0;32mI (9052) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (9062) DEVICE: X: 3298, Y: 1123[0m
+[0;32mI (9072) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (9082) DEVICE: X: 3298, Y: 1135[0m
+[0;32mI (9092) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (9102) DEVICE: X: 3297, Y: 1288[0m
+[0;32mI (9112) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (9122) DEVICE: X: 3302, Y: 1327[0m
+[0;32mI (9132) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (9142) DEVICE: X: 3298, Y: 1340[0m
+[0;32mI (9152) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (9162) DEVICE: X: 3296, Y: 1342[0m
+[0;32mI (9172) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (9182) DEVICE: X: 3298, Y: 1341[0m
+[0;32mI (9192) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (9202) DEVICE: X: 3301, Y: 1341[0m
+[0;32mI (9212) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (9222) DEVICE: X: 3297, Y: 1342[0m
+[0;32mI (9232) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (9242) DEVICE: X: 3297, Y: 1343[0m
+[0;32mI (9252) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (9262) DEVICE: X: 3295, Y: 1342[0m
+[0;32mI (9272) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (9272) DEVICE: X: 3299, Y: 1344[0m
+[0;32mI (9292) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (9302) DEVICE: X: 3296, Y: 1340[0m
+[0;32mI (9312) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (9322) DEVICE: X: 3298, Y: 1342[0m
+[0;32mI (9332) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (9342) DEVICE: X: 3299, Y: 1344[0m
+[0;32mI (9352) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (9362) DEVICE: X: 3300, Y: 1344[0m
+[0;32mI (9372) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (9382) DEVICE: X: 3298, Y: 1342[0m
+[0;32mI (9392) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (9402) DEVICE: X: 3296, Y: 1341[0m
+[0;32mI (9412) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (9422) DEVICE: X: 3297, Y: 1371[0m
+[0;32mI (9432) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (9442) DEVICE: X: 3299, Y: 1408[0m
+[0;32mI (9452) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (9462) DEVICE: X: 3300, Y: 1459[0m
+[0;32mI (9472) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (9482) DEVICE: X: 3299, Y: 1470[0m
+[0;32mI (9492) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (9502) DEVICE: X: 3296, Y: 1473[0m
+[0;32mI (9512) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (9522) DEVICE: X: 3304, Y: 1472[0m
+[0;32mI (9532) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (9542) DEVICE: X: 3297, Y: 1508[0m
+[0;32mI (9552) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (9562) DEVICE: X: 3295, Y: 1602[0m
+[0;32mI (9572) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (9582) DEVICE: X: 3294, Y: 1646[0m
+[0;32mI (9592) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (9602) DEVICE: X: 2509, Y: 1648[0m
+[0;32mI (9612) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (9622) DEVICE: X: 1642, Y: 1648[0m
+[0;32mI (9632) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (9642) DEVICE: X: 1641, Y: 1646[0m
+[0;32mI (9652) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (9662) DEVICE: X: 1640, Y: 1646[0m
+[0;32mI (9672) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (9682) DEVICE: X: 1645, Y: 1650[0m
+[0;32mI (9692) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (9702) DEVICE: X: 1642, Y: 1645[0m
+[0;32mI (9712) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (9722) DEVICE: X: 1642, Y: 1644[0m
+[0;32mI (9732) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (9742) DEVICE: X: 1643, Y: 1651[0m
+[0;32mI (9752) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (9762) DEVICE: X: 1643, Y: 1647[0m
+[0;32mI (9772) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (9782) DEVICE: X: 1641, Y: 1647[0m
+[0;32mI (9792) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (9802) DEVICE: X: 1642, Y: 1648[0m
+[0;32mI (9812) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (9822) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (9832) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (9842) DEVICE: X: 1646, Y: 1647[0m
+[0;32mI (9852) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (9862) DEVICE: X: 1643, Y: 1645[0m
+[0;32mI (9872) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (9882) DEVICE: X: 1643, Y: 1644[0m
+[0;32mI (9892) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (9902) DEVICE: X: 1640, Y: 1647[0m
+[0;32mI (9912) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (9922) DEVICE: X: 1643, Y: 1647[0m
+[0;32mI (9932) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (9942) DEVICE: X: 1644, Y: 1646[0m
+[0;32mI (9952) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (9962) DEVICE: X: 1640, Y: 1646[0m
+[0;32mI (9972) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (9982) DEVICE: X: 1641, Y: 1646[0m
+[0;32mI (9992) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (10002) DEVICE: X: 1643, Y: 1647[0m
+[0;32mI (10012) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (10022) DEVICE: X: 1642, Y: 1645[0m
+[0;32mI (10032) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (10042) DEVICE: X: 1643, Y: 1650[0m
+[0;32mI (10052) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (10062) DEVICE: X: 1647, Y: 1651[0m
+[0;32mI (10072) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (10082) DEVICE: X: 1645, Y: 1676[0m
+[0;32mI (10092) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (10102) DEVICE: X: 1642, Y: 1679[0m
+[0;32mI (10112) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (10122) DEVICE: X: 1642, Y: 1682[0m
+[0;32mI (10132) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (10142) DEVICE: X: 1641, Y: 1683[0m
+[0;32mI (10152) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (10162) DEVICE: X: 1644, Y: 1682[0m
+[0;32mI (10172) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (10182) DEVICE: X: 1579, Y: 1681[0m
+[0;32mI (10192) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (10202) DEVICE: X: 1520, Y: 1680[0m
+[0;32mI (10212) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (10222) DEVICE: X: 1518, Y: 1675[0m
+[0;32mI (10232) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (10242) DEVICE: X: 1642, Y: 1649[0m
+[0;32mI (10252) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (10262) DEVICE: X: 1641, Y: 1647[0m
+[0;32mI (10272) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (10272) DEVICE: X: 1642, Y: 1645[0m
+[0;32mI (10292) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (10302) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (10312) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (10322) DEVICE: X: 1645, Y: 1647[0m
+[0;32mI (10332) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (10342) DEVICE: X: 1643, Y: 1645[0m
+[0;32mI (10352) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (10362) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (10372) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (10382) DEVICE: X: 1641, Y: 1646[0m
+[0;32mI (10392) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (10402) DEVICE: X: 1646, Y: 1647[0m
+[0;32mI (10412) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (10422) DEVICE: X: 1642, Y: 1647[0m
+[0;32mI (10432) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (10442) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (10452) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (10462) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (10472) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (10482) DEVICE: X: 1645, Y: 1648[0m
+[0;32mI (10492) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (10502) DEVICE: X: 1642, Y: 1649[0m
+[0;32mI (10512) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (10522) DEVICE: X: 1643, Y: 1647[0m
+[0;32mI (10532) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (10542) DEVICE: X: 1644, Y: 1647[0m
+[0;32mI (10552) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (10562) DEVICE: X: 1644, Y: 1648[0m
+[0;32mI (10572) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (10582) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (10592) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (10602) DEVICE: X: 1640, Y: 1647[0m
+[0;32mI (10612) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (10622) DEVICE: X: 1641, Y: 1646[0m
+[0;32mI (10632) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (10642) DEVICE: X: 1646, Y: 1648[0m
+[0;32mI (10652) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (10662) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (10672) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (10682) DEVICE: X: 1642, Y: 1647[0m
+[0;32mI (10692) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (10702) DEVICE: X: 1643, Y: 1648[0m
+[0;32mI (10712) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (10722) DEVICE: X: 1645, Y: 1646[0m
+[0;32mI (10732) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (10742) DEVICE: X: 1643, Y: 1645[0m
+[0;32mI (10752) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (10762) DEVICE: X: 1643, Y: 1647[0m
+[0;32mI (10772) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (10782) DEVICE: X: 1642, Y: 1647[0m
+[0;32mI (10792) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (10802) DEVICE: X: 1646, Y: 1647[0m
+[0;32mI (10812) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (10822) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (10832) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (10842) DEVICE: X: 1642, Y: 1648[0m
+[0;32mI (10852) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (10862) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (10872) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (10882) DEVICE: X: 1644, Y: 1647[0m
+[0;32mI (10892) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (10902) DEVICE: X: 1644, Y: 1646[0m
+[0;32mI (10912) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (10922) DEVICE: X: 1642, Y: 1645[0m
+[0;32mI (10932) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (10942) DEVICE: X: 1639, Y: 1645[0m
+[0;32mI (10952) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (10962) DEVICE: X: 1644, Y: 1647[0m
+[0;32mI (10972) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (10982) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (10992) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (11002) DEVICE: X: 1640, Y: 1647[0m
+[0;32mI (11012) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (11022) DEVICE: X: 1643, Y: 1645[0m
+[0;32mI (11032) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (11042) DEVICE: X: 1646, Y: 1648[0m
+[0;32mI (11052) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (11062) DEVICE: X: 1643, Y: 1644[0m
+[0;32mI (11072) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (11082) DEVICE: X: 1641, Y: 1646[0m
+[0;32mI (11092) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (11102) DEVICE: X: 1643, Y: 1647[0m
+[0;32mI (11112) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (11122) DEVICE: X: 1645, Y: 1647[0m
+[0;32mI (11132) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (11142) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (11152) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (11162) DEVICE: X: 1641, Y: 1645[0m
+[0;32mI (11172) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (11182) DEVICE: X: 1642, Y: 1645[0m
+[0;32mI (11192) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (11202) DEVICE: X: 1643, Y: 1649[0m
+[0;32mI (11212) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (11222) DEVICE: X: 1642, Y: 1647[0m
+[0;32mI (11232) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (11242) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (11252) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (11262) DEVICE: X: 1644, Y: 1645[0m
+[0;32mI (11272) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (11272) DEVICE: X: 1647, Y: 1649[0m
+[0;32mI (11292) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (11302) DEVICE: X: 1641, Y: 1646[0m
+[0;32mI (11312) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (11322) DEVICE: X: 1644, Y: 1645[0m
+[0;32mI (11332) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (11342) DEVICE: X: 1643, Y: 1648[0m
+[0;32mI (11352) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (11362) DEVICE: X: 1646, Y: 1647[0m
+[0;32mI (11372) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (11382) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (11392) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (11402) DEVICE: X: 1643, Y: 1647[0m
+[0;32mI (11412) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (11422) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (11432) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (11442) DEVICE: X: 1644, Y: 1649[0m
+[0;32mI (11452) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (11462) DEVICE: X: 1644, Y: 1647[0m
+[0;32mI (11472) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (11482) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (11492) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (11502) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (11512) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (11522) DEVICE: X: 1645, Y: 1649[0m
+[0;32mI (11532) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (11542) DEVICE: X: 1643, Y: 1647[0m
+[0;32mI (11552) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (11562) DEVICE: X: 1643, Y: 1645[0m
+[0;32mI (11572) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (11582) DEVICE: X: 1644, Y: 1646[0m
+[0;32mI (11592) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (11602) DEVICE: X: 1647, Y: 1645[0m
+[0;32mI (11612) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (11622) DEVICE: X: 1642, Y: 1645[0m
+[0;32mI (11632) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (11642) DEVICE: X: 1641, Y: 1644[0m
+[0;32mI (11652) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (11662) DEVICE: X: 1642, Y: 1645[0m
+[0;32mI (11672) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (11682) DEVICE: X: 1644, Y: 1650[0m
+[0;32mI (11692) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (11702) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (11712) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (11722) DEVICE: X: 1643, Y: 1647[0m
+[0;32mI (11732) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (11742) DEVICE: X: 1642, Y: 1643[0m
+[0;32mI (11752) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (11762) DEVICE: X: 1643, Y: 1647[0m
+[0;32mI (11772) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (11782) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (11792) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (11802) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (11812) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (11822) DEVICE: X: 1643, Y: 1647[0m
+[0;32mI (11832) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (11842) DEVICE: X: 1646, Y: 1650[0m
+[0;32mI (11852) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (11862) DEVICE: X: 1642, Y: 1644[0m
+[0;32mI (11872) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (11882) DEVICE: X: 1643, Y: 1650[0m
+[0;32mI (11892) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (11902) DEVICE: X: 1640, Y: 1646[0m
+[0;32mI (11912) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (11922) DEVICE: X: 1645, Y: 1649[0m
+[0;32mI (11932) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (11942) DEVICE: X: 1644, Y: 1649[0m
+[0;32mI (11952) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (11962) DEVICE: X: 1642, Y: 1647[0m
+[0;32mI (11972) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (11982) DEVICE: X: 1643, Y: 1647[0m
+[0;32mI (11992) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (12002) DEVICE: X: 1644, Y: 1647[0m
+[0;32mI (12012) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (12022) DEVICE: X: 1644, Y: 1645[0m
+[0;32mI (12032) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (12042) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (12052) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (12062) DEVICE: X: 1644, Y: 1645[0m
+[0;32mI (12072) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (12082) DEVICE: X: 1643, Y: 1649[0m
+[0;32mI (12092) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (12102) DEVICE: X: 1642, Y: 1645[0m
+[0;32mI (12112) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (12122) DEVICE: X: 1641, Y: 1646[0m
+[0;32mI (12132) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (12142) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (12152) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (12162) DEVICE: X: 1645, Y: 1646[0m
+[0;32mI (12172) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (12182) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (12192) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (12202) DEVICE: X: 1641, Y: 1646[0m
+[0;32mI (12212) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (12222) DEVICE: X: 1643, Y: 1645[0m
+[0;32mI (12232) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (12242) DEVICE: X: 1645, Y: 1647[0m
+[0;32mI (12252) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (12262) DEVICE: X: 1641, Y: 1647[0m
+[0;32mI (12272) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (12272) DEVICE: X: 1642, Y: 1645[0m
+[0;32mI (12292) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (12302) DEVICE: X: 1643, Y: 1645[0m
+[0;32mI (12312) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (12322) DEVICE: X: 1647, Y: 1647[0m
+[0;32mI (12332) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (12342) DEVICE: X: 1642, Y: 1647[0m
+[0;32mI (12352) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (12362) DEVICE: X: 1643, Y: 1645[0m
+[0;32mI (12372) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (12382) DEVICE: X: 1644, Y: 1647[0m
+[0;32mI (12392) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (12402) DEVICE: X: 1646, Y: 1648[0m
+[0;32mI (12412) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (12422) DEVICE: X: 1643, Y: 1647[0m
+[0;32mI (12432) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (12442) DEVICE: X: 1641, Y: 1646[0m
+[0;32mI (12452) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (12462) DEVICE: X: 1641, Y: 1646[0m
+[0;32mI (12472) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (12482) DEVICE: X: 1642, Y: 1647[0m
+[0;32mI (12492) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (12502) DEVICE: X: 1642, Y: 1645[0m
+[0;32mI (12512) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (12522) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (12532) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (12542) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (12552) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (12562) DEVICE: X: 1643, Y: 1650[0m
+[0;32mI (12572) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (12582) DEVICE: X: 1641, Y: 1646[0m
+[0;32mI (12592) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (12602) DEVICE: X: 1640, Y: 1646[0m
+[0;32mI (12612) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (12622) DEVICE: X: 1641, Y: 1647[0m
+[0;32mI (12632) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (12642) DEVICE: X: 1646, Y: 1649[0m
+[0;32mI (12652) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (12662) DEVICE: X: 1644, Y: 1645[0m
+[0;32mI (12672) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (12682) DEVICE: X: 1642, Y: 1647[0m
+[0;32mI (12692) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (12702) DEVICE: X: 1641, Y: 1648[0m
+[0;32mI (12712) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (12722) DEVICE: X: 1643, Y: 1648[0m
+[0;32mI (12732) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (12742) DEVICE: X: 1644, Y: 1646[0m
+[0;32mI (12752) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (12762) DEVICE: X: 1643, Y: 1647[0m
+[0;32mI (12772) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (12782) DEVICE: X: 1641, Y: 1649[0m
+[0;32mI (12792) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (12802) DEVICE: X: 1645, Y: 1649[0m
+[0;32mI (12812) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (12822) DEVICE: X: 1641, Y: 1647[0m
+[0;32mI (12832) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (12842) DEVICE: X: 1641, Y: 1647[0m
+[0;32mI (12852) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (12862) DEVICE: X: 1640, Y: 1646[0m
+[0;32mI (12872) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (12882) DEVICE: X: 1645, Y: 1647[0m
+[0;32mI (12892) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (12902) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (12912) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (12922) DEVICE: X: 1643, Y: 1648[0m
+[0;32mI (12932) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (12942) DEVICE: X: 1641, Y: 1647[0m
+[0;32mI (12952) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (12962) DEVICE: X: 1644, Y: 1647[0m
+[0;32mI (12972) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (12982) DEVICE: X: 1641, Y: 1646[0m
+[0;32mI (12992) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (13002) DEVICE: X: 1644, Y: 1646[0m
+[0;32mI (13012) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (13022) DEVICE: X: 1644, Y: 1648[0m
+[0;32mI (13032) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (13042) DEVICE: X: 1644, Y: 1647[0m
+[0;32mI (13052) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (13062) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (13072) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (13082) DEVICE: X: 1643, Y: 1647[0m
+[0;32mI (13092) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (13102) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (13112) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (13122) DEVICE: X: 1646, Y: 1648[0m
+[0;32mI (13132) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (13142) DEVICE: X: 1641, Y: 1646[0m
+[0;32mI (13152) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (13162) DEVICE: X: 1642, Y: 1647[0m
+[0;32mI (13172) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (13182) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (13192) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (13202) DEVICE: X: 1646, Y: 1647[0m
+[0;32mI (13212) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (13222) DEVICE: X: 1640, Y: 1646[0m
+[0;32mI (13232) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (13242) DEVICE: X: 1643, Y: 1647[0m
+[0;32mI (13252) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (13262) DEVICE: X: 1643, Y: 1647[0m
+[0;32mI (13272) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (13272) DEVICE: X: 1644, Y: 1649[0m
+[0;32mI (13292) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (13302) DEVICE: X: 1643, Y: 1648[0m
+[0;32mI (13312) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (13322) DEVICE: X: 1642, Y: 1644[0m
+[0;32mI (13332) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (13342) DEVICE: X: 1643, Y: 1647[0m
+[0;32mI (13352) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (13362) DEVICE: X: 1645, Y: 1647[0m
+[0;32mI (13372) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (13382) DEVICE: X: 1641, Y: 1645[0m
+[0;32mI (13392) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (13402) DEVICE: X: 1642, Y: 1648[0m
+[0;32mI (13412) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (13422) DEVICE: X: 1644, Y: 1648[0m
+[0;32mI (13432) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (13442) DEVICE: X: 1647, Y: 1646[0m
+[0;32mI (13452) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (13462) DEVICE: X: 1641, Y: 1646[0m
+[0;32mI (13472) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (13482) DEVICE: X: 1643, Y: 1645[0m
+[0;32mI (13492) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (13502) DEVICE: X: 1644, Y: 1647[0m
+[0;32mI (13512) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (13522) DEVICE: X: 1646, Y: 1649[0m
+[0;32mI (13532) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (13542) DEVICE: X: 1643, Y: 1647[0m
+[0;32mI (13552) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (13562) DEVICE: X: 1643, Y: 1647[0m
+[0;32mI (13572) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (13582) DEVICE: X: 1642, Y: 1648[0m
+[0;32mI (13592) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (13602) DEVICE: X: 1646, Y: 1647[0m
+[0;32mI (13612) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (13622) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (13632) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (13642) DEVICE: X: 1645, Y: 1646[0m
+[0;32mI (13652) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (13662) DEVICE: X: 1641, Y: 1645[0m
+[0;32mI (13672) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (13682) DEVICE: X: 1645, Y: 1649[0m
+[0;32mI (13692) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (13702) DEVICE: X: 1643, Y: 1647[0m
+[0;32mI (13712) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (13722) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (13732) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (13742) DEVICE: X: 1641, Y: 1647[0m
+[0;32mI (13752) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (13762) DEVICE: X: 1645, Y: 1647[0m
+[0;32mI (13772) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (13782) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (13792) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (13802) DEVICE: X: 1642, Y: 1643[0m
+[0;32mI (13812) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (13822) DEVICE: X: 1643, Y: 1645[0m
+[0;32mI (13832) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (13842) DEVICE: X: 1643, Y: 1648[0m
+[0;32mI (13852) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (13862) DEVICE: X: 1644, Y: 1645[0m
+[0;32mI (13872) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (13882) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (13892) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (13902) DEVICE: X: 1642, Y: 1647[0m
+[0;32mI (13912) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (13922) DEVICE: X: 1647, Y: 1647[0m
+[0;32mI (13932) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (13942) DEVICE: X: 1642, Y: 1647[0m
+[0;32mI (13952) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (13962) DEVICE: X: 1644, Y: 1647[0m
+[0;32mI (13972) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (13982) DEVICE: X: 1641, Y: 1647[0m
+[0;32mI (13992) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (14002) DEVICE: X: 1643, Y: 1647[0m
+[0;32mI (14012) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (14022) DEVICE: X: 1644, Y: 1646[0m
+[0;32mI (14032) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (14042) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (14052) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (14062) DEVICE: X: 1641, Y: 1647[0m
+[0;32mI (14072) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (14082) DEVICE: X: 1645, Y: 1646[0m
+[0;32mI (14092) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (14102) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (14112) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (14122) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (14132) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (14142) DEVICE: X: 1642, Y: 1647[0m
+[0;32mI (14152) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (14162) DEVICE: X: 1644, Y: 1647[0m
+[0;32mI (14172) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (14182) DEVICE: X: 1643, Y: 1649[0m
+[0;32mI (14192) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (14202) DEVICE: X: 1642, Y: 1648[0m
+[0;32mI (14212) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (14222) DEVICE: X: 1644, Y: 1647[0m
+[0;32mI (14232) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (14242) DEVICE: X: 1647, Y: 1648[0m
+[0;32mI (14252) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (14262) DEVICE: X: 1641, Y: 1649[0m
+[0;32mI (14272) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (14272) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (14292) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (14302) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (14312) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (14322) DEVICE: X: 1645, Y: 1648[0m
+[0;32mI (14332) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (14342) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (14352) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (14362) DEVICE: X: 1640, Y: 1648[0m
+[0;32mI (14372) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (14382) DEVICE: X: 1642, Y: 1647[0m
+[0;32mI (14392) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (14402) DEVICE: X: 1646, Y: 1649[0m
+[0;32mI (14412) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (14422) DEVICE: X: 1642, Y: 1645[0m
+[0;32mI (14432) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (14442) DEVICE: X: 1643, Y: 1647[0m
+[0;32mI (14452) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (14462) DEVICE: X: 1642, Y: 1648[0m
+[0;32mI (14472) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (14482) DEVICE: X: 1648, Y: 1648[0m
+[0;32mI (14482) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (14492) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (14502) DEVICE: X: 1644, Y: 1646[0m
+[0;32mI (14512) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (14522) DEVICE: X: 1644, Y: 1645[0m
+[0;32mI (14532) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (14542) DEVICE: X: 1641, Y: 1645[0m
+[0;32mI (14552) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (14562) DEVICE: X: 1645, Y: 1648[0m
+[0;32mI (14572) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (14582) DEVICE: X: 1643, Y: 1647[0m
+[0;32mI (14592) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (14602) DEVICE: X: 1641, Y: 1646[0m
+[0;32mI (14612) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (14622) DEVICE: X: 1641, Y: 1648[0m
+[0;32mI (14632) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (14642) DEVICE: X: 1646, Y: 1649[0m
+[0;32mI (14652) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (14662) DEVICE: X: 1644, Y: 1648[0m
+[0;32mI (14672) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (14682) DEVICE: X: 1643, Y: 1650[0m
+[0;32mI (14692) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (14702) DEVICE: X: 1640, Y: 1645[0m
+[0;32mI (14712) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (14722) DEVICE: X: 1646, Y: 1647[0m
+[0;32mI (14732) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (14742) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (14752) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (14762) DEVICE: X: 1644, Y: 1646[0m
+[0;32mI (14772) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (14782) DEVICE: X: 1642, Y: 1650[0m
+[0;32mI (14792) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (14802) DEVICE: X: 1645, Y: 1649[0m
+[0;32mI (14812) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (14822) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (14832) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (14842) DEVICE: X: 1644, Y: 1647[0m
+[0;32mI (14852) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (14862) DEVICE: X: 1642, Y: 1648[0m
+[0;32mI (14872) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (14882) DEVICE: X: 1646, Y: 1647[0m
+[0;32mI (14892) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (14902) DEVICE: X: 1644, Y: 1645[0m
+[0;32mI (14912) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (14922) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (14932) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (14942) DEVICE: X: 1642, Y: 1647[0m
+[0;32mI (14952) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (14962) DEVICE: X: 1647, Y: 1647[0m
+[0;32mI (14972) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (14982) DEVICE: X: 1644, Y: 1648[0m
+[0;32mI (14992) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (15002) DEVICE: X: 1642, Y: 1647[0m
+[0;32mI (15012) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (15022) DEVICE: X: 1641, Y: 1647[0m
+[0;32mI (15032) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (15042) DEVICE: X: 1644, Y: 1648[0m
+[0;32mI (15052) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (15062) DEVICE: X: 1642, Y: 1647[0m
+[0;32mI (15072) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (15082) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (15092) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (15102) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (15112) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (15122) DEVICE: X: 1646, Y: 1649[0m
+[0;32mI (15132) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (15142) DEVICE: X: 1642, Y: 1647[0m
+[0;32mI (15152) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (15162) DEVICE: X: 1644, Y: 1647[0m
+[0;32mI (15172) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (15182) DEVICE: X: 1643, Y: 1645[0m
+[0;32mI (15192) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (15202) DEVICE: X: 1647, Y: 1644[0m
+[0;32mI (15212) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (15222) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (15232) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (15242) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (15252) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (15262) DEVICE: X: 1641, Y: 1646[0m
+[0;32mI (15272) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (15272) DEVICE: X: 1645, Y: 1648[0m
+[0;32mI (15292) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (15302) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (15312) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (15322) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (15332) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (15342) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (15352) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (15362) DEVICE: X: 1647, Y: 1647[0m
+[0;32mI (15372) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (15382) DEVICE: X: 1641, Y: 1645[0m
+[0;32mI (15392) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (15402) DEVICE: X: 1643, Y: 1645[0m
+[0;32mI (15412) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (15422) DEVICE: X: 1643, Y: 1649[0m
+[0;32mI (15432) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (15442) DEVICE: X: 1644, Y: 1649[0m
+[0;32mI (15452) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (15462) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (15472) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (15482) DEVICE: X: 1641, Y: 1646[0m
+[0;32mI (15492) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (15502) DEVICE: X: 1645, Y: 1646[0m
+[0;32mI (15512) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (15522) DEVICE: X: 1645, Y: 1647[0m
+[0;32mI (15532) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (15542) DEVICE: X: 1643, Y: 1649[0m
+[0;32mI (15552) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (15562) DEVICE: X: 1642, Y: 1647[0m
+[0;32mI (15572) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (15582) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (15592) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (15602) DEVICE: X: 1647, Y: 1647[0m
+[0;32mI (15612) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (15622) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (15632) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (15642) DEVICE: X: 1644, Y: 1646[0m
+[0;32mI (15652) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (15662) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (15672) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (15682) DEVICE: X: 1646, Y: 1648[0m
+[0;32mI (15692) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (15702) DEVICE: X: 1644, Y: 1647[0m
+[0;32mI (15712) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (15722) DEVICE: X: 1642, Y: 1644[0m
+[0;32mI (15732) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (15742) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (15752) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (15762) DEVICE: X: 1643, Y: 1649[0m
+[0;32mI (15772) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (15782) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (15792) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (15802) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (15812) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (15822) DEVICE: X: 1644, Y: 1646[0m
+[0;32mI (15832) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (15842) DEVICE: X: 1646, Y: 1649[0m
+[0;32mI (15852) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (15862) DEVICE: X: 1641, Y: 1645[0m
+[0;32mI (15872) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (15882) DEVICE: X: 1645, Y: 1647[0m
+[0;32mI (15892) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (15902) DEVICE: X: 1642, Y: 1647[0m
+[0;32mI (15912) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (15922) DEVICE: X: 1645, Y: 1647[0m
+[0;32mI (15932) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (15942) DEVICE: X: 1642, Y: 1647[0m
+[0;32mI (15952) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (15962) DEVICE: X: 1644, Y: 1646[0m
+[0;32mI (15972) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (15982) DEVICE: X: 1642, Y: 1647[0m
+[0;32mI (15992) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (16002) DEVICE: X: 1645, Y: 1646[0m
+[0;32mI (16012) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (16012) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (16022) DEVICE: X: 1643, Y: 1648[0m
+[0;32mI (16032) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (16042) DEVICE: X: 1643, Y: 1648[0m
+[0;32mI (16052) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (16062) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (16072) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (16082) DEVICE: X: 1645, Y: 1648[0m
+[0;32mI (16092) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (16102) DEVICE: X: 1643, Y: 1643[0m
+[0;32mI (16112) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (16122) DEVICE: X: 1644, Y: 1646[0m
+[0;32mI (16132) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (16142) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (16152) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (16162) DEVICE: X: 1648, Y: 1649[0m
+[0;32mI (16172) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (16182) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (16192) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (16202) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (16212) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (16222) DEVICE: X: 1643, Y: 1647[0m
+[0;32mI (16232) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (16242) DEVICE: X: 1644, Y: 1648[0m
+[0;32mI (16252) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (16262) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (16272) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (16272) DEVICE: X: 1643, Y: 1645[0m
+[0;32mI (16292) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (16302) DEVICE: X: 1642, Y: 1644[0m
+[0;32mI (16312) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (16322) DEVICE: X: 1645, Y: 1646[0m
+[0;32mI (16332) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (16342) DEVICE: X: 1640, Y: 1646[0m
+[0;32mI (16352) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (16362) DEVICE: X: 1642, Y: 1647[0m
+[0;32mI (16372) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (16382) DEVICE: X: 1643, Y: 1647[0m
+[0;32mI (16392) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (16402) DEVICE: X: 1645, Y: 1647[0m
+[0;32mI (16412) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (16422) DEVICE: X: 1641, Y: 1646[0m
+[0;32mI (16432) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (16442) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (16452) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (16462) DEVICE: X: 1644, Y: 1646[0m
+[0;32mI (16472) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (16482) DEVICE: X: 1648, Y: 1647[0m
+[0;32mI (16492) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (16502) DEVICE: X: 1644, Y: 1646[0m
+[0;32mI (16512) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (16522) DEVICE: X: 1643, Y: 1647[0m
+[0;32mI (16532) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (16542) DEVICE: X: 1644, Y: 1646[0m
+[0;32mI (16552) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (16562) DEVICE: X: 1644, Y: 1647[0m
+[0;32mI (16572) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (16582) DEVICE: X: 1644, Y: 1646[0m
+[0;32mI (16592) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (16602) DEVICE: X: 1642, Y: 1647[0m
+[0;32mI (16612) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (16622) DEVICE: X: 1643, Y: 1644[0m
+[0;32mI (16632) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (16642) DEVICE: X: 1644, Y: 1648[0m
+[0;32mI (16652) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (16662) DEVICE: X: 1642, Y: 1647[0m
+[0;32mI (16672) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (16682) DEVICE: X: 1641, Y: 1646[0m
+[0;32mI (16692) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (16702) DEVICE: X: 1644, Y: 1645[0m
+[0;32mI (16712) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (16722) DEVICE: X: 1643, Y: 1647[0m
+[0;32mI (16732) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (16742) DEVICE: X: 1643, Y: 1645[0m
+[0;32mI (16752) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (16762) DEVICE: X: 1643, Y: 1643[0m
+[0;32mI (16772) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (16782) DEVICE: X: 1641, Y: 1646[0m
+[0;32mI (16792) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (16802) DEVICE: X: 1644, Y: 1650[0m
+[0;32mI (16812) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (16822) DEVICE: X: 1642, Y: 1645[0m
+[0;32mI (16832) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (16842) DEVICE: X: 1641, Y: 1646[0m
+[0;32mI (16852) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (16862) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (16872) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (16882) DEVICE: X: 1647, Y: 1648[0m
+[0;32mI (16892) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (16902) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (16912) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (16922) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (16932) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (16942) DEVICE: X: 1642, Y: 1645[0m
+[0;32mI (16952) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (16962) DEVICE: X: 1645, Y: 1648[0m
+[0;32mI (16972) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (16982) DEVICE: X: 1642, Y: 1649[0m
+[0;32mI (16992) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (17002) DEVICE: X: 1644, Y: 1645[0m
+[0;32mI (17012) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (17022) DEVICE: X: 1642, Y: 1645[0m
+[0;32mI (17032) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (17042) DEVICE: X: 1646, Y: 1646[0m
+[0;32mI (17052) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (17062) DEVICE: X: 1642, Y: 1645[0m
+[0;32mI (17072) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (17082) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (17092) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (17102) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (17112) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (17122) DEVICE: X: 1646, Y: 1648[0m
+[0;32mI (17132) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (17142) DEVICE: X: 1643, Y: 1645[0m
+[0;32mI (17152) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (17162) DEVICE: X: 1643, Y: 1645[0m
+[0;32mI (17172) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (17182) DEVICE: X: 1642, Y: 1647[0m
+[0;32mI (17192) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (17202) DEVICE: X: 1645, Y: 1649[0m
+[0;32mI (17212) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (17222) DEVICE: X: 1644, Y: 1647[0m
+[0;32mI (17232) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (17242) DEVICE: X: 1642, Y: 1645[0m
+[0;32mI (17252) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (17262) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (17272) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (17272) DEVICE: X: 1646, Y: 1648[0m
+[0;32mI (17292) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (17302) DEVICE: X: 1644, Y: 1645[0m
+[0;32mI (17312) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (17322) DEVICE: X: 1642, Y: 1645[0m
+[0;32mI (17332) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (17342) DEVICE: X: 1642, Y: 1645[0m
+[0;32mI (17352) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (17362) DEVICE: X: 1646, Y: 1648[0m
+[0;32mI (17372) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (17382) DEVICE: X: 1640, Y: 1646[0m
+[0;32mI (17392) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (17402) DEVICE: X: 1642, Y: 1647[0m
+[0;32mI (17412) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (17422) DEVICE: X: 1641, Y: 1647[0m
+[0;32mI (17432) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (17442) DEVICE: X: 1645, Y: 1649[0m
+[0;32mI (17452) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (17462) DEVICE: X: 1641, Y: 1646[0m
+[0;32mI (17472) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (17482) DEVICE: X: 1640, Y: 1646[0m
+[0;32mI (17492) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (17502) DEVICE: X: 1644, Y: 1646[0m
+[0;32mI (17512) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (17522) DEVICE: X: 1645, Y: 1647[0m
+[0;32mI (17532) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (17542) DEVICE: X: 1641, Y: 1646[0m
+[0;32mI (17552) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (17562) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (17572) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (17582) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (17592) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (17602) DEVICE: X: 1645, Y: 1646[0m
+[0;32mI (17612) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (17622) DEVICE: X: 1644, Y: 1646[0m
+[0;32mI (17632) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (17642) DEVICE: X: 1640, Y: 1646[0m
+[0;32mI (17652) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (17662) DEVICE: X: 1643, Y: 1645[0m
+[0;32mI (17672) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (17682) DEVICE: X: 1645, Y: 1648[0m
+[0;32mI (17692) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (17702) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (17712) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (17722) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (17732) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (17742) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (17752) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (17762) DEVICE: X: 1646, Y: 1649[0m
+[0;32mI (17772) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (17782) DEVICE: X: 1641, Y: 1647[0m
+[0;32mI (17792) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (17802) DEVICE: X: 1643, Y: 1648[0m
+[0;32mI (17812) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (17822) DEVICE: X: 1642, Y: 1645[0m
+[0;32mI (17832) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (17842) DEVICE: X: 1646, Y: 1646[0m
+[0;32mI (17852) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (17862) DEVICE: X: 1643, Y: 1647[0m
+[0;32mI (17872) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (17882) DEVICE: X: 1644, Y: 1647[0m
+[0;32mI (17892) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (17902) DEVICE: X: 1643, Y: 1647[0m
+[0;32mI (17912) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (17922) DEVICE: X: 1647, Y: 1649[0m
+[0;32mI (17932) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (17942) DEVICE: X: 1640, Y: 1645[0m
+[0;32mI (17952) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (17962) DEVICE: X: 1643, Y: 1647[0m
+[0;32mI (17972) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (17982) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (17992) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (18002) DEVICE: X: 1646, Y: 1649[0m
+[0;32mI (18012) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (18022) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (18032) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (18042) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (18052) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (18062) DEVICE: X: 1641, Y: 1646[0m
+[0;32mI (18072) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (18082) DEVICE: X: 1646, Y: 1649[0m
+[0;32mI (18092) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (18102) DEVICE: X: 1644, Y: 1646[0m
+[0;32mI (18112) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (18122) DEVICE: X: 1640, Y: 1646[0m
+[0;32mI (18132) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (18142) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (18152) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (18162) DEVICE: X: 1647, Y: 1646[0m
+[0;32mI (18172) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (18182) DEVICE: X: 1642, Y: 1645[0m
+[0;32mI (18192) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (18202) DEVICE: X: 1640, Y: 1647[0m
+[0;32mI (18212) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (18222) DEVICE: X: 1644, Y: 1644[0m
+[0;32mI (18232) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (18242) DEVICE: X: 1647, Y: 1648[0m
+[0;32mI (18252) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (18262) DEVICE: X: 1644, Y: 1647[0m
+[0;32mI (18272) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (18272) DEVICE: X: 1640, Y: 1645[0m
+[0;32mI (18292) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (18302) DEVICE: X: 1644, Y: 1646[0m
+[0;32mI (18312) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (18322) DEVICE: X: 1646, Y: 1648[0m
+[0;32mI (18332) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (18342) DEVICE: X: 1644, Y: 1645[0m
+[0;32mI (18352) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (18362) DEVICE: X: 1642, Y: 1648[0m
+[0;32mI (18372) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (18382) DEVICE: X: 1642, Y: 1647[0m
+[0;32mI (18392) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (18402) DEVICE: X: 1646, Y: 1648[0m
+[0;32mI (18412) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (18422) DEVICE: X: 1641, Y: 1646[0m
+[0;32mI (18432) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (18442) DEVICE: X: 1641, Y: 1648[0m
+[0;32mI (18452) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (18462) DEVICE: X: 1640, Y: 1646[0m
+[0;32mI (18472) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (18482) DEVICE: X: 1643, Y: 1647[0m
+[0;32mI (18492) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (18502) DEVICE: X: 1643, Y: 1645[0m
+[0;32mI (18512) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (18522) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (18532) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (18542) DEVICE: X: 1643, Y: 1647[0m
+[0;32mI (18552) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (18562) DEVICE: X: 1644, Y: 1648[0m
+[0;32mI (18572) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (18582) DEVICE: X: 1641, Y: 1645[0m
+[0;32mI (18592) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (18602) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (18612) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (18622) DEVICE: X: 1641, Y: 1646[0m
+[0;32mI (18632) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (18642) DEVICE: X: 1644, Y: 1649[0m
+[0;32mI (18652) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (18662) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (18672) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (18682) DEVICE: X: 1644, Y: 1645[0m
+[0;32mI (18692) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (18702) DEVICE: X: 1645, Y: 1644[0m
+[0;32mI (18712) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (18722) DEVICE: X: 1646, Y: 1648[0m
+[0;32mI (18732) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (18742) DEVICE: X: 1644, Y: 1646[0m
+[0;32mI (18752) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (18762) DEVICE: X: 1643, Y: 1645[0m
+[0;32mI (18772) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (18782) DEVICE: X: 1642, Y: 1647[0m
+[0;32mI (18792) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (18802) DEVICE: X: 1644, Y: 1647[0m
+[0;32mI (18812) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (18822) DEVICE: X: 1643, Y: 1643[0m
+[0;32mI (18832) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (18842) DEVICE: X: 1641, Y: 1647[0m
+[0;32mI (18852) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (18862) DEVICE: X: 1642, Y: 1647[0m
+[0;32mI (18872) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (18882) DEVICE: X: 1646, Y: 1648[0m
+[0;32mI (18892) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (18902) DEVICE: X: 1641, Y: 1645[0m
+[0;32mI (18912) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (18922) DEVICE: X: 1644, Y: 1646[0m
+[0;32mI (18932) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (18942) DEVICE: X: 1643, Y: 1644[0m
+[0;32mI (18952) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (18962) DEVICE: X: 1644, Y: 1648[0m
+[0;32mI (18972) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (18982) DEVICE: X: 1641, Y: 1645[0m
+[0;32mI (18992) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (19002) DEVICE: X: 1642, Y: 1648[0m
+[0;32mI (19012) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (19022) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (19032) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (19042) DEVICE: X: 1647, Y: 1651[0m
+[0;32mI (19052) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (19062) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (19072) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (19082) DEVICE: X: 1643, Y: 1645[0m
+[0;32mI (19092) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (19102) DEVICE: X: 1642, Y: 1647[0m
+[0;32mI (19112) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (19122) DEVICE: X: 1645, Y: 1648[0m
+[0;32mI (19132) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (19142) DEVICE: X: 1641, Y: 1646[0m
+[0;32mI (19152) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (19162) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (19172) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (19182) DEVICE: X: 1641, Y: 1646[0m
+[0;32mI (19192) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (19202) DEVICE: X: 1646, Y: 1647[0m
+[0;32mI (19212) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (19222) DEVICE: X: 1640, Y: 1646[0m
+[0;32mI (19232) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (19242) DEVICE: X: 1644, Y: 1645[0m
+[0;32mI (19252) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (19262) DEVICE: X: 1644, Y: 1645[0m
+[0;32mI (19272) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (19272) DEVICE: X: 1646, Y: 1649[0m
+[0;32mI (19292) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (19302) DEVICE: X: 1638, Y: 1645[0m
+[0;32mI (19312) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (19322) DEVICE: X: 1641, Y: 1644[0m
+[0;32mI (19332) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (19342) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (19352) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (19362) DEVICE: X: 1644, Y: 1648[0m
+[0;32mI (19372) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (19382) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (19392) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (19402) DEVICE: X: 1643, Y: 1647[0m
+[0;32mI (19412) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (19422) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (19432) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (19442) DEVICE: X: 1644, Y: 1647[0m
+[0;32mI (19452) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (19462) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (19472) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (19482) DEVICE: X: 1643, Y: 1645[0m
+[0;32mI (19492) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (19502) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (19512) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (19522) DEVICE: X: 1646, Y: 1647[0m
+[0;32mI (19532) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (19542) DEVICE: X: 1643, Y: 1645[0m
+[0;32mI (19552) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (19562) DEVICE: X: 1640, Y: 1646[0m
+[0;32mI (19572) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (19582) DEVICE: X: 1641, Y: 1646[0m
+[0;32mI (19592) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (19602) DEVICE: X: 1645, Y: 1647[0m
+[0;32mI (19612) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (19622) DEVICE: X: 1642, Y: 1645[0m
+[0;32mI (19632) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (19642) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (19652) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (19662) DEVICE: X: 1641, Y: 1647[0m
+[0;32mI (19672) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (19682) DEVICE: X: 1645, Y: 1646[0m
+[0;32mI (19692) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (19702) DEVICE: X: 1641, Y: 1645[0m
+[0;32mI (19712) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (19722) DEVICE: X: 1642, Y: 1645[0m
+[0;32mI (19732) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (19742) DEVICE: X: 1643, Y: 1647[0m
+[0;32mI (19752) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (19762) DEVICE: X: 1645, Y: 1648[0m
+[0;32mI (19772) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (19782) DEVICE: X: 1643, Y: 1648[0m
+[0;32mI (19792) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (19802) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (19812) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (19822) DEVICE: X: 1643, Y: 1647[0m
+[0;32mI (19832) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (19842) DEVICE: X: 1648, Y: 1647[0m
+[0;32mI (19852) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (19862) DEVICE: X: 1644, Y: 1648[0m
+[0;32mI (19872) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (19882) DEVICE: X: 1641, Y: 1647[0m
+[0;32mI (19892) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (19902) DEVICE: X: 1643, Y: 1645[0m
+[0;32mI (19912) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (19922) DEVICE: X: 1645, Y: 1648[0m
+[0;32mI (19932) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (19942) DEVICE: X: 1640, Y: 1647[0m
+[0;32mI (19952) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (19962) DEVICE: X: 1643, Y: 1645[0m
+[0;32mI (19972) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (19982) DEVICE: X: 1643, Y: 1647[0m
+[0;32mI (19992) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (20002) DEVICE: X: 1647, Y: 1647[0m
+[0;32mI (20012) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (20022) DEVICE: X: 1642, Y: 1645[0m
+[0;32mI (20032) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (20042) DEVICE: X: 1641, Y: 1647[0m
+[0;32mI (20052) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (20062) DEVICE: X: 1644, Y: 1647[0m
+[0;32mI (20072) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (20082) DEVICE: X: 1646, Y: 1648[0m
+[0;32mI (20092) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (20102) DEVICE: X: 1641, Y: 1646[0m
+[0;32mI (20112) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (20122) DEVICE: X: 1642, Y: 1647[0m
+[0;32mI (20132) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (20142) DEVICE: X: 1644, Y: 1645[0m
+[0;32mI (20152) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (20162) DEVICE: X: 1645, Y: 1646[0m
+[0;32mI (20172) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (20182) DEVICE: X: 1641, Y: 1646[0m
+[0;32mI (20192) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (20202) DEVICE: X: 1642, Y: 1647[0m
+[0;32mI (20212) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (20222) DEVICE: X: 1641, Y: 1644[0m
+[0;32mI (20232) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (20242) DEVICE: X: 1644, Y: 1647[0m
+[0;32mI (20252) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (20262) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (20272) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (20272) DEVICE: X: 1639, Y: 1647[0m
+[0;32mI (20292) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (20302) DEVICE: X: 1642, Y: 1643[0m
+[0;32mI (20312) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (20322) DEVICE: X: 1645, Y: 1648[0m
+[0;32mI (20332) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (20342) DEVICE: X: 1644, Y: 1648[0m
+[0;32mI (20352) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (20362) DEVICE: X: 1643, Y: 1648[0m
+[0;32mI (20372) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (20382) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (20392) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (20402) DEVICE: X: 1645, Y: 1647[0m
+[0;32mI (20412) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (20422) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (20432) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (20442) DEVICE: X: 1642, Y: 1645[0m
+[0;32mI (20452) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (20462) DEVICE: X: 1641, Y: 1647[0m
+[0;32mI (20472) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (20482) DEVICE: X: 1645, Y: 1648[0m
+[0;32mI (20492) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (20502) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (20512) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (20522) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (20532) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (20542) DEVICE: X: 1641, Y: 1645[0m
+[0;32mI (20552) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (20562) DEVICE: X: 1644, Y: 1648[0m
+[0;32mI (20572) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (20582) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (20592) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (20602) DEVICE: X: 1643, Y: 1648[0m
+[0;32mI (20612) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (20622) DEVICE: X: 1643, Y: 1645[0m
+[0;32mI (20632) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (20642) DEVICE: X: 1644, Y: 1648[0m
+[0;32mI (20652) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (20662) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (20672) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (20682) DEVICE: X: 1643, Y: 1647[0m
+[0;32mI (20692) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (20702) DEVICE: X: 1640, Y: 1647[0m
+[0;32mI (20712) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (20722) DEVICE: X: 1645, Y: 1649[0m
+[0;32mI (20732) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (20742) DEVICE: X: 1644, Y: 1645[0m
+[0;32mI (20752) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (20762) DEVICE: X: 1641, Y: 1646[0m
+[0;32mI (20772) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (20782) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (20792) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (20802) DEVICE: X: 1644, Y: 1647[0m
+[0;32mI (20812) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (20822) DEVICE: X: 1644, Y: 1647[0m
+[0;32mI (20832) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (20842) DEVICE: X: 1642, Y: 1648[0m
+[0;32mI (20852) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (20862) DEVICE: X: 1641, Y: 1647[0m
+[0;32mI (20872) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (20882) DEVICE: X: 1645, Y: 1647[0m
+[0;32mI (20892) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (20902) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (20912) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (20922) DEVICE: X: 1644, Y: 1646[0m
+[0;32mI (20932) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (20942) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (20952) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (20962) DEVICE: X: 1643, Y: 1648[0m
+[0;32mI (20972) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (20982) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (20992) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (21002) DEVICE: X: 1642, Y: 1647[0m
+[0;32mI (21012) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (21022) DEVICE: X: 1643, Y: 1645[0m
+[0;32mI (21032) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (21042) DEVICE: X: 1644, Y: 1648[0m
+[0;32mI (21052) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (21062) DEVICE: X: 1641, Y: 1646[0m
+[0;32mI (21072) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (21082) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (21092) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (21102) DEVICE: X: 1642, Y: 1645[0m
+[0;32mI (21112) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (21122) DEVICE: X: 1644, Y: 1647[0m
+[0;32mI (21132) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (21142) DEVICE: X: 1644, Y: 1645[0m
+[0;32mI (21152) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (21162) DEVICE: X: 1641, Y: 1645[0m
+[0;32mI (21172) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (21182) DEVICE: X: 1644, Y: 1647[0m
+[0;32mI (21192) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (21202) DEVICE: X: 1647, Y: 1648[0m
+[0;32mI (21212) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (21222) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (21232) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (21242) DEVICE: X: 1644, Y: 1646[0m
+[0;32mI (21252) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (21262) DEVICE: X: 1642, Y: 1645[0m
+[0;32mI (21272) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (21272) DEVICE: X: 1644, Y: 1649[0m
+[0;32mI (21292) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (21302) DEVICE: X: 1641, Y: 1644[0m
+[0;32mI (21312) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (21322) DEVICE: X: 1644, Y: 1645[0m
+[0;32mI (21332) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (21342) DEVICE: X: 1643, Y: 1645[0m
+[0;32mI (21352) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (21362) DEVICE: X: 1648, Y: 1648[0m
+[0;32mI (21372) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (21382) DEVICE: X: 1641, Y: 1647[0m
+[0;32mI (21392) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (21402) DEVICE: X: 1644, Y: 1646[0m
+[0;32mI (21412) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (21422) DEVICE: X: 1643, Y: 1645[0m
+[0;32mI (21432) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (21442) DEVICE: X: 1644, Y: 1648[0m
+[0;32mI (21452) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (21462) DEVICE: X: 1641, Y: 1647[0m
+[0;32mI (21472) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (21482) DEVICE: X: 1643, Y: 1647[0m
+[0;32mI (21492) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (21502) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (21512) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (21522) DEVICE: X: 1645, Y: 1648[0m
+[0;32mI (21532) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (21542) DEVICE: X: 1642, Y: 1647[0m
+[0;32mI (21552) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (21562) DEVICE: X: 1644, Y: 1647[0m
+[0;32mI (21572) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (21582) DEVICE: X: 1644, Y: 1645[0m
+[0;32mI (21592) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (21602) DEVICE: X: 1646, Y: 1649[0m
+[0;32mI (21612) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (21622) DEVICE: X: 1645, Y: 1647[0m
+[0;32mI (21632) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (21642) DEVICE: X: 1645, Y: 1645[0m
+[0;32mI (21652) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (21662) DEVICE: X: 1642, Y: 1647[0m
+[0;32mI (21672) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (21682) DEVICE: X: 1645, Y: 1648[0m
+[0;32mI (21692) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (21702) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (21712) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (21722) DEVICE: X: 1639, Y: 1645[0m
+[0;32mI (21732) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (21742) DEVICE: X: 1641, Y: 1645[0m
+[0;32mI (21752) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (21762) DEVICE: X: 1647, Y: 1648[0m
+[0;32mI (21772) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (21782) DEVICE: X: 1644, Y: 1647[0m
+[0;32mI (21792) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (21802) DEVICE: X: 1643, Y: 1645[0m
+[0;32mI (21812) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (21822) DEVICE: X: 1642, Y: 1645[0m
+[0;32mI (21832) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (21842) DEVICE: X: 1643, Y: 1648[0m
+[0;32mI (21852) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (21862) DEVICE: X: 1642, Y: 1645[0m
+[0;32mI (21872) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (21882) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (21892) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (21902) DEVICE: X: 1641, Y: 1645[0m
+[0;32mI (21912) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (21922) DEVICE: X: 1645, Y: 1647[0m
+[0;32mI (21932) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (21942) DEVICE: X: 1643, Y: 1647[0m
+[0;32mI (21952) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (21962) DEVICE: X: 1644, Y: 1646[0m
+[0;32mI (21972) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (21982) DEVICE: X: 1644, Y: 1646[0m
+[0;32mI (21992) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (22002) DEVICE: X: 1644, Y: 1646[0m
+[0;32mI (22012) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (22022) DEVICE: X: 1645, Y: 1646[0m
+[0;32mI (22032) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (22042) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (22052) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (22062) DEVICE: X: 1642, Y: 1645[0m
+[0;32mI (22072) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (22082) DEVICE: X: 1646, Y: 1646[0m
+[0;32mI (22092) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (22102) DEVICE: X: 1643, Y: 1648[0m
+[0;32mI (22112) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (22122) DEVICE: X: 1642, Y: 1647[0m
+[0;32mI (22132) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (22142) DEVICE: X: 1643, Y: 1647[0m
+[0;32mI (22152) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (22162) DEVICE: X: 1647, Y: 1646[0m
+[0;32mI (22172) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (22182) DEVICE: X: 1643, Y: 1647[0m
+[0;32mI (22192) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (22202) DEVICE: X: 1640, Y: 1645[0m
+[0;32mI (22212) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (22222) DEVICE: X: 1643, Y: 1647[0m
+[0;32mI (22232) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (22242) DEVICE: X: 1645, Y: 1648[0m
+[0;32mI (22252) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (22262) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (22272) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (22272) DEVICE: X: 1642, Y: 1645[0m
+[0;32mI (22292) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (22302) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (22312) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (22322) DEVICE: X: 1645, Y: 1647[0m
+[0;32mI (22332) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (22342) DEVICE: X: 1640, Y: 1646[0m
+[0;32mI (22352) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (22362) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (22372) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (22382) DEVICE: X: 1643, Y: 1647[0m
+[0;32mI (22392) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (22402) DEVICE: X: 1644, Y: 1648[0m
+[0;32mI (22412) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (22422) DEVICE: X: 1642, Y: 1645[0m
+[0;32mI (22432) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (22442) DEVICE: X: 1644, Y: 1647[0m
+[0;32mI (22452) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (22462) DEVICE: X: 1644, Y: 1645[0m
+[0;32mI (22472) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (22482) DEVICE: X: 1645, Y: 1648[0m
+[0;32mI (22492) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (22502) DEVICE: X: 1642, Y: 1645[0m
+[0;32mI (22512) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (22522) DEVICE: X: 1644, Y: 1645[0m
+[0;32mI (22532) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (22542) DEVICE: X: 1643, Y: 1648[0m
+[0;32mI (22552) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (22562) DEVICE: X: 1645, Y: 1647[0m
+[0;32mI (22572) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (22582) DEVICE: X: 1644, Y: 1648[0m
+[0;32mI (22592) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (22602) DEVICE: X: 1644, Y: 1647[0m
+[0;32mI (22612) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (22622) DEVICE: X: 1644, Y: 1646[0m
+[0;32mI (22632) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (22642) DEVICE: X: 1645, Y: 1648[0m
+[0;32mI (22652) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (22662) DEVICE: X: 1641, Y: 1645[0m
+[0;32mI (22672) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (22682) DEVICE: X: 1643, Y: 1645[0m
+[0;32mI (22692) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (22702) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (22712) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (22722) DEVICE: X: 1646, Y: 1647[0m
+[0;32mI (22732) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (22742) DEVICE: X: 1642, Y: 1645[0m
+[0;32mI (22752) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (22762) DEVICE: X: 1642, Y: 1648[0m
+[0;32mI (22772) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (22782) DEVICE: X: 1641, Y: 1645[0m
+[0;32mI (22792) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (22802) DEVICE: X: 1644, Y: 1650[0m
+[0;32mI (22812) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (22822) DEVICE: X: 1643, Y: 1647[0m
+[0;32mI (22832) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (22842) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (22852) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (22862) DEVICE: X: 1643, Y: 1647[0m
+[0;32mI (22872) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (22882) DEVICE: X: 1644, Y: 1648[0m
+[0;32mI (22892) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (22902) DEVICE: X: 1644, Y: 1647[0m
+[0;32mI (22912) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (22922) DEVICE: X: 1643, Y: 1647[0m
+[0;32mI (22932) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (22942) DEVICE: X: 1643, Y: 1645[0m
+[0;32mI (22952) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (22962) DEVICE: X: 1647, Y: 1648[0m
+[0;32mI (22972) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (22982) DEVICE: X: 1641, Y: 1645[0m
+[0;32mI (22992) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (23002) DEVICE: X: 1641, Y: 1646[0m
+[0;32mI (23012) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (23022) DEVICE: X: 1641, Y: 1646[0m
+[0;32mI (23032) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (23042) DEVICE: X: 1647, Y: 1646[0m
+[0;32mI (23052) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (23062) DEVICE: X: 1642, Y: 1645[0m
+[0;32mI (23072) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (23082) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (23092) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (23102) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (23112) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (23122) DEVICE: X: 1645, Y: 1647[0m
+[0;32mI (23132) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (23142) DEVICE: X: 1641, Y: 1646[0m
+[0;32mI (23152) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (23162) DEVICE: X: 1644, Y: 1647[0m
+[0;32mI (23172) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (23182) DEVICE: X: 1645, Y: 1645[0m
+[0;32mI (23192) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (23202) DEVICE: X: 1643, Y: 1648[0m
+[0;32mI (23212) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (23222) DEVICE: X: 1642, Y: 1651[0m
+[0;32mI (23232) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (23242) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (23252) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (23262) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (23272) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (23272) DEVICE: X: 1645, Y: 1649[0m
+[0;32mI (23292) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (23302) DEVICE: X: 1643, Y: 1645[0m
+[0;32mI (23312) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (23322) DEVICE: X: 1642, Y: 1645[0m
+[0;32mI (23332) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (23342) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (23352) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (23362) DEVICE: X: 1646, Y: 1647[0m
+[0;32mI (23372) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (23382) DEVICE: X: 1643, Y: 1648[0m
+[0;32mI (23392) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (23402) DEVICE: X: 1641, Y: 1646[0m
+[0;32mI (23412) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (23422) DEVICE: X: 1640, Y: 1647[0m
+[0;32mI (23432) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (23442) DEVICE: X: 1647, Y: 1646[0m
+[0;32mI (23452) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (23462) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (23472) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (23482) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (23492) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (23502) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (23512) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (23522) DEVICE: X: 1644, Y: 1648[0m
+[0;32mI (23532) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (23542) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (23552) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (23562) DEVICE: X: 1642, Y: 1645[0m
+[0;32mI (23572) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (23582) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (23592) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (23602) DEVICE: X: 1647, Y: 1647[0m
+[0;32mI (23612) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (23622) DEVICE: X: 1642, Y: 1645[0m
+[0;32mI (23632) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (23642) DEVICE: X: 1643, Y: 1645[0m
+[0;32mI (23652) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (23662) DEVICE: X: 1641, Y: 1646[0m
+[0;32mI (23672) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (23682) DEVICE: X: 1646, Y: 1647[0m
+[0;32mI (23692) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (23702) DEVICE: X: 1641, Y: 1646[0m
+[0;32mI (23712) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (23722) DEVICE: X: 1642, Y: 1647[0m
+[0;32mI (23732) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (23742) DEVICE: X: 1642, Y: 1647[0m
+[0;32mI (23752) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (23762) DEVICE: X: 1646, Y: 1650[0m
+[0;32mI (23772) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (23782) DEVICE: X: 1644, Y: 1646[0m
+[0;32mI (23792) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (23802) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (23812) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (23822) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (23832) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (23842) DEVICE: X: 1646, Y: 1647[0m
+[0;32mI (23852) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (23862) DEVICE: X: 1642, Y: 1647[0m
+[0;32mI (23872) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (23882) DEVICE: X: 1643, Y: 1647[0m
+[0;32mI (23892) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (23902) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (23912) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (23922) DEVICE: X: 1646, Y: 1648[0m
+[0;32mI (23932) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (23942) DEVICE: X: 1644, Y: 1646[0m
+[0;32mI (23952) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (23962) DEVICE: X: 1644, Y: 1647[0m
+[0;32mI (23972) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (23982) DEVICE: X: 1644, Y: 1648[0m
+[0;32mI (23992) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (24002) DEVICE: X: 1647, Y: 1647[0m
+[0;32mI (24012) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (24022) DEVICE: X: 1644, Y: 1647[0m
+[0;32mI (24032) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (24042) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (24052) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (24062) DEVICE: X: 1642, Y: 1648[0m
+[0;32mI (24072) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (24082) DEVICE: X: 1644, Y: 1648[0m
+[0;32mI (24092) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (24102) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (24112) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (24122) DEVICE: X: 1643, Y: 1647[0m
+[0;32mI (24132) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (24142) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (24152) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (24162) DEVICE: X: 1645, Y: 1648[0m
+[0;32mI (24172) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (24182) DEVICE: X: 1642, Y: 1647[0m
+[0;32mI (24192) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (24202) DEVICE: X: 1645, Y: 1647[0m
+[0;32mI (24212) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (24222) DEVICE: X: 1643, Y: 1648[0m
+[0;32mI (24232) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (24242) DEVICE: X: 1645, Y: 1647[0m
+[0;32mI (24252) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (24262) DEVICE: X: 1644, Y: 1647[0m
+[0;32mI (24272) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (24272) DEVICE: X: 1642, Y: 1647[0m
+[0;32mI (24292) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (24302) DEVICE: X: 1643, Y: 1644[0m
+[0;32mI (24312) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (24322) DEVICE: X: 1645, Y: 1647[0m
+[0;32mI (24332) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (24342) DEVICE: X: 1644, Y: 1648[0m
+[0;32mI (24352) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (24362) DEVICE: X: 1642, Y: 1648[0m
+[0;32mI (24372) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (24382) DEVICE: X: 1642, Y: 1647[0m
+[0;32mI (24392) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (24402) DEVICE: X: 1644, Y: 1647[0m
+[0;32mI (24412) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (24422) DEVICE: X: 1643, Y: 1648[0m
+[0;32mI (24432) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (24442) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (24452) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (24462) DEVICE: X: 1643, Y: 1647[0m
+[0;32mI (24472) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (24482) DEVICE: X: 1644, Y: 1648[0m
+[0;32mI (24492) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (24502) DEVICE: X: 1643, Y: 1647[0m
+[0;32mI (24512) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (24522) DEVICE: X: 1643, Y: 1648[0m
+[0;32mI (24532) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (24542) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (24552) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (24562) DEVICE: X: 1646, Y: 1648[0m
+[0;32mI (24572) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (24582) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (24592) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (24602) DEVICE: X: 1643, Y: 1647[0m
+[0;32mI (24612) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (24622) DEVICE: X: 1642, Y: 1645[0m
+[0;32mI (24632) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (24642) DEVICE: X: 1645, Y: 1648[0m
+[0;32mI (24652) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (24662) DEVICE: X: 1644, Y: 1646[0m
+[0;32mI (24672) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (24682) DEVICE: X: 1644, Y: 1645[0m
+[0;32mI (24692) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (24702) DEVICE: X: 1642, Y: 1647[0m
+[0;32mI (24712) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (24722) DEVICE: X: 1645, Y: 1648[0m
+[0;32mI (24732) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (24742) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (24752) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (24762) DEVICE: X: 1642, Y: 1647[0m
+[0;32mI (24772) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (24782) DEVICE: X: 1641, Y: 1646[0m
+[0;32mI (24792) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (24802) DEVICE: X: 1646, Y: 1647[0m
+[0;32mI (24812) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (24822) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (24832) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (24842) DEVICE: X: 1642, Y: 1645[0m
+[0;32mI (24852) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (24862) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (24872) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (24882) DEVICE: X: 1646, Y: 1648[0m
+[0;32mI (24892) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (24902) DEVICE: X: 1644, Y: 1647[0m
+[0;32mI (24912) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (24922) DEVICE: X: 1641, Y: 1647[0m
+[0;32mI (24932) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (24942) DEVICE: X: 1641, Y: 1645[0m
+[0;32mI (24952) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (24962) DEVICE: X: 1645, Y: 1650[0m
+[0;32mI (24972) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (24982) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (24992) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (25002) DEVICE: X: 1640, Y: 1647[0m
+[0;32mI (25012) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (25022) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (25032) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (25042) DEVICE: X: 1646, Y: 1647[0m
+[0;32mI (25052) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (25062) DEVICE: X: 1644, Y: 1646[0m
+[0;32mI (25072) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (25082) DEVICE: X: 1643, Y: 1647[0m
+[0;32mI (25092) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (25102) DEVICE: X: 1641, Y: 1646[0m
+[0;32mI (25112) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (25122) DEVICE: X: 1644, Y: 1648[0m
+[0;32mI (25132) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (25142) DEVICE: X: 1644, Y: 1649[0m
+[0;32mI (25152) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (25162) DEVICE: X: 1641, Y: 1646[0m
+[0;32mI (25172) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (25182) DEVICE: X: 1644, Y: 1645[0m
+[0;32mI (25192) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (25202) DEVICE: X: 1646, Y: 1648[0m
+[0;32mI (25212) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (25222) DEVICE: X: 1641, Y: 1647[0m
+[0;32mI (25232) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (25242) DEVICE: X: 1644, Y: 1647[0m
+[0;32mI (25252) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (25262) DEVICE: X: 1644, Y: 1645[0m
+[0;32mI (25272) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (25272) DEVICE: X: 1647, Y: 1649[0m
+[0;32mI (25292) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (25302) DEVICE: X: 1641, Y: 1643[0m
+[0;32mI (25312) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (25322) DEVICE: X: 1643, Y: 1644[0m
+[0;32mI (25332) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (25342) DEVICE: X: 1641, Y: 1647[0m
+[0;32mI (25352) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (25362) DEVICE: X: 1645, Y: 1647[0m
+[0;32mI (25372) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (25382) DEVICE: X: 1641, Y: 1646[0m
+[0;32mI (25392) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (25402) DEVICE: X: 1644, Y: 1647[0m
+[0;32mI (25412) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (25422) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (25432) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (25442) DEVICE: X: 1644, Y: 1648[0m
+[0;32mI (25452) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (25462) DEVICE: X: 1642, Y: 1643[0m
+[0;32mI (25472) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (25482) DEVICE: X: 1644, Y: 1648[0m
+[0;32mI (25492) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (25502) DEVICE: X: 1642, Y: 1647[0m
+[0;32mI (25512) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (25522) DEVICE: X: 1644, Y: 1647[0m
+[0;32mI (25532) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (25542) DEVICE: X: 1642, Y: 1645[0m
+[0;32mI (25552) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (25562) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (25572) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (25582) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (25592) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (25602) DEVICE: X: 1646, Y: 1648[0m
+[0;32mI (25612) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (25622) DEVICE: X: 1641, Y: 1645[0m
+[0;32mI (25632) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (25642) DEVICE: X: 1642, Y: 1643[0m
+[0;32mI (25652) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (25662) DEVICE: X: 1642, Y: 1645[0m
+[0;32mI (25672) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (25682) DEVICE: X: 1644, Y: 1648[0m
+[0;32mI (25692) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (25702) DEVICE: X: 1644, Y: 1645[0m
+[0;32mI (25712) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (25722) DEVICE: X: 1641, Y: 1647[0m
+[0;32mI (25732) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (25742) DEVICE: X: 1642, Y: 1645[0m
+[0;32mI (25752) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (25762) DEVICE: X: 1644, Y: 1647[0m
+[0;32mI (25772) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (25782) DEVICE: X: 1643, Y: 1645[0m
+[0;32mI (25792) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (25802) DEVICE: X: 1640, Y: 1646[0m
+[0;32mI (25812) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (25822) DEVICE: X: 1640, Y: 1645[0m
+[0;32mI (25832) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (25842) DEVICE: X: 1644, Y: 1649[0m
+[0;32mI (25852) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (25862) DEVICE: X: 1643, Y: 1647[0m
+[0;32mI (25872) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (25882) DEVICE: X: 1643, Y: 1649[0m
+[0;32mI (25892) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (25902) DEVICE: X: 1642, Y: 1645[0m
+[0;32mI (25912) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (25922) DEVICE: X: 1645, Y: 1650[0m
+[0;32mI (25932) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (25942) DEVICE: X: 1643, Y: 1650[0m
+[0;32mI (25952) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (25962) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (25972) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (25982) DEVICE: X: 1641, Y: 1647[0m
+[0;32mI (25992) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (26002) DEVICE: X: 1644, Y: 1648[0m
+[0;32mI (26012) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (26022) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (26032) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (26042) DEVICE: X: 1643, Y: 1647[0m
+[0;32mI (26052) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (26062) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (26072) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (26082) DEVICE: X: 1647, Y: 1649[0m
+[0;32mI (26092) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (26102) DEVICE: X: 1643, Y: 1647[0m
+[0;32mI (26112) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (26122) DEVICE: X: 1643, Y: 1644[0m
+[0;32mI (26132) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (26142) DEVICE: X: 1644, Y: 1646[0m
+[0;32mI (26152) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (26162) DEVICE: X: 1645, Y: 1649[0m
+[0;32mI (26172) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (26182) DEVICE: X: 1644, Y: 1646[0m
+[0;32mI (26192) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (26202) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (26212) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (26222) DEVICE: X: 1642, Y: 1647[0m
+[0;32mI (26232) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (26242) DEVICE: X: 1643, Y: 1648[0m
+[0;32mI (26252) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (26262) DEVICE: X: 1639, Y: 1646[0m
+[0;32mI (26272) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (26272) DEVICE: X: 1641, Y: 1646[0m
+[0;32mI (26292) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (26302) DEVICE: X: 1644, Y: 1644[0m
+[0;32mI (26312) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (26322) DEVICE: X: 1646, Y: 1646[0m
+[0;32mI (26332) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (26342) DEVICE: X: 1641, Y: 1647[0m
+[0;32mI (26352) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (26362) DEVICE: X: 1644, Y: 1646[0m
+[0;32mI (26372) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (26382) DEVICE: X: 1641, Y: 1647[0m
+[0;32mI (26392) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (26402) DEVICE: X: 1645, Y: 1648[0m
+[0;32mI (26412) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (26422) DEVICE: X: 1642, Y: 1645[0m
+[0;32mI (26432) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (26442) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (26452) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (26462) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (26472) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (26482) DEVICE: X: 1645, Y: 1649[0m
+[0;32mI (26492) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (26502) DEVICE: X: 1643, Y: 1647[0m
+[0;32mI (26512) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (26522) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (26532) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (26542) DEVICE: X: 1643, Y: 1645[0m
+[0;32mI (26552) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (26562) DEVICE: X: 1644, Y: 1647[0m
+[0;32mI (26572) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (26582) DEVICE: X: 1640, Y: 1647[0m
+[0;32mI (26592) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (26602) DEVICE: X: 1644, Y: 1649[0m
+[0;32mI (26612) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (26622) DEVICE: X: 1642, Y: 1647[0m
+[0;32mI (26632) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (26642) DEVICE: X: 1647, Y: 1647[0m
+[0;32mI (26652) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (26662) DEVICE: X: 1643, Y: 1647[0m
+[0;32mI (26672) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (26672) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (26682) DEVICE: X: 1644, Y: 1643[0m
+[0;32mI (26692) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (26702) DEVICE: X: 1641, Y: 1646[0m
+[0;32mI (26712) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (26722) DEVICE: X: 1646, Y: 1648[0m
+[0;32mI (26732) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (26742) DEVICE: X: 1644, Y: 1646[0m
+[0;32mI (26752) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (26762) DEVICE: X: 1642, Y: 1647[0m
+[0;32mI (26772) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (26782) DEVICE: X: 1640, Y: 1646[0m
+[0;32mI (26792) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (26802) DEVICE: X: 1646, Y: 1649[0m
+[0;32mI (26812) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (26822) DEVICE: X: 1644, Y: 1646[0m
+[0;32mI (26832) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (26842) DEVICE: X: 1642, Y: 1645[0m
+[0;32mI (26852) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (26862) DEVICE: X: 1642, Y: 1647[0m
+[0;32mI (26872) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (26882) DEVICE: X: 1646, Y: 1648[0m
+[0;32mI (26892) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (26902) DEVICE: X: 1642, Y: 1645[0m
+[0;32mI (26912) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (26922) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (26932) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (26942) DEVICE: X: 1644, Y: 1645[0m
+[0;32mI (26952) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (26962) DEVICE: X: 1643, Y: 1648[0m
+[0;32mI (26972) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (26982) DEVICE: X: 1642, Y: 1645[0m
+[0;32mI (26992) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (27002) DEVICE: X: 1643, Y: 1647[0m
+[0;32mI (27012) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (27022) DEVICE: X: 1641, Y: 1645[0m
+[0;32mI (27032) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (27042) DEVICE: X: 1645, Y: 1647[0m
+[0;32mI (27052) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (27062) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (27072) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (27082) DEVICE: X: 1641, Y: 1646[0m
+[0;32mI (27092) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (27102) DEVICE: X: 1644, Y: 1645[0m
+[0;32mI (27112) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (27122) DEVICE: X: 1645, Y: 1648[0m
+[0;32mI (27132) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (27142) DEVICE: X: 1642, Y: 1649[0m
+[0;32mI (27152) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (27162) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (27172) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (27182) DEVICE: X: 1643, Y: 1647[0m
+[0;32mI (27192) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (27202) DEVICE: X: 1644, Y: 1648[0m
+[0;32mI (27212) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (27222) DEVICE: X: 1642, Y: 1647[0m
+[0;32mI (27232) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (27242) DEVICE: X: 1641, Y: 1644[0m
+[0;32mI (27252) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (27262) DEVICE: X: 1644, Y: 1645[0m
+[0;32mI (27272) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (27272) DEVICE: X: 1646, Y: 1649[0m
+[0;32mI (27292) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (27302) DEVICE: X: 1643, Y: 1641[0m
+[0;32mI (27312) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (27322) DEVICE: X: 1643, Y: 1645[0m
+[0;32mI (27332) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (27342) DEVICE: X: 1643, Y: 1645[0m
+[0;32mI (27352) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (27362) DEVICE: X: 1645, Y: 1647[0m
+[0;32mI (27372) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (27382) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (27392) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (27402) DEVICE: X: 1641, Y: 1646[0m
+[0;32mI (27412) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (27422) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (27432) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (27442) DEVICE: X: 1643, Y: 1648[0m
+[0;32mI (27452) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (27462) DEVICE: X: 1643, Y: 1648[0m
+[0;32mI (27472) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (27482) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (27492) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (27502) DEVICE: X: 1643, Y: 1645[0m
+[0;32mI (27512) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (27522) DEVICE: X: 1647, Y: 1648[0m
+[0;32mI (27532) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (27542) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (27552) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (27562) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (27572) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (27582) DEVICE: X: 1641, Y: 1646[0m
+[0;32mI (27592) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (27602) DEVICE: X: 1644, Y: 1648[0m
+[0;32mI (27612) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (27622) DEVICE: X: 1644, Y: 1645[0m
+[0;32mI (27632) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (27642) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (27652) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (27662) DEVICE: X: 1643, Y: 1645[0m
+[0;32mI (27672) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (27682) DEVICE: X: 1642, Y: 1648[0m
+[0;32mI (27692) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (27702) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (27712) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (27722) DEVICE: X: 1643, Y: 1645[0m
+[0;32mI (27732) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (27742) DEVICE: X: 1644, Y: 1647[0m
+[0;32mI (27752) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (27762) DEVICE: X: 1647, Y: 1648[0m
+[0;32mI (27772) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (27782) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (27792) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (27802) DEVICE: X: 1644, Y: 1646[0m
+[0;32mI (27812) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (27822) DEVICE: X: 1643, Y: 1647[0m
+[0;32mI (27832) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (27842) DEVICE: X: 1646, Y: 1648[0m
+[0;32mI (27852) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (27862) DEVICE: X: 1643, Y: 1644[0m
+[0;32mI (27872) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (27882) DEVICE: X: 1644, Y: 1644[0m
+[0;32mI (27892) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (27902) DEVICE: X: 1641, Y: 1644[0m
+[0;32mI (27912) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (27922) DEVICE: X: 1646, Y: 1648[0m
+[0;32mI (27932) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (27942) DEVICE: X: 1643, Y: 1644[0m
+[0;32mI (27952) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (27962) DEVICE: X: 1641, Y: 1645[0m
+[0;32mI (27972) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (27982) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (27992) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (28002) DEVICE: X: 1646, Y: 1646[0m
+[0;32mI (28012) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (28022) DEVICE: X: 1644, Y: 1648[0m
+[0;32mI (28032) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (28042) DEVICE: X: 1642, Y: 1644[0m
+[0;32mI (28052) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (28062) DEVICE: X: 1643, Y: 1650[0m
+[0;32mI (28072) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (28082) DEVICE: X: 1646, Y: 1647[0m
+[0;32mI (28092) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (28092) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (28102) DEVICE: X: 1644, Y: 1645[0m
+[0;32mI (28112) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (28122) DEVICE: X: 1645, Y: 1647[0m
+[0;32mI (28132) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (28142) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (28152) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (28162) DEVICE: X: 1645, Y: 1647[0m
+[0;32mI (28172) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (28182) DEVICE: X: 1642, Y: 1648[0m
+[0;32mI (28192) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (28202) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (28212) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (28222) DEVICE: X: 1644, Y: 1646[0m
+[0;32mI (28232) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (28242) DEVICE: X: 1646, Y: 1648[0m
+[0;32mI (28252) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (28262) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (28272) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (28272) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (28292) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (28302) DEVICE: X: 1643, Y: 1644[0m
+[0;32mI (28312) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (28322) DEVICE: X: 1645, Y: 1647[0m
+[0;32mI (28332) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (28342) DEVICE: X: 1644, Y: 1646[0m
+[0;32mI (28352) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (28362) DEVICE: X: 1640, Y: 1645[0m
+[0;32mI (28372) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (28382) DEVICE: X: 1644, Y: 1643[0m
+[0;32mI (28392) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (28402) DEVICE: X: 1645, Y: 1647[0m
+[0;32mI (28412) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (28422) DEVICE: X: 1641, Y: 1644[0m
+[0;32mI (28432) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (28442) DEVICE: X: 1643, Y: 1645[0m
+[0;32mI (28452) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (28462) DEVICE: X: 1643, Y: 1644[0m
+[0;32mI (28472) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (28482) DEVICE: X: 1645, Y: 1647[0m
+[0;32mI (28492) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (28502) DEVICE: X: 1644, Y: 1645[0m
+[0;32mI (28512) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (28522) DEVICE: X: 1641, Y: 1647[0m
+[0;32mI (28532) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (28542) DEVICE: X: 1642, Y: 1648[0m
+[0;32mI (28552) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (28562) DEVICE: X: 1646, Y: 1649[0m
+[0;32mI (28572) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (28582) DEVICE: X: 1641, Y: 1644[0m
+[0;32mI (28592) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (28602) DEVICE: X: 1643, Y: 1647[0m
+[0;32mI (28612) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (28622) DEVICE: X: 1641, Y: 1646[0m
+[0;32mI (28632) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (28642) DEVICE: X: 1644, Y: 1647[0m
+[0;32mI (28652) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (28662) DEVICE: X: 1644, Y: 1645[0m
+[0;32mI (28672) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (28682) DEVICE: X: 1639, Y: 1645[0m
+[0;32mI (28692) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (28702) DEVICE: X: 1640, Y: 1643[0m
+[0;32mI (28712) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (28722) DEVICE: X: 1645, Y: 1649[0m
+[0;32mI (28732) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (28742) DEVICE: X: 1644, Y: 1646[0m
+[0;32mI (28752) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (28762) DEVICE: X: 1642, Y: 1648[0m
+[0;32mI (28772) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (28782) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (28792) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (28802) DEVICE: X: 1646, Y: 1648[0m
+[0;32mI (28812) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (28822) DEVICE: X: 1644, Y: 1643[0m
+[0;32mI (28832) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (28842) DEVICE: X: 1643, Y: 1649[0m
+[0;32mI (28852) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (28862) DEVICE: X: 1643, Y: 1644[0m
+[0;32mI (28872) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (28882) DEVICE: X: 1644, Y: 1647[0m
+[0;32mI (28892) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (28902) DEVICE: X: 1643, Y: 1648[0m
+[0;32mI (28912) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (28922) DEVICE: X: 1644, Y: 1648[0m
+[0;32mI (28932) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (28942) DEVICE: X: 1644, Y: 1648[0m
+[0;32mI (28952) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (28962) DEVICE: X: 1646, Y: 1648[0m
+[0;32mI (28972) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (28982) DEVICE: X: 1643, Y: 1644[0m
+[0;32mI (28992) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (29002) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (29012) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (29022) DEVICE: X: 1642, Y: 1645[0m
+[0;32mI (29032) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (29042) DEVICE: X: 1646, Y: 1648[0m
+[0;32mI (29052) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (29062) DEVICE: X: 1643, Y: 1647[0m
+[0;32mI (29072) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (29082) DEVICE: X: 1639, Y: 1646[0m
+[0;32mI (29092) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (29102) DEVICE: X: 1645, Y: 1645[0m
+[0;32mI (29112) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (29122) DEVICE: X: 1646, Y: 1648[0m
+[0;32mI (29132) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (29142) DEVICE: X: 1641, Y: 1645[0m
+[0;32mI (29152) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (29162) DEVICE: X: 1643, Y: 1647[0m
+[0;32mI (29172) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (29182) DEVICE: X: 1641, Y: 1645[0m
+[0;32mI (29192) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (29202) DEVICE: X: 1644, Y: 1647[0m
+[0;32mI (29212) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (29222) DEVICE: X: 1641, Y: 1647[0m
+[0;32mI (29232) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (29242) DEVICE: X: 1641, Y: 1647[0m
+[0;32mI (29252) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (29262) DEVICE: X: 1644, Y: 1649[0m
+[0;32mI (29272) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (29272) DEVICE: X: 1646, Y: 1648[0m
+[0;32mI (29292) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (29302) DEVICE: X: 1641, Y: 1649[0m
+[0;32mI (29312) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (29322) DEVICE: X: 1642, Y: 1650[0m
+[0;32mI (29332) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (29342) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (29352) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (29362) DEVICE: X: 1646, Y: 1647[0m
+[0;32mI (29372) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (29382) DEVICE: X: 1642, Y: 1647[0m
+[0;32mI (29392) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (29402) DEVICE: X: 1642, Y: 1645[0m
+[0;32mI (29412) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (29422) DEVICE: X: 1641, Y: 1647[0m
+[0;32mI (29432) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (29442) DEVICE: X: 1646, Y: 1648[0m
+[0;32mI (29452) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (29462) DEVICE: X: 1645, Y: 1647[0m
+[0;32mI (29472) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (29482) DEVICE: X: 1643, Y: 1643[0m
+[0;32mI (29492) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (29502) DEVICE: X: 1641, Y: 1645[0m
+[0;32mI (29512) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (29522) DEVICE: X: 1646, Y: 1647[0m
+[0;32mI (29532) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (29542) DEVICE: X: 1643, Y: 1647[0m
+[0;32mI (29552) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (29562) DEVICE: X: 1644, Y: 1648[0m
+[0;32mI (29572) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (29582) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (29592) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (29602) DEVICE: X: 1645, Y: 1647[0m
+[0;32mI (29612) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (29622) DEVICE: X: 1644, Y: 1649[0m
+[0;32mI (29632) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (29642) DEVICE: X: 1642, Y: 1645[0m
+[0;32mI (29652) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (29662) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (29672) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (29682) DEVICE: X: 1644, Y: 1650[0m
+[0;32mI (29692) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (29702) DEVICE: X: 1641, Y: 1648[0m
+[0;32mI (29712) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (29722) DEVICE: X: 1643, Y: 1648[0m
+[0;32mI (29732) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (29742) DEVICE: X: 1643, Y: 1645[0m
+[0;32mI (29752) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (29762) DEVICE: X: 1645, Y: 1649[0m
+[0;32mI (29772) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (29782) DEVICE: X: 1642, Y: 1649[0m
+[0;32mI (29792) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (29802) DEVICE: X: 1641, Y: 1647[0m
+[0;32mI (29812) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (29822) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (29832) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (29842) DEVICE: X: 1645, Y: 1646[0m
+[0;32mI (29852) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (29862) DEVICE: X: 1643, Y: 1644[0m
+[0;32mI (29872) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (29882) DEVICE: X: 1643, Y: 1645[0m
+[0;32mI (29892) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (29902) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (29912) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (29922) DEVICE: X: 1646, Y: 1646[0m
+[0;32mI (29932) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (29942) DEVICE: X: 1642, Y: 1648[0m
+[0;32mI (29952) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (29962) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (29972) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (29982) DEVICE: X: 1643, Y: 1643[0m
+[0;32mI (29992) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (30002) DEVICE: X: 1647, Y: 1650[0m
+[0;32mI (30012) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (30022) DEVICE: X: 1644, Y: 1648[0m
+[0;32mI (30032) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (30042) DEVICE: X: 1642, Y: 1648[0m
+[0;32mI (30052) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (30062) DEVICE: X: 1642, Y: 1647[0m
+[0;32mI (30072) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (30082) DEVICE: X: 1645, Y: 1647[0m
+[0;32mI (30092) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (30102) DEVICE: X: 1643, Y: 1643[0m
+[0;32mI (30112) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (30122) DEVICE: X: 1643, Y: 1644[0m
+[0;32mI (30132) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (30142) DEVICE: X: 1644, Y: 1647[0m
+[0;32mI (30152) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (30162) DEVICE: X: 1645, Y: 1648[0m
+[0;32mI (30172) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (30182) DEVICE: X: 1640, Y: 1646[0m
+[0;32mI (30192) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (30202) DEVICE: X: 1640, Y: 1647[0m
+[0;32mI (30212) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (30222) DEVICE: X: 1644, Y: 1646[0m
+[0;32mI (30232) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (30242) DEVICE: X: 1643, Y: 1649[0m
+[0;32mI (30252) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (30262) DEVICE: X: 1643, Y: 1647[0m
+[0;32mI (30272) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (30272) DEVICE: X: 1641, Y: 1645[0m
+[0;32mI (30292) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (30302) DEVICE: X: 1643, Y: 1647[0m
+[0;32mI (30312) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (30322) DEVICE: X: 1648, Y: 1648[0m
+[0;32mI (30332) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (30342) DEVICE: X: 1644, Y: 1647[0m
+[0;32mI (30352) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (30362) DEVICE: X: 1642, Y: 1647[0m
+[0;32mI (30372) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (30382) DEVICE: X: 1645, Y: 1643[0m
+[0;32mI (30392) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (30402) DEVICE: X: 1644, Y: 1649[0m
+[0;32mI (30412) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (30422) DEVICE: X: 1643, Y: 1649[0m
+[0;32mI (30432) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (30442) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (30452) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (30462) DEVICE: X: 1642, Y: 1645[0m
+[0;32mI (30472) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (30482) DEVICE: X: 1645, Y: 1648[0m
+[0;32mI (30492) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (30502) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (30512) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (30522) DEVICE: X: 1643, Y: 1647[0m
+[0;32mI (30532) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (30542) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (30552) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (30562) DEVICE: X: 1646, Y: 1649[0m
+[0;32mI (30572) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (30582) DEVICE: X: 1643, Y: 1649[0m
+[0;32mI (30592) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (30602) DEVICE: X: 1642, Y: 1645[0m
+[0;32mI (30612) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (30622) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (30632) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (30642) DEVICE: X: 1645, Y: 1648[0m
+[0;32mI (30652) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (30662) DEVICE: X: 1641, Y: 1642[0m
+[0;32mI (30672) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (30682) DEVICE: X: 1641, Y: 1647[0m
+[0;32mI (30692) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (30702) DEVICE: X: 1641, Y: 1646[0m
+[0;32mI (30712) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (30722) DEVICE: X: 1646, Y: 1647[0m
+[0;32mI (30732) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (30742) DEVICE: X: 1643, Y: 1648[0m
+[0;32mI (30752) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (30762) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (30772) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (30782) DEVICE: X: 1641, Y: 1647[0m
+[0;32mI (30792) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (30802) DEVICE: X: 1645, Y: 1647[0m
+[0;32mI (30812) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (30822) DEVICE: X: 1645, Y: 1650[0m
+[0;32mI (30832) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (30842) DEVICE: X: 1644, Y: 1646[0m
+[0;32mI (30852) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (30862) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (30872) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (30882) DEVICE: X: 1647, Y: 1649[0m
+[0;32mI (30892) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (30902) DEVICE: X: 1644, Y: 1648[0m
+[0;32mI (30912) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (30922) DEVICE: X: 1642, Y: 1647[0m
+[0;32mI (30932) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (30942) DEVICE: X: 1643, Y: 1648[0m
+[0;32mI (30952) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (30962) DEVICE: X: 1645, Y: 1646[0m
+[0;32mI (30972) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (30982) DEVICE: X: 1642, Y: 1648[0m
+[0;32mI (30992) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (31002) DEVICE: X: 1643, Y: 1649[0m
+[0;32mI (31012) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (31022) DEVICE: X: 1642, Y: 1648[0m
+[0;32mI (31032) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (31042) DEVICE: X: 1644, Y: 1649[0m
+[0;32mI (31052) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (31062) DEVICE: X: 1642, Y: 1645[0m
+[0;32mI (31072) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (31082) DEVICE: X: 1643, Y: 1648[0m
+[0;32mI (31092) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (31102) DEVICE: X: 1644, Y: 1645[0m
+[0;32mI (31112) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (31122) DEVICE: X: 1644, Y: 1646[0m
+[0;32mI (31132) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (31142) DEVICE: X: 1645, Y: 1644[0m
+[0;32mI (31152) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (31162) DEVICE: X: 1639, Y: 1646[0m
+[0;32mI (31172) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (31182) DEVICE: X: 1641, Y: 1646[0m
+[0;32mI (31192) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (31202) DEVICE: X: 1645, Y: 1647[0m
+[0;32mI (31212) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (31222) DEVICE: X: 1644, Y: 1648[0m
+[0;32mI (31232) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (31242) DEVICE: X: 1642, Y: 1648[0m
+[0;32mI (31252) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (31262) DEVICE: X: 1641, Y: 1648[0m
+[0;32mI (31272) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (31272) DEVICE: X: 1644, Y: 1648[0m
+[0;32mI (31292) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (31302) DEVICE: X: 1644, Y: 1646[0m
+[0;32mI (31312) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (31322) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (31332) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (31342) DEVICE: X: 1644, Y: 1649[0m
+[0;32mI (31352) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (31362) DEVICE: X: 1646, Y: 1649[0m
+[0;32mI (31372) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (31382) DEVICE: X: 1643, Y: 1644[0m
+[0;32mI (31392) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (31402) DEVICE: X: 1643, Y: 1647[0m
+[0;32mI (31412) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (31422) DEVICE: X: 1641, Y: 1646[0m
+[0;32mI (31432) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (31442) DEVICE: X: 1647, Y: 1648[0m
+[0;32mI (31452) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (31462) DEVICE: X: 1644, Y: 1645[0m
+[0;32mI (31472) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (31482) DEVICE: X: 1645, Y: 1648[0m
+[0;32mI (31482) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (31492) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (31502) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (31512) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (31522) DEVICE: X: 1645, Y: 1649[0m
+[0;32mI (31532) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (31542) DEVICE: X: 1642, Y: 1647[0m
+[0;32mI (31552) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (31562) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (31572) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (31582) DEVICE: X: 1642, Y: 1650[0m
+[0;32mI (31592) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (31602) DEVICE: X: 1646, Y: 1649[0m
+[0;32mI (31612) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (31622) DEVICE: X: 1643, Y: 1647[0m
+[0;32mI (31632) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (31642) DEVICE: X: 1643, Y: 1648[0m
+[0;32mI (31652) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (31662) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (31672) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (31682) DEVICE: X: 1646, Y: 1648[0m
+[0;32mI (31692) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (31702) DEVICE: X: 1644, Y: 1645[0m
+[0;32mI (31712) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (31722) DEVICE: X: 1644, Y: 1647[0m
+[0;32mI (31732) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (31742) DEVICE: X: 1645, Y: 1649[0m
+[0;32mI (31752) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (31762) DEVICE: X: 1644, Y: 1648[0m
+[0;32mI (31772) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (31782) DEVICE: X: 1643, Y: 1647[0m
+[0;32mI (31792) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (31802) DEVICE: X: 1640, Y: 1646[0m
+[0;32mI (31812) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (31822) DEVICE: X: 1643, Y: 1647[0m
+[0;32mI (31832) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (31842) DEVICE: X: 1646, Y: 1647[0m
+[0;32mI (31852) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (31862) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (31872) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (31882) DEVICE: X: 1642, Y: 1645[0m
+[0;32mI (31892) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (31902) DEVICE: X: 1643, Y: 1644[0m
+[0;32mI (31912) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (31922) DEVICE: X: 1646, Y: 1647[0m
+[0;32mI (31932) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (31942) DEVICE: X: 1640, Y: 1646[0m
+[0;32mI (31952) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (31962) DEVICE: X: 1644, Y: 1647[0m
+[0;32mI (31972) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (31982) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (31992) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (32002) DEVICE: X: 1646, Y: 1648[0m
+[0;32mI (32012) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (32022) DEVICE: X: 1644, Y: 1647[0m
+[0;32mI (32032) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (32042) DEVICE: X: 1642, Y: 1644[0m
+[0;32mI (32052) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (32062) DEVICE: X: 1642, Y: 1648[0m
+[0;32mI (32072) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (32082) DEVICE: X: 1646, Y: 1647[0m
+[0;32mI (32092) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (32102) DEVICE: X: 1645, Y: 1650[0m
+[0;32mI (32112) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (32122) DEVICE: X: 1641, Y: 1649[0m
+[0;32mI (32132) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (32142) DEVICE: X: 1640, Y: 1649[0m
+[0;32mI (32152) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (32162) DEVICE: X: 1646, Y: 1645[0m
+[0;32mI (32172) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (32182) DEVICE: X: 1643, Y: 1649[0m
+[0;32mI (32192) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (32202) DEVICE: X: 1641, Y: 1647[0m
+[0;32mI (32212) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (32222) DEVICE: X: 1643, Y: 1643[0m
+[0;32mI (32232) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (32242) DEVICE: X: 1648, Y: 1647[0m
+[0;32mI (32252) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (32262) DEVICE: X: 1644, Y: 1645[0m
+[0;32mI (32272) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (32272) DEVICE: X: 1641, Y: 1645[0m
+[0;32mI (32292) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (32302) DEVICE: X: 1641, Y: 1647[0m
+[0;32mI (32312) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (32322) DEVICE: X: 1645, Y: 1647[0m
+[0;32mI (32332) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (32342) DEVICE: X: 1641, Y: 1649[0m
+[0;32mI (32352) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (32362) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (32372) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (32382) DEVICE: X: 1642, Y: 1647[0m
+[0;32mI (32392) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (32402) DEVICE: X: 1645, Y: 1648[0m
+[0;32mI (32412) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (32422) DEVICE: X: 1643, Y: 1643[0m
+[0;32mI (32432) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (32442) DEVICE: X: 1644, Y: 1647[0m
+[0;32mI (32452) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (32462) DEVICE: X: 1644, Y: 1647[0m
+[0;32mI (32472) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (32482) DEVICE: X: 1645, Y: 1648[0m
+[0;32mI (32492) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (32502) DEVICE: X: 1644, Y: 1645[0m
+[0;32mI (32512) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (32522) DEVICE: X: 1643, Y: 1645[0m
+[0;32mI (32532) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (32542) DEVICE: X: 1644, Y: 1646[0m
+[0;32mI (32552) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (32562) DEVICE: X: 1644, Y: 1648[0m
+[0;32mI (32572) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (32582) DEVICE: X: 1642, Y: 1647[0m
+[0;32mI (32592) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (32602) DEVICE: X: 1642, Y: 1645[0m
+[0;32mI (32612) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (32622) DEVICE: X: 1645, Y: 1648[0m
+[0;32mI (32632) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (32642) DEVICE: X: 1646, Y: 1649[0m
+[0;32mI (32652) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (32662) DEVICE: X: 1642, Y: 1645[0m
+[0;32mI (32672) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (32682) DEVICE: X: 1645, Y: 1645[0m
+[0;32mI (32692) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (32702) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (32712) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (32722) DEVICE: X: 1647, Y: 1648[0m
+[0;32mI (32732) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (32742) DEVICE: X: 1644, Y: 1645[0m
+[0;32mI (32752) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (32762) DEVICE: X: 1642, Y: 1648[0m
+[0;32mI (32772) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (32782) DEVICE: X: 1641, Y: 1649[0m
+[0;32mI (32792) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (32802) DEVICE: X: 1646, Y: 1648[0m
+[0;32mI (32812) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (32822) DEVICE: X: 1642, Y: 1649[0m
+[0;32mI (32832) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (32842) DEVICE: X: 1644, Y: 1644[0m
+[0;32mI (32852) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (32862) DEVICE: X: 1642, Y: 1647[0m
+[0;32mI (32872) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (32882) DEVICE: X: 1647, Y: 1648[0m
+[0;32mI (32892) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (32902) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (32912) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (32922) DEVICE: X: 1642, Y: 1645[0m
+[0;32mI (32932) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (32942) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (32952) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (32962) DEVICE: X: 1647, Y: 1646[0m
+[0;32mI (32972) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (32982) DEVICE: X: 1644, Y: 1645[0m
+[0;32mI (32992) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (33002) DEVICE: X: 1643, Y: 1647[0m
+[0;32mI (33012) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (33022) DEVICE: X: 1644, Y: 1647[0m
+[0;32mI (33032) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (33042) DEVICE: X: 1646, Y: 1649[0m
+[0;32mI (33052) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (33062) DEVICE: X: 1641, Y: 1645[0m
+[0;32mI (33072) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (33082) DEVICE: X: 1642, Y: 1647[0m
+[0;32mI (33092) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (33102) DEVICE: X: 1642, Y: 1647[0m
+[0;32mI (33112) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (33122) DEVICE: X: 1644, Y: 1648[0m
+[0;32mI (33132) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (33142) DEVICE: X: 1643, Y: 1648[0m
+[0;32mI (33152) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (33162) DEVICE: X: 1642, Y: 1645[0m
+[0;32mI (33172) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (33182) DEVICE: X: 1642, Y: 1645[0m
+[0;32mI (33192) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (33202) DEVICE: X: 1644, Y: 1648[0m
+[0;32mI (33212) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (33222) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (33232) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (33242) DEVICE: X: 1643, Y: 1647[0m
+[0;32mI (33252) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (33262) DEVICE: X: 1640, Y: 1644[0m
+[0;32mI (33272) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (33272) DEVICE: X: 1646, Y: 1648[0m
+[0;32mI (33292) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (33302) DEVICE: X: 1642, Y: 1643[0m
+[0;32mI (33312) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (33322) DEVICE: X: 1642, Y: 1645[0m
+[0;32mI (33332) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (33342) DEVICE: X: 1642, Y: 1647[0m
+[0;32mI (33352) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (33362) DEVICE: X: 1644, Y: 1648[0m
+[0;32mI (33372) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (33382) DEVICE: X: 1643, Y: 1647[0m
+[0;32mI (33392) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (33402) DEVICE: X: 1642, Y: 1649[0m
+[0;32mI (33412) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (33422) DEVICE: X: 1641, Y: 1646[0m
+[0;32mI (33432) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (33442) DEVICE: X: 1646, Y: 1650[0m
+[0;32mI (33452) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (33462) DEVICE: X: 1643, Y: 1647[0m
+[0;32mI (33472) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (33482) DEVICE: X: 1641, Y: 1646[0m
+[0;32mI (33492) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (33502) DEVICE: X: 1640, Y: 1645[0m
+[0;32mI (33512) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (33522) DEVICE: X: 1646, Y: 1650[0m
+[0;32mI (33532) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (33542) DEVICE: X: 1641, Y: 1645[0m
+[0;32mI (33552) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (33562) DEVICE: X: 1641, Y: 1648[0m
+[0;32mI (33572) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (33582) DEVICE: X: 1641, Y: 1646[0m
+[0;32mI (33592) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (33602) DEVICE: X: 1643, Y: 1648[0m
+[0;32mI (33612) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (33622) DEVICE: X: 1644, Y: 1648[0m
+[0;32mI (33632) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (33642) DEVICE: X: 1641, Y: 1647[0m
+[0;32mI (33652) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (33662) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (33672) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (33682) DEVICE: X: 1647, Y: 1647[0m
+[0;32mI (33692) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (33702) DEVICE: X: 1641, Y: 1648[0m
+[0;32mI (33712) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (33722) DEVICE: X: 1644, Y: 1649[0m
+[0;32mI (33732) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (33742) DEVICE: X: 1643, Y: 1647[0m
+[0;32mI (33752) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (33762) DEVICE: X: 1645, Y: 1648[0m
+[0;32mI (33772) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (33782) DEVICE: X: 1643, Y: 1645[0m
+[0;32mI (33792) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (33802) DEVICE: X: 1640, Y: 1647[0m
+[0;32mI (33812) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (33822) DEVICE: X: 1642, Y: 1648[0m
+[0;32mI (33832) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (33842) DEVICE: X: 1646, Y: 1649[0m
+[0;32mI (33852) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (33862) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (33872) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (33882) DEVICE: X: 1643, Y: 1649[0m
+[0;32mI (33892) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (33902) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (33912) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (33922) DEVICE: X: 1647, Y: 1648[0m
+[0;32mI (33932) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (33942) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (33952) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (33962) DEVICE: X: 1642, Y: 1648[0m
+[0;32mI (33972) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (33982) DEVICE: X: 1645, Y: 1645[0m
+[0;32mI (33992) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (34002) DEVICE: X: 1644, Y: 1648[0m
+[0;32mI (34012) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (34022) DEVICE: X: 1639, Y: 1645[0m
+[0;32mI (34032) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (34042) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (34052) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (34062) DEVICE: X: 1641, Y: 1645[0m
+[0;32mI (34072) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (34082) DEVICE: X: 1645, Y: 1647[0m
+[0;32mI (34092) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (34102) DEVICE: X: 1642, Y: 1648[0m
+[0;32mI (34112) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (34122) DEVICE: X: 1641, Y: 1646[0m
+[0;32mI (34132) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (34142) DEVICE: X: 1644, Y: 1646[0m
+[0;32mI (34152) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (34162) DEVICE: X: 1644, Y: 1648[0m
+[0;32mI (34172) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (34182) DEVICE: X: 1644, Y: 1644[0m
+[0;32mI (34192) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (34202) DEVICE: X: 1642, Y: 1645[0m
+[0;32mI (34212) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (34222) DEVICE: X: 1644, Y: 1644[0m
+[0;32mI (34232) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (34242) DEVICE: X: 1645, Y: 1644[0m
+[0;32mI (34252) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (34262) DEVICE: X: 1643, Y: 1647[0m
+[0;32mI (34272) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (34272) DEVICE: X: 1642, Y: 1647[0m
+[0;32mI (34292) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (34302) DEVICE: X: 1641, Y: 1643[0m
+[0;32mI (34312) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (34322) DEVICE: X: 1645, Y: 1648[0m
+[0;32mI (34332) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (34342) DEVICE: X: 1643, Y: 1645[0m
+[0;32mI (34352) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (34362) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (34372) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (34382) DEVICE: X: 1643, Y: 1648[0m
+[0;32mI (34392) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (34402) DEVICE: X: 1644, Y: 1651[0m
+[0;32mI (34412) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (34422) DEVICE: X: 1644, Y: 1647[0m
+[0;32mI (34432) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (34442) DEVICE: X: 1643, Y: 1648[0m
+[0;32mI (34452) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (34452) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (34462) DEVICE: X: 1643, Y: 1647[0m
+[0;32mI (34472) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (34482) DEVICE: X: 1645, Y: 1649[0m
+[0;32mI (34492) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (34502) DEVICE: X: 1641, Y: 1645[0m
+[0;32mI (34512) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (34522) DEVICE: X: 1643, Y: 1648[0m
+[0;32mI (34532) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (34542) DEVICE: X: 1644, Y: 1646[0m
+[0;32mI (34552) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (34562) DEVICE: X: 1644, Y: 1647[0m
+[0;32mI (34572) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (34582) DEVICE: X: 1644, Y: 1646[0m
+[0;32mI (34592) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (34602) DEVICE: X: 1642, Y: 1650[0m
+[0;32mI (34612) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (34622) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (34632) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (34642) DEVICE: X: 1645, Y: 1647[0m
+[0;32mI (34652) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (34662) DEVICE: X: 1641, Y: 1645[0m
+[0;32mI (34672) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (34682) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (34692) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (34702) DEVICE: X: 1643, Y: 1647[0m
+[0;32mI (34712) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (34722) DEVICE: X: 1647, Y: 1649[0m
+[0;32mI (34732) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (34742) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (34752) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (34762) DEVICE: X: 1642, Y: 1647[0m
+[0;32mI (34772) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (34782) DEVICE: X: 1640, Y: 1646[0m
+[0;32mI (34792) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (34802) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (34812) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (34822) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (34832) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (34842) DEVICE: X: 1642, Y: 1649[0m

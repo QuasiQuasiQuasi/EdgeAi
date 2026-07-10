@@ -1,0 +1,64 @@
+Command: /home/finja/.espressif/python_env/idf6.2_py3.12_env/bin/python /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/tools/idf_monitor.py -p /dev/ttyACM0 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32h2 --revision 0 --decode-panic backtrace /home/finja/Documents/Diplomarbeit/EdgeAI/mcu/device/build/device.elf /home/finja/Documents/Diplomarbeit/EdgeAI/mcu/device/build/bootloader/bootloader.elf -m '/home/finja/.espressif/python_env/idf6.2_py3.12_env/bin/python' '/home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/tools/idf.py'
+[0;32mI (133) esp_image: segment 3: paddr=0003a534 vaddr=40806734 sizeESP-ROM:esp32h2-eco5-20240613[0m
+Build:Jun 13 2024
+rst:0x15 (USB_UART_HPSYS),boot:0xc (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40804ac8
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x408460f0,len:0x1664
+load:0x4083c2d0,len:0xef8
+load:0x4083efd0,len:0x2fb0
+entry 0x4083c2da
+[0;32mI (23) boot: ESP-IDF v6.1-dev-6126-ge9da155a726 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Jul  8 2026 15:17:08[0m
+[0;32mI (26) boot: chip revision: v1.2[0m
+[0;32mI (26) boot: efuse block revision: v0.3[0m
+[0;32mI (29) boot.esp32h2: SPI Speed      : 64MHz[0m
+[0;32mI (32) boot.esp32h2: SPI Mode       : DIO[0m
+[0;32mI (36) boot.esp32h2: SPI Flash Size : 2MB[0m
+[0;32mI (40) boot: Enabling RNG early entropy source...[0m
+[0;32mI (44) boot: Partition Table:[0m
+[0;32mI (47) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (53) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (60) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (66) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (73) boot: End of partition table[0m
+[0;32mI (76) esp_image: segment 0: paddr=00010020 vaddr=42020020 size=098bch ( 39100) map[0m
+[0;32mI (94) esp_image: segment 1: paddr=000198e4 vaddr=40800000 size=06734h ( 26420) load[0m
+[0;32mI (103) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=1a50ch (107788) map[0m
+[0;32mI (133) esp_image: segment 3: paddr=0003a534 vaddr=40806734 size=04c68h ( 19560) load[0m
+[0;32mI (140) esp_image: segment 4: paddr=0003f1a4 vaddr=4080b3a0 size=02604h (  9732) load[0m
+[0;32mI (147) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (148) boot: Disabling RNG early entropy source...[0m
+[0;32mI (158) cpu_start: Unicore app[0m
+[0;32mI (167) cpu_start: GPIO 23 and 24 are used as console UART I/O pins[0m
+[0;32mI (168) cpu_start: Pro cpu start user code[0m
+[0;32mI (168) cpu_start: cpu freq: 96000000 Hz[0m
+[0;32mI (169) app_init: Application information:[0m
+[0;32mI (173) app_init: Project name:     device[0m
+[0;32mI (177) app_init: App version:      526bfce-dirty[0m
+[0;32mI (181) app_init: Compile time:     Jul  8 2026 15:17:16[0m
+[0;32mI (186) app_init: ELF file SHA256:  93247a6ad...[0m
+[0;32mI (191) app_init: ESP-IDF:          v6.1-dev-6126-ge9da155a726[0m
+[0;32mI (196) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (200) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (204) efuse_init: Chip rev:         v1.2[0m
+[0;32mI (208) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (214) heap_init: At 4080FA50 len 0003D930 (246 KiB): RAM[0m
+[0;32mI (219) heap_init: At 4084D380 len 00002B60 (10 KiB): RAM[0m
+[0;32mI (224) heap_init: At 50000000 len 00000FE8 (3 KiB): RTCRAM[0m
+[0;32mI (231) spi_flash: detected chip: gd[0m
+[0;32mI (233) spi_flash: flash io: dio[0m
+[0;33mW (236) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (249) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (254) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (262) main_task: Started on CPU0[0m
+[0;32mI (262) main_task: Calling app_main()[0m
+[0;32mI (282) phy: phy_version: 324,5, 0d8cd71, Apr 10 2026, 13:58:46[0m
+[0;32mI (282) phy: libbtbb version: 8db04ea, Apr 10 2026, 13:58:59[0m
+[0;32mI (1932) DEVICE: MSG: Hi Guys[0m
+
+[0;32mI (8932) DEVICE: MSG: Hi Guys[0m
+
+[0;32mI (14422) DEVICE: MSG: Hi Guys[0m
+

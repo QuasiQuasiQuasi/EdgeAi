@@ -1,0 +1,2 @@
+source /home/finja/Documents/Diplomarbeit/EdgeAI/mcu/gather_data/build/gdbinit/symbols
+source /home/finja/Documents/Diplomarbeit/EdgeAI/mcu/gather_data/build/gdbinit/connect

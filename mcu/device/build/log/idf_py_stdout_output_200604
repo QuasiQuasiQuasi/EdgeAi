@@ -1,0 +1,38 @@
+Command: ninja all
+[1/10] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/device.c.obj
+/home/finja/Documents/Diplomarbeit/EdgeAI/mcu/device/main/device.c: In function 'esp_ieee802154_receive_done':
+/home/finja/Documents/Diplomarbeit/EdgeAI/mcu/device/main/device.c:17:29: warning: unused variable 'packet' [-Wunused-variable]
+   17 |         ieee802154_packet_t packet = {0};
+      |                             ^~~~~~
+[2/10] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/home/finja/Documents/Diplomarbeit/EdgeAI/mcu/shared/ieee802154.c.obj
+/home/finja/Documents/Diplomarbeit/EdgeAI/mcu/shared/ieee802154.c: In function 'ieee802154_analysis_packet':
+/home/finja/Documents/Diplomarbeit/EdgeAI/mcu/shared/ieee802154.c:215:26: warning: unused variable 'checksum' [-Wunused-variable]
+  215 |                 uint16_t checksum = *((uint16_t*) &buffer[buffer_length - sizeof(uint16_t)]);
+      |                          ^~~~~~~~
+/home/finja/Documents/Diplomarbeit/EdgeAI/mcu/shared/ieee802154.c:198:26: warning: unused variable 'header_length' [-Wunused-variable]
+  198 |                 uint8_t  header_length = position;
+      |                          ^~~~~~~~~~~~~
+/home/finja/Documents/Diplomarbeit/EdgeAI/mcu/shared/ieee802154.c:197:26: warning: unused variable 'header' [-Wunused-variable]
+  197 |                 uint8_t* header            = &buffer[0];
+      |                          ^~~~~~
+/home/finja/Documents/Diplomarbeit/EdgeAI/mcu/shared/ieee802154.c:114:26: warning: variable 'broadcast' set but not used [-Wunused-but-set-variable=]
+  114 |                 bool     broadcast              = false;
+      |                          ^~~~~~~~~
+[3/10] Performing build step for 'bootloader'
+[1/1] cd /home/finja/Documents/Diplomarbeit/EdgeAI/mcu/device/build/bootloader && /home/finja/.espressif/python_env/idf6.2_py3.12_env/bin/python /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /home/finja/Documents/Diplomarbeit/EdgeAI/mcu/device/build/bootloader/bootloader.bin
+Bootloader binary size 0x5560 bytes. 0x2aa0 bytes (33%) free.
+[4/10] No install step for 'bootloader'
+[5/10] Linking C static library esp-idf/main/libmain.a
+[6/10] Completed 'bootloader'
+[7/10] Generating esp-idf/esp_system/ld/sections.ld
+Skipping linker fragment parsing, fragment files unchanged
+[8/10] Linking CXX executable device.elf
+[9/10] Generating binary image from built executable
+esptool v5.3.1
+Creating ESP32-H2 image...
+Merged 3 ELF sections.
+Successfully created ESP32-H2 image.
+Generated /home/finja/Documents/Diplomarbeit/EdgeAI/mcu/device/build/device.bin
+[10/10] cd /home/finja/Documents/Diplomarbeit/EdgeAI/mcu/device/build && /home/finja/.espressif/python_env/idf6.2_py3.12_env/bin/python /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/finja/Documents/Diplomarbeit/EdgeAI/mcu/device/build/partition_table/partition-table.bin /home/finja/Documents/Diplomarbeit/EdgeAI/mcu/device/build/device.bin
+device.bin binary size 0x31a60 bytes. Smallest app partition is 0x100000 bytes. 
+0xce5a0 bytes (81%) free.

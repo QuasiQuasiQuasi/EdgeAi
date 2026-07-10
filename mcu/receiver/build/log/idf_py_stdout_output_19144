@@ -1,0 +1,404 @@
+Command: /home/finja/.espressif/python_env/idf6.2_py3.12_env/bin/python /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/tools/idf_monitor.py -p /dev/ttyACM2 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32h2 --revision 0 --decode-panic backtrace /home/finja/Documents/Diplomarbeit/EdgeAI/mcu/receiver/build/receiver.elf /home/finja/Documents/Diplomarbeit/EdgeAI/mcu/receiver/build/bootloader/bootloader.elf -m '/home/finja/.espressif/python_env/idf6.2_py3.12_env/bin/python' '/home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/tools/idf.py'
+[0;32mI (133) esp_image: segment 3: paddr=0003a26c vaddr=40806738 sizeI (466) DEVICE: X: 1644, Y: 1647[0m
+ESP-ROM:esp32h2-eco5-20240613
+Build:Jun 13 2024
+rst:0x15 (USB_UART_HPSYS),boot:0xc (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40804ac8
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x408460f0,len:0x1664
+load:0x4083c2d0,len:0xef8
+load:0x4083efd0,len:0x2fb0
+entry 0x4083c2da
+[0;32mI (23) boot: ESP-IDF v6.1-dev-6126-ge9da155a726 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Jul 10 2026 10:46:54[0m
+[0;32mI (26) boot: chip revision: v1.2[0m
+[0;32mI (26) boot: efuse block revision: v0.3[0m
+[0;32mI (29) boot.esp32h2: SPI Speed      : 64MHz[0m
+[0;32mI (32) boot.esp32h2: SPI Mode       : DIO[0m
+[0;32mI (36) boot.esp32h2: SPI Flash Size : 2MB[0m
+[0;32mI (40) boot: Enabling RNG early entropy source...[0m
+[0;32mI (44) boot: Partition Table:[0m
+[0;32mI (47) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (53) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (60) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (66) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (73) boot: End of partition table[0m
+[0;32mI (76) esp_image: segment 0: paddr=00010020 vaddr=42020020 size=098b8h ( 39096) map[0m
+[0;32mI (94) esp_image: segment 1: paddr=000198e0 vaddr=40800000 size=06738h ( 26424) load[0m
+[0;32mI (103) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=1a244h (107076) map[0m
+[0;32mI (133) esp_image: segment 3: paddr=0003a26c vaddr=40806738 size=04b4ch ( 19276) load[0m
+[0;32mI (140) esp_image: segment 4: paddr=0003edc0 vaddr=4080b290 size=025e4h (  9700) load[0m
+[0;32mI (147) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (148) boot: Disabling RNG early entropy source...[0m
+[0;32mI (158) cpu_start: Unicore app[0m
+[0;32mI (167) cpu_start: GPIO 23 and 24 are used as console UART I/O pins[0m
+[0;32mI (168) cpu_start: Pro cpu start user code[0m
+[0;32mI (168) cpu_start: cpu freq: 96000000 Hz[0m
+[0;32mI (169) app_init: Application information:[0m
+[0;32mI (173) app_init: Project name:     receiver[0m
+[0;32mI (177) app_init: App version:      526bfce-dirty[0m
+[0;32mI (181) app_init: Compile time:     Jul 10 2026 10:47:03[0m
+[0;32mI (186) app_init: ELF file SHA256:  695984537...[0m
+[0;32mI (191) app_init: ESP-IDF:          v6.1-dev-6126-ge9da155a726[0m
+[0;32mI (196) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (200) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (204) efuse_init: Chip rev:         v1.2[0m
+[0;32mI (208) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (214) heap_init: At 4080F920 len 0003DA60 (246 KiB): RAM[0m
+[0;32mI (219) heap_init: At 4084D380 len 00002B60 (10 KiB): RAM[0m
+[0;32mI (224) heap_init: At 50000000 len 00000FE8 (3 KiB): RTCRAM[0m
+[0;32mI (231) spi_flash: detected chip: gd[0m
+[0;32mI (233) spi_flash: flash io: dio[0m
+[0;33mW (236) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (249) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (254) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (262) main_task: Started on CPU0[0m
+[0;32mI (262) main_task: Calling app_main()[0m
+[0;32mI (272) phy: phy_version: 324,5, 0d8cd71, Apr 10 2026, 13:58:46[0m
+[0;32mI (272) phy: libbtbb version: 8db04ea, Apr 10 2026, 13:58:59[0m
+[0;32mI (292) DEVICE: X: 1644, Y: 1646[0m
+[0;32mI (312) DEVICE: X: 1644, Y: 1649[0m
+[0;32mI (332) DEVICE: X: 1645, Y: 1647[0m
+[0;32mI (352) DEVICE: X: 1641, Y: 1644[0m
+[0;32mI (372) DEVICE: X: 1643, Y: 1644[0m
+[0;32mI (392) DEVICE: X: 1646, Y: 1644[0m
+[0;32mI (412) DEVICE: X: 1644, Y: 1645[0m
+[0;32mI (432) DEVICE: X: 1641, Y: 1646[0m
+[0;32mI (452) DEVICE: X: 1643, Y: 1645[0m
+[0;32mI (472) DEVICE: X: 1645, Y: 1650[0m
+[0;32mI (492) DEVICE: X: 1643, Y: 1645[0m
+[0;32mI (512) DEVICE: X: 1643, Y: 1647[0m
+[0;32mI (532) DEVICE: X: 1641, Y: 1643[0m
+[0;32mI (552) DEVICE: X: 1645, Y: 1647[0m
+[0;32mI (572) DEVICE: X: 1642, Y: 1645[0m
+[0;32mI (592) DEVICE: X: 1644, Y: 1646[0m
+[0;32mI (612) DEVICE: X: 1643, Y: 1643[0m
+[0;32mI (632) DEVICE: X: 1646, Y: 1650[0m
+[0;32mI (652) DEVICE: X: 1642, Y: 1647[0m
+[0;32mI (672) DEVICE: X: 1643, Y: 1644[0m
+[0;32mI (692) DEVICE: X: 1642, Y: 1645[0m
+[0;32mI (712) DEVICE: X: 1648, Y: 1650[0m
+[0;32mI (732) DEVICE: X: 1642, Y: 1643[0m
+[0;32mI (752) DEVICE: X: 1643, Y: 1645[0m
+[0;32mI (772) DEVICE: X: 1643, Y: 1648[0m
+[0;32mI (792) DEVICE: X: 1645, Y: 1648[0m
+[0;32mI (812) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (832) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (852) DEVICE: X: 1644, Y: 1645[0m
+[0;32mI (872) DEVICE: X: 1646, Y: 1651[0m
+[0;32mI (892) DEVICE: X: 1643, Y: 1645[0m
+[0;32mI (912) DEVICE: X: 1643, Y: 1647[0m
+[0;32mI (932) DEVICE: X: 1643, Y: 1645[0m
+[0;32mI (952) DEVICE: X: 1646, Y: 1646[0m
+[0;32mI (972) DEVICE: X: 1644, Y: 1648[0m
+[0;32mI (992) DEVICE: X: 1644, Y: 1647[0m
+[0;32mI (1012) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (1032) DEVICE: X: 1645, Y: 1647[0m
+[0;32mI (1052) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (1072) DEVICE: X: 1644, Y: 1645[0m
+[0;32mI (1092) DEVICE: X: 1643, Y: 1643[0m
+[0;32mI (1112) DEVICE: X: 1647, Y: 1651[0m
+[0;32mI (1132) DEVICE: X: 1642, Y: 1645[0m
+[0;32mI (1152) DEVICE: X: 1643, Y: 1644[0m
+[0;32mI (1172) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (1192) DEVICE: X: 1646, Y: 1648[0m
+[0;32mI (1212) DEVICE: X: 1644, Y: 1645[0m
+[0;32mI (1232) DEVICE: X: 1644, Y: 1645[0m
+[0;32mI (1252) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (1272) DEVICE: X: 1644, Y: 1651[0m
+[0;32mI (1292) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (1312) DEVICE: X: 1642, Y: 1647[0m
+[0;32mI (1332) DEVICE: X: 1641, Y: 1644[0m
+[0;32mI (1352) DEVICE: X: 1647, Y: 1650[0m
+[0;32mI (1372) DEVICE: X: 1643, Y: 1645[0m
+[0;32mI (1392) DEVICE: X: 1643, Y: 1645[0m
+[0;32mI (1412) DEVICE: X: 1644, Y: 1645[0m
+[0;32mI (1432) DEVICE: X: 1644, Y: 1650[0m
+[0;32mI (1452) DEVICE: X: 1644, Y: 1645[0m
+[0;32mI (1472) DEVICE: X: 1645, Y: 1645[0m
+[0;32mI (1492) DEVICE: X: 1644, Y: 1647[0m
+[0;32mI (1512) DEVICE: X: 1644, Y: 1650[0m
+[0;32mI (1532) DEVICE: X: 1643, Y: 1645[0m
+[0;32mI (1552) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (1572) DEVICE: X: 1644, Y: 1645[0m
+[0;32mI (1592) DEVICE: X: 1646, Y: 1647[0m
+[0;32mI (1612) DEVICE: X: 1644, Y: 1646[0m
+[0;32mI (1632) DEVICE: X: 1644, Y: 1648[0m
+[0;32mI (1652) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (1672) DEVICE: X: 1647, Y: 1648[0m
+[0;32mI (1692) DEVICE: X: 1643, Y: 1645[0m
+[0;32mI (1712) DEVICE: X: 1642, Y: 1647[0m
+[0;32mI (1732) DEVICE: X: 1644, Y: 1646[0m
+[0;32mI (1752) DEVICE: X: 1646, Y: 1650[0m
+[0;32mI (1772) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (1792) DEVICE: X: 1642, Y: 1645[0m
+[0;32mI (1812) DEVICE: X: 1643, Y: 1647[0m
+[0;32mI (1832) DEVICE: X: 1646, Y: 1649[0m
+[0;32mI (1852) DEVICE: X: 1639, Y: 1645[0m
+[0;32mI (1872) DEVICE: X: 1643, Y: 1645[0m
+[0;32mI (1892) DEVICE: X: 1643, Y: 1645[0m
+[0;32mI (1912) DEVICE: X: 1645, Y: 1650[0m
+[0;32mI (1932) DEVICE: X: 1642, Y: 1644[0m
+[0;32mI (1952) DEVICE: X: 1645, Y: 1646[0m
+[0;32mI (1972) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (1992) DEVICE: X: 1646, Y: 1649[0m
+[0;32mI (2012) DEVICE: X: 1642, Y: 1647[0m
+[0;32mI (2032) DEVICE: X: 1643, Y: 1645[0m
+[0;32mI (2052) DEVICE: X: 1644, Y: 1641[0m
+[0;32mI (2072) DEVICE: X: 1643, Y: 1651[0m
+[0;32mI (2092) DEVICE: X: 1644, Y: 1647[0m
+[0;32mI (2112) DEVICE: X: 1640, Y: 1644[0m
+[0;32mI (2132) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (2152) DEVICE: X: 1644, Y: 1652[0m
+[0;32mI (2172) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (2192) DEVICE: X: 1642, Y: 1648[0m
+[0;32mI (2212) DEVICE: X: 1641, Y: 1647[0m
+[0;32mI (2232) DEVICE: X: 1645, Y: 1651[0m
+[0;32mI (2252) DEVICE: X: 1641, Y: 1645[0m
+[0;32mI (2272) DEVICE: X: 1641, Y: 1646[0m
+[0;32mI (2292) DEVICE: X: 1641, Y: 1645[0m
+[0;32mI (2312) DEVICE: X: 1646, Y: 1647[0m
+[0;32mI (2332) DEVICE: X: 1642, Y: 1650[0m
+[0;32mI (2352) DEVICE: X: 1645, Y: 1645[0m
+[0;32mI (2372) DEVICE: X: 1643, Y: 1647[0m
+[0;32mI (2392) DEVICE: X: 1646, Y: 1652[0m
+[0;32mI (2412) DEVICE: X: 1642, Y: 1645[0m
+[0;32mI (2432) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (2452) DEVICE: X: 1641, Y: 1645[0m
+[0;32mI (2472) DEVICE: X: 1645, Y: 1650[0m
+[0;32mI (2492) DEVICE: X: 1642, Y: 1649[0m
+[0;32mI (2512) DEVICE: X: 1642, Y: 1644[0m
+[0;32mI (2532) DEVICE: X: 1640, Y: 1646[0m
+[0;32mI (2552) DEVICE: X: 1644, Y: 1651[0m
+[0;32mI (2572) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (2592) DEVICE: X: 1643, Y: 1645[0m
+[0;32mI (2612) DEVICE: X: 1643, Y: 1648[0m
+[0;32mI (2632) DEVICE: X: 1647, Y: 1649[0m
+[0;32mI (2652) DEVICE: X: 1645, Y: 1648[0m
+[0;32mI (2672) DEVICE: X: 1640, Y: 1645[0m
+[0;32mI (2692) DEVICE: X: 1647, Y: 1646[0m
+[0;32mI (2712) DEVICE: X: 1645, Y: 1647[0m
+[0;32mI (2732) DEVICE: X: 1845, Y: 1646[0m
+[0;32mI (2752) DEVICE: X: 2649, Y: 1648[0m
+[0;32mI (2772) DEVICE: X: 3295, Y: 1647[0m
+[0;32mI (2792) DEVICE: X: 3298, Y: 1648[0m
+[0;32mI (2812) DEVICE: X: 3298, Y: 1643[0m
+[0;32mI (2832) DEVICE: X: 3297, Y: 1646[0m
+[0;32mI (2852) DEVICE: X: 3299, Y: 1646[0m
+[0;32mI (2872) DEVICE: X: 3302, Y: 1647[0m
+[0;32mI (2892) DEVICE: X: 3297, Y: 1639[0m
+[0;32mI (2912) DEVICE: X: 3296, Y: 1646[0m
+[0;32mI (2932) DEVICE: X: 3297, Y: 1645[0m
+[0;32mI (2952) DEVICE: X: 3301, Y: 1645[0m
+[0;32mI (2972) DEVICE: X: 3298, Y: 1644[0m
+[0;32mI (2992) DEVICE: X: 3295, Y: 1645[0m
+[0;32mI (3012) DEVICE: X: 3299, Y: 1644[0m
+[0;32mI (3032) DEVICE: X: 3301, Y: 1649[0m
+[0;32mI (3052) DEVICE: X: 3297, Y: 1645[0m
+[0;32mI (3072) DEVICE: X: 2187, Y: 1646[0m
+[0;32mI (3092) DEVICE: X: 1644, Y: 1647[0m
+[0;32mI (3112) DEVICE: X: 1645, Y: 1650[0m
+[0;32mI (3132) DEVICE: X: 1640, Y: 1645[0m
+[0;32mI (3152) DEVICE: X: 1639, Y: 1646[0m
+[0;32mI (3172) DEVICE: X: 1640, Y: 1646[0m
+[0;32mI (3192) DEVICE: X: 1645, Y: 1650[0m
+[0;32mI (3212) DEVICE: X: 1642, Y: 1649[0m
+[0;32mI (3232) DEVICE: X: 1643, Y: 1643[0m
+[0;32mI (3252) DEVICE: X: 1644, Y: 1647[0m
+[0;32mI (3272) DEVICE: X: 1645, Y: 1649[0m
+[0;32mI (3292) DEVICE: X: 1643, Y: 1648[0m
+[0;32mI (3312) DEVICE: X: 1642, Y: 1647[0m
+[0;32mI (3332) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (3352) DEVICE: X: 1645, Y: 1648[0m
+[0;32mI (3372) DEVICE: X: 1639, Y: 1644[0m
+[0;32mI (3392) DEVICE: X: 1639, Y: 1644[0m
+[0;32mI (3412) DEVICE: X: 1644, Y: 1646[0m
+[0;32mI (3432) DEVICE: X: 1646, Y: 1648[0m
+[0;32mI (3452) DEVICE: X: 1640, Y: 1646[0m
+[0;32mI (3472) DEVICE: X: 1644, Y: 1646[0m
+[0;32mI (3492) DEVICE: X: 1640, Y: 1647[0m
+[0;32mI (3512) DEVICE: X: 1644, Y: 1647[0m
+[0;32mI (3532) DEVICE: X: 1641, Y: 1647[0m
+[0;32mI (3552) DEVICE: X: 1642, Y: 1647[0m
+[0;32mI (3572) DEVICE: X: 1641, Y: 1644[0m
+[0;32mI (3592) DEVICE: X: 1536, Y: 1648[0m
+[0;32mI (3612) DEVICE: X: 436, Y: 1647[0m
+[0;32mI (3632) DEVICE: X: 0, Y: 1647[0m
+[0;32mI (3652) DEVICE: X: 0, Y: 1646[0m
+[0;32mI (3672) DEVICE: X: 0, Y: 1646[0m
+[0;32mI (3692) DEVICE: X: 0, Y: 1647[0m
+[0;32mI (3712) DEVICE: X: 0, Y: 1644[0m
+[0;32mI (3732) DEVICE: X: 0, Y: 1643[0m
+[0;32mI (3752) DEVICE: X: 0, Y: 1647[0m
+[0;32mI (3772) DEVICE: X: 0, Y: 1647[0m
+[0;32mI (3792) DEVICE: X: 0, Y: 1646[0m
+[0;32mI (3812) DEVICE: X: 0, Y: 1646[0m
+[0;32mI (3832) DEVICE: X: 0, Y: 1649[0m
+[0;32mI (3852) DEVICE: X: 0, Y: 1644[0m
+[0;32mI (3872) DEVICE: X: 0, Y: 1645[0m
+[0;32mI (3892) DEVICE: X: 0, Y: 1645[0m
+[0;32mI (3912) DEVICE: X: 0, Y: 1649[0m
+[0;32mI (3932) DEVICE: X: 0, Y: 1644[0m
+[0;32mI (3952) DEVICE: X: 0, Y: 1644[0m
+[0;32mI (3972) DEVICE: X: 0, Y: 1647[0m
+[0;32mI (3992) DEVICE: X: 451, Y: 1648[0m
+[0;32mI (4012) DEVICE: X: 1641, Y: 1642[0m
+[0;32mI (4032) DEVICE: X: 1642, Y: 1644[0m
+[0;32mI (4052) DEVICE: X: 1639, Y: 1645[0m
+[0;32mI (4072) DEVICE: X: 1644, Y: 1647[0m
+[0;32mI (4092) DEVICE: X: 1641, Y: 1644[0m
+[0;32mI (4112) DEVICE: X: 1642, Y: 1642[0m
+[0;32mI (4132) DEVICE: X: 1646, Y: 1647[0m
+[0;32mI (4152) DEVICE: X: 1640, Y: 1168[0m
+[0;32mI (4172) DEVICE: X: 1644, Y: 560[0m
+[0;32mI (4192) DEVICE: X: 1642, Y: 160[0m
+[0;32mI (4212) DEVICE: X: 1334, Y: 0[0m
+[0;32mI (4232) DEVICE: X: 723, Y: 1[0m
+[0;32mI (4252) DEVICE: X: 53, Y: 0[0m
+[0;32mI (4272) DEVICE: X: 0, Y: 0[0m
+[0;32mI (4292) DEVICE: X: 0, Y: 0[0m
+[0;32mI (4312) DEVICE: X: 1, Y: 0[0m
+[0;32mI (4332) DEVICE: X: 1, Y: 0[0m
+[0;32mI (4352) DEVICE: X: 1, Y: 0[0m
+[0;32mI (4372) DEVICE: X: 0, Y: 0[0m
+[0;32mI (4392) DEVICE: X: 0, Y: 0[0m
+[0;32mI (4412) DEVICE: X: 1, Y: 0[0m
+[0;32mI (4432) DEVICE: X: 0, Y: 0[0m
+[0;32mI (4452) DEVICE: X: 0, Y: 0[0m
+[0;32mI (4472) DEVICE: X: 8, Y: 1[0m
+[0;32mI (4492) DEVICE: X: 351, Y: 0[0m
+[0;32mI (4512) DEVICE: X: 811, Y: 808[0m
+[0;32mI (4532) DEVICE: X: 1584, Y: 1646[0m
+[0;32mI (4552) DEVICE: X: 1647, Y: 1650[0m
+[0;32mI (4572) DEVICE: X: 1644, Y: 1644[0m
+[0;32mI (4592) DEVICE: X: 1640, Y: 1640[0m
+[0;32mI (4612) DEVICE: X: 1642, Y: 1648[0m
+[0;32mI (4632) DEVICE: X: 1645, Y: 1650[0m
+[0;32mI (4652) DEVICE: X: 1642, Y: 1645[0m
+[0;32mI (4672) DEVICE: X: 1640, Y: 1687[0m
+[0;32mI (4692) DEVICE: X: 1642, Y: 2209[0m
+[0;32mI (4712) DEVICE: X: 1642, Y: 2804[0m
+[0;32mI (4732) DEVICE: X: 1642, Y: 3293[0m
+[0;32mI (4752) DEVICE: X: 1641, Y: 3294[0m
+[0;32mI (4772) DEVICE: X: 1641, Y: 3295[0m
+[0;32mI (4792) DEVICE: X: 1646, Y: 3300[0m
+[0;32mI (4812) DEVICE: X: 1641, Y: 3294[0m
+[0;32mI (4832) DEVICE: X: 1642, Y: 3296[0m
+[0;32mI (4852) DEVICE: X: 1639, Y: 3296[0m
+[0;32mI (4872) DEVICE: X: 1643, Y: 3299[0m
+[0;32mI (4892) DEVICE: X: 1639, Y: 3296[0m
+[0;32mI (4912) DEVICE: X: 1643, Y: 3296[0m
+[0;32mI (4932) DEVICE: X: 1640, Y: 3297[0m
+[0;32mI (4952) DEVICE: X: 1643, Y: 3299[0m
+[0;32mI (4972) DEVICE: X: 1641, Y: 3299[0m
+[0;32mI (4992) DEVICE: X: 1642, Y: 3296[0m
+[0;32mI (5012) DEVICE: X: 1642, Y: 3295[0m
+[0;32mI (5032) DEVICE: X: 1648, Y: 3300[0m
+[0;32mI (5052) DEVICE: X: 1644, Y: 3125[0m
+[0;32mI (5072) DEVICE: X: 1641, Y: 1686[0m
+[0;32mI (5092) DEVICE: X: 1642, Y: 1645[0m
+[0;32mI (5112) DEVICE: X: 1648, Y: 1649[0m
+[0;32mI (5132) DEVICE: X: 1643, Y: 1648[0m
+[0;32mI (5152) DEVICE: X: 1644, Y: 1648[0m
+[0;32mI (5172) DEVICE: X: 1645, Y: 1650[0m
+[0;32mI (5192) DEVICE: X: 1650, Y: 1646[0m
+[0;32mI (5212) DEVICE: X: 1646, Y: 1649[0m
+[0;32mI (5232) DEVICE: X: 1646, Y: 1646[0m
+[0;32mI (5252) DEVICE: X: 1645, Y: 1650[0m
+[0;32mI (5272) DEVICE: X: 1646, Y: 1651[0m
+[0;32mI (5292) DEVICE: X: 1642, Y: 1644[0m
+[0;32mI (5312) DEVICE: X: 1644, Y: 1645[0m
+[0;32mI (5332) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (5352) DEVICE: X: 1646, Y: 1652[0m
+[0;32mI (5372) DEVICE: X: 1644, Y: 1645[0m
+[0;32mI (5392) DEVICE: X: 1643, Y: 1644[0m
+[0;32mI (5412) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (5432) DEVICE: X: 1643, Y: 1647[0m
+[0;32mI (5452) DEVICE: X: 1644, Y: 1646[0m
+[0;32mI (5472) DEVICE: X: 1644, Y: 1649[0m
+[0;32mI (5492) DEVICE: X: 1643, Y: 1642[0m
+[0;32mI (5512) DEVICE: X: 1646, Y: 1647[0m
+[0;32mI (5532) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (5552) DEVICE: X: 1642, Y: 1647[0m
+[0;32mI (5572) DEVICE: X: 1643, Y: 1645[0m
+[0;32mI (5592) DEVICE: X: 1646, Y: 1652[0m
+[0;32mI (5612) DEVICE: X: 1644, Y: 1645[0m
+[0;32mI (5632) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (5652) DEVICE: X: 1644, Y: 1646[0m
+[0;32mI (5672) DEVICE: X: 1647, Y: 1649[0m
+[0;32mI (5692) DEVICE: X: 1644, Y: 1646[0m
+[0;32mI (5712) DEVICE: X: 1644, Y: 1646[0m
+[0;32mI (5732) DEVICE: X: 1645, Y: 1644[0m
+[0;32mI (5752) DEVICE: X: 1645, Y: 1647[0m
+[0;32mI (5772) DEVICE: X: 1642, Y: 1644[0m
+[0;32mI (5792) DEVICE: X: 1642, Y: 1645[0m
+[0;32mI (5812) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (5832) DEVICE: X: 1646, Y: 1652[0m
+[0;32mI (5852) DEVICE: X: 1644, Y: 1648[0m
+[0;32mI (5872) DEVICE: X: 1644, Y: 1645[0m
+[0;32mI (5892) DEVICE: X: 1644, Y: 1643[0m
+[0;32mI (5912) DEVICE: X: 1646, Y: 1653[0m
+[0;32mI (5932) DEVICE: X: 1643, Y: 1643[0m
+[0;32mI (5952) DEVICE: X: 1642, Y: 1645[0m
+[0;32mI (5972) DEVICE: X: 1643, Y: 1642[0m
+[0;32mI (5992) DEVICE: X: 1647, Y: 1651[0m
+[0;32mI (6012) DEVICE: X: 1644, Y: 1645[0m
+[0;32mI (6032) DEVICE: X: 1642, Y: 1647[0m
+[0;32mI (6052) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (6072) DEVICE: X: 1645, Y: 1652[0m
+[0;32mI (6092) DEVICE: X: 1642, Y: 1645[0m
+[0;32mI (6112) DEVICE: X: 1643, Y: 1647[0m
+[0;32mI (6132) DEVICE: X: 1644, Y: 1644[0m
+[0;32mI (6152) DEVICE: X: 1646, Y: 1650[0m
+[0;32mI (6172) DEVICE: X: 1644, Y: 1646[0m
+[0;32mI (6192) DEVICE: X: 1645, Y: 1647[0m
+[0;32mI (6212) DEVICE: X: 1643, Y: 1644[0m
+[0;32mI (6232) DEVICE: X: 1647, Y: 1649[0m
+[0;32mI (6252) DEVICE: X: 1644, Y: 1646[0m
+[0;32mI (6272) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (6292) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (6312) DEVICE: X: 1646, Y: 1651[0m
+[0;32mI (6332) DEVICE: X: 1644, Y: 1647[0m
+[0;32mI (6352) DEVICE: X: 1644, Y: 1648[0m
+[0;32mI (6372) DEVICE: X: 1640, Y: 1643[0m
+[0;32mI (6392) DEVICE: X: 1647, Y: 1647[0m
+[0;32mI (6412) DEVICE: X: 1644, Y: 1646[0m
+[0;32mI (6432) DEVICE: X: 1642, Y: 1648[0m
+[0;32mI (6452) DEVICE: X: 1642, Y: 1643[0m
+[0;32mI (6472) DEVICE: X: 1647, Y: 1648[0m
+[0;32mI (6492) DEVICE: X: 1642, Y: 1645[0m
+[0;32mI (6512) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (6532) DEVICE: X: 1645, Y: 1646[0m
+[0;32mI (6552) DEVICE: X: 1645, Y: 1647[0m
+[0;32mI (6572) DEVICE: X: 1643, Y: 1645[0m
+[0;32mI (6592) DEVICE: X: 1644, Y: 1646[0m
+[0;32mI (6612) DEVICE: X: 1641, Y: 1646[0m
+[0;32mI (6632) DEVICE: X: 1647, Y: 1646[0m
+[0;32mI (6652) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (6672) DEVICE: X: 1644, Y: 1644[0m
+[0;32mI (6692) DEVICE: X: 1644, Y: 1646[0m
+[0;32mI (6712) DEVICE: X: 1644, Y: 1646[0m
+[0;32mI (6732) DEVICE: X: 1644, Y: 1646[0m
+[0;32mI (6752) DEVICE: X: 1643, Y: 1645[0m
+[0;32mI (6772) DEVICE: X: 1642, Y: 1644[0m
+[0;32mI (6792) DEVICE: X: 1648, Y: 1646[0m
+[0;32mI (6812) DEVICE: X: 1642, Y: 1646[0m
+[0;32mI (6832) DEVICE: X: 1641, Y: 1644[0m
+[0;32mI (6852) DEVICE: X: 1642, Y: 1644[0m
+[0;32mI (6872) DEVICE: X: 1646, Y: 1649[0m
+[0;32mI (6892) DEVICE: X: 1644, Y: 1643[0m
+[0;32mI (6912) DEVICE: X: 1644, Y: 1647[0m
+[0;32mI (6932) DEVICE: X: 1646, Y: 1647[0m
+[0;32mI (6952) DEVICE: X: 1645, Y: 1647[0m
+[0;32mI (6972) DEVICE: X: 1643, Y: 1646[0m
+[0;32mI (6992) DEVICE: X: 1644, Y: 1645[0m
+[0;32mI (7012) DEVICE: X: 1644, Y: 1647[0m
+[0;32mI (7032) DEVICE: X: 1648, Y: 1650[0m
+[0;32mI (7052) DEVICE: X: 1640, Y: 1644[0m
+[0;32mI (7072) DEVICE: X: 1642, Y: 1645[0m
+[0;32mI (7092) DEVICE: X: 1642, Y: 1647[0m
+[0;32mI (7112) DEVICE: X: 1648, Y: 1648[0m
+[0;32mI (7132) DEVICE: X: 1645, Y: 1646[0m
+[0;32mI (7152) DEVICE: X: 1645, Y: 1645[0m
+[0;32mI (7172) DEVICE: X: 1641, Y: 1645[0m

@@ -1,0 +1,109 @@
+Command: /home/finja/.espressif/python_env/idf6.2_py3.12_env/bin/python /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/tools/idf_monitor.py -p /dev/ttyACM0 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32h2 --revision 0 --decode-panic backtrace /home/finja/Documents/Diplomarbeit/EdgeAI/mcu/device/build/device.elf /home/finja/Documents/Diplomarbeit/EdgeAI/mcu/device/build/bootloader/bootloader.elf -m '/home/finja/.espressif/python_env/idf6.2_py3.12_env/bin/python' '/home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/tools/idf.py'
+[0;32mI (133) esp_image: segment 3: paddr=0003afc8 vaddr=40806018 sizeESP-ROM:esp32h2-eco5-20240613[0m
+Build:Jun 13 2024
+rst:0x15 (USB_UART_HPSYS),boot:0xc (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40804ac8
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x408460f0,len:0x1664
+load:0x4083c2d0,len:0xef8
+load:0x4083efd0,len:0x2fb0
+entry 0x4083c2da
+[0;32mI (23) boot: ESP-IDF v6.1-dev-6126-ge9da155a726 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Jul  8 2026 15:17:08[0m
+[0;32mI (25) boot: chip revision: v1.2[0m
+[0;32mI (25) boot: efuse block revision: v0.3[0m
+[0;32mI (29) boot.esp32h2: SPI Speed      : 64MHz[0m
+[0;32mI (32) boot.esp32h2: SPI Mode       : DIO[0m
+[0;32mI (36) boot.esp32h2: SPI Flash Size : 2MB[0m
+[0;32mI (40) boot: Enabling RNG early entropy source...[0m
+[0;32mI (44) boot: Partition Table:[0m
+[0;32mI (47) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (53) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (60) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (66) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (73) boot: End of partition table[0m
+[0;32mI (76) esp_image: segment 0: paddr=00010020 vaddr=42020020 size=09fd8h ( 40920) map[0m
+[0;32mI (95) esp_image: segment 1: paddr=0001a000 vaddr=40800000 size=06018h ( 24600) load[0m
+[0;32mI (103) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=1afa0h (110496) map[0m
+[0;32mI (133) esp_image: segment 3: paddr=0003afc8 vaddr=40806018 size=05480h ( 21632) load[0m
+[0;32mI (141) esp_image: segment 4: paddr=00040450 vaddr=4080b4a0 size=02618h (  9752) load[0m
+[0;32mI (149) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (149) boot: Disabling RNG early entropy source...[0m
+[0;32mI (159) cpu_start: Unicore app[0m
+[0;32mI (168) cpu_start: GPIO 23 and 24 are used as console UART I/O pins[0m
+[0;32mI (169) cpu_start: Pro cpu start user code[0m
+[0;32mI (169) cpu_start: cpu freq: 96000000 Hz[0m
+[0;32mI (170) app_init: Application information:[0m
+[0;32mI (174) app_init: Project name:     device[0m
+[0;32mI (178) app_init: App version:      526bfce-dirty[0m
+[0;32mI (182) app_init: Compile time:     Jul  8 2026 15:17:16[0m
+[0;32mI (187) app_init: ELF file SHA256:  d1cce4f2f...[0m
+[0;32mI (192) app_init: ESP-IDF:          v6.1-dev-6126-ge9da155a726[0m
+[0;32mI (197) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (201) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (205) efuse_init: Chip rev:         v1.2[0m
+[0;32mI (209) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (215) heap_init: At 4080FB60 len 0003D820 (246 KiB): RAM[0m
+[0;32mI (220) heap_init: At 4084D380 len 00002B60 (10 KiB): RAM[0m
+[0;32mI (225) heap_init: At 50000000 len 00000FE8 (3 KiB): RTCRAM[0m
+[0;32mI (232) spi_flash: detected chip: gd[0m
+[0;32mI (234) spi_flash: flash io: dio[0m
+[0;33mW (237) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (250) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (255) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (263) main_task: Started on CPU0[0m
+[0;32mI (263) main_task: Calling app_main()[0m
+[0;32mI (283) phy: phy_version: 324,5, 0d8cd71, Apr 10 2026, 13:58:46[0m
+[0;32mI (283) phy: libbtbb version: 8db04ea, Apr 10 2026, 13:58:59[0m
+[0;32mI (283) ieee802154: Ready, panId=0x6767, channel=12, myAddr=0xc9e6[0m
+[0;32mI (293) DEVICE: tx sfd done[0m
+[0;32mI (293) DEVICE: tx OK, sent 19 bytes, ack 0[0m
+[0;32mI (6913) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (6913) DEVICE: rx OK, received 19 bytes[0m
+[0;32mI (6923) ieee802154: -----------------------[0m
+[0;32mI (6923) ieee802154: 0x4084efe1   41 88 00 67 67 ff ff 39  e5 48 69 20 47 75 79 73  |A..gg..9.Hi Guys|[0m
+[0;32mI (6923) ieee802154: 0x4084eff1   0a dc a5                                          |...|[0m
+[0;32mI (6933) ieee802154: Frame type:                   1[0m
+[0;32mI (6943) ieee802154: Security Enabled:             False[0m
+[0;32mI (6943) ieee802154: Frame pending:                False[0m
+[0;32mI (6953) ieee802154: Acknowledge request:          False[0m
+[0;32mI (6953) ieee802154: PAN ID Compression:           True[0m
+[0;32mI (6963) ieee802154: Reserved:                     False[0m
+[0;32mI (6963) ieee802154: Sequence Number Suppression:  False[0m
+[0;32mI (6973) ieee802154: Information Elements Present: False[0m
+[0;32mI (6973) ieee802154: Destination addressing mode:  2[0m
+[0;32mI (6983) ieee802154: Frame version:                0[0m
+[0;32mI (6983) ieee802154: Source addressing mode:       2[0m
+[0;32mI (6983) ieee802154: sequence_number (0)[0m
+[0;32mI (6993) ieee802154: On PAN 0x6767 to short address 0xffff[0m
+[0;32mI (6993) ieee802154: Originating from short address 0xe539[0m
+[0;32mI (7003) ieee802154: Data length: 8[0m
+[0;32mI (7003) ieee802154: checksum: 0xa5dc[0m
+[0;32mI (7013) ieee802154: PAN 6767 S e539 00:00:00:00:00:00:00:00 to ffff 00:00:00:00:00:00:00:00 [0m
+[0;32mI (7013) ieee802154: -----------------------[0m
+MSG: (        )
+[0;32mI (7343) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (7343) DEVICE: rx OK, received 19 bytes[0m
+[0;32mI (7353) ieee802154: -----------------------[0m
+[0;32mI (7353) ieee802154: 0x4084efe1   41 88 00 67 67 ff ff 39  e5 48 69 20 47 75 79 73  |A..gg..9.Hi Guys|[0m
+[0;32mI (7353) ieee802154: 0x4084eff1   0a dc a5                                          |...|[0m
+[0;32mI (7363) ieee802154: Frame type:                   1[0m
+[0;32mI (7363) ieee802154: Security Enabled:             False[0m
+[0;32mI (7373) ieee802154: Frame pending:                False[0m
+[0;32mI (7373) ieee802154: Acknowledge request:          False[0m
+[0;32mI (7383) ieee802154: PAN ID Compression:           True[0m
+[0;32mI (7383) ieee802154: Reserved:                     False[0m
+[0;32mI (7393) ieee802154: Sequence Number Suppression:  False[0m
+[0;32mI (7393) ieee802154: Information Elements Present: False[0m
+[0;32mI (7403) ieee802154: Destination addressing mode:  2[0m
+[0;32mI (7403) ieee802154: Frame version:                0[0m
+[0;32mI (7413) ieee802154: Source addressing mode:       2[0m
+[0;32mI (7413) ieee802154: sequence_number (0)[0m
+[0;32mI (7413) ieee802154: On PAN 0x6767 to short address 0xffff[0m
+[0;32mI (7423) ieee802154: Originating from short address 0xe539[0m
+[0;32mI (7423) ieee802154: Data length: 8[0m
+[0;32mI (7433) ieee802154: checksum: 0xa5dc[0m
+[0;32mI (7433) ieee802154: PAN 6767 S e539 00:00:00:00:00:00:00:00 to ffff 00:00:00:00:00:00:00:00 [0m
+[0;32mI (7443) ieee802154: -----------------------[0m
+MSG: (        )

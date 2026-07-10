@@ -1,0 +1,2 @@
+source /home/finja/Documents/Diplomarbeit/EdgeAI/mcu/device/build/bootloader/gdbinit/symbols
+source /home/finja/Documents/Diplomarbeit/EdgeAI/mcu/device/build/bootloader/gdbinit/connect

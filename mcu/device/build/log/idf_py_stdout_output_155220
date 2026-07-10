@@ -1,0 +1,325 @@
+Command: /home/finja/.espressif/python_env/idf6.2_py3.12_env/bin/python /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/tools/idf_monitor.py -p /dev/ttyACM0 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32h2 --revision 0 --decode-panic backtrace /home/finja/Documents/Diplomarbeit/EdgeAI/mcu/device/build/device.elf /home/finja/Documents/Diplomarbeit/EdgeAI/mcu/device/build/bootloader/bootloader.elf -m '/home/finja/.espressif/python_env/idf6.2_py3.12_env/bin/python' '/home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/tools/idf.py'
+[0;32mI (133) esp_image: segment 3: paddr=0003a6c0 vaddr=40806440 sizeESP-ROM:esp32h2-eco5-20240613[0m
+Build:Jun 13 2024
+rst:0x15 (USB_UART_HPSYS),boot:0x1c (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40804ac8
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x408460f0,len:0x1664
+load:0x4083c2d0,len:0xef8
+load:0x4083efd0,len:0x2fb0
+entry 0x4083c2da
+[0;32mI (23) boot: ESP-IDF v6.1-dev-6126-ge9da155a726 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Jul  8 2026 15:17:08[0m
+[0;32mI (25) boot: chip revision: v1.2[0m
+[0;32mI (26) boot: efuse block revision: v0.3[0m
+[0;32mI (29) boot.esp32h2: SPI Speed      : 64MHz[0m
+[0;32mI (33) boot.esp32h2: SPI Mode       : DIO[0m
+[0;32mI (36) boot.esp32h2: SPI Flash Size : 2MB[0m
+[0;32mI (40) boot: Enabling RNG early entropy source...[0m
+[0;32mI (45) boot: Partition Table:[0m
+[0;32mI (47) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (53) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (60) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (66) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (73) boot: End of partition table[0m
+[0;32mI (76) esp_image: segment 0: paddr=00010020 vaddr=42020020 size=09bb0h ( 39856) map[0m
+[0;32mI (94) esp_image: segment 1: paddr=00019bd8 vaddr=40800000 size=06440h ( 25664) load[0m
+[0;32mI (103) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=1a698h (108184) map[0m
+[0;32mI (133) esp_image: segment 3: paddr=0003a6c0 vaddr=40806440 size=07288h ( 29320) load[0m
+[0;32mI (146) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (147) boot: Disabling RNG early entropy source...[0m
+[0;32mI (157) cpu_start: Unicore app[0m
+[0;32mI (165) cpu_start: GPIO 23 and 24 are used as console UART I/O pins[0m
+[0;32mI (166) cpu_start: Pro cpu start user code[0m
+[0;32mI (167) cpu_start: cpu freq: 96000000 Hz[0m
+[0;32mI (168) app_init: Application information:[0m
+[0;32mI (171) app_init: Project name:     device[0m
+[0;32mI (175) app_init: App version:      526bfce-dirty[0m
+[0;32mI (180) app_init: Compile time:     Jul  8 2026 15:17:16[0m
+[0;32mI (185) app_init: ELF file SHA256:  58cd76ede...[0m
+[0;32mI (189) app_init: ESP-IDF:          v6.1-dev-6126-ge9da155a726[0m
+[0;32mI (195) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (198) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (202) efuse_init: Chip rev:         v1.2[0m
+[0;32mI (206) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (212) heap_init: At 4080F760 len 0003DC20 (247 KiB): RAM[0m
+[0;32mI (218) heap_init: At 4084D380 len 00002B60 (10 KiB): RAM[0m
+[0;32mI (223) heap_init: At 50000000 len 00000FE8 (3 KiB): RTCRAM[0m
+[0;32mI (229) spi_flash: detected chip: gd[0m
+[0;32mI (231) spi_flash: flash io: dio[0m
+[0;33mW (234) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (247) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (253) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (260) main_task: Started on CPU0[0m
+[0;32mI (260) main_task: Calling app_main()[0m
+[0;32mI (280) phy: phy_version: 324,5, 0d8cd71, Apr 10 2026, 13:58:46[0m
+[0;32mI (280) phy: libbtbb version: 8db04ea, Apr 10 2026, 13:58:59[0m
+[0;32mI (280) ieee802154: Ready, panId=0x6767, channel=12, myAddr=0xc9e6[0m
+[0;32mI (290) DEVICE: tx sfd done[0m
+[0;32mI (290) DEVICE: tx OK, sent 19 bytes, ack 0[0m
+[0;32mI (2440) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (2440) DEVICE: rx OK, received 19 bytes[0m
+
+abort() was called at PC 0x40801c4b on core 0
+Core  0 register dump:
+MEPC    : 0x408065a0  RA      : 0x4080655e  SP      : 0x4080de40  GP      : 0x4080b8b4  
+TP      : 0x40812f70  T0      : 0x37363534  T1      : 0x7271706f  T2      : 0x33323130  
+S0/FP   : 0x00000004  S1      : 0x4080dea4  A0      : 0x4080de6c  A1      : 0x4080dea2  
+A2      : 0x00000000  A3      : 0x4080de99  A4      : 0x00000001  A5      : 0x4080f000  
+A6      : 0x00000000  A7      : 0x76757473  S2      : 0xffffffff  S3      : 0x4080df0c  
+S4      : 0x600c2000  S5      : 0x4080e090  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x6e6d6c6b  T4      : 0x6a696867  T5      : 0x66656463  T6      : 0x62613938  
+MSTATUS : 0x00001881  MTVEC   : 0x40800001  MCAUSE  : 0x00000002  MTVAL   : 0x00000000  
+MHARTID : 0x00000000  
+
+Stack memory:
+4080de40: 0x00000000 0x00000000 0x4080dea0 0x40805d86 0x00000000 0x00000000 0x00000000 0x4080cba4
+4080de60: 0x4080dea4 0x4080cbc0 0x4080dea0 0x726f6261 0x20292874 0x20736177 0x6c6c6163 0x61206465
+4080de80: 0x43502074 0x34783020 0x31303830 0x20623463 0x63206e6f 0x2065726f 0x00000030 0x00000000
+4080dea0: 0x00000030 0x30383034 0x62346331 0x00000000 0x00000000 0x00000004 0x40813060 0x40801c4e
+4080dec0: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x42015826
+4080dee0: 0x4080b3c4 0x00000013 0x40813060 0x40801da8 0x00000000 0x00000000 0x40813008 0x40801e7e
+4080df00: 0x00000000 0x00000000 0x40813008 0x40813060 0x00000000 0x00000000 0x4080e830 0x42015c8c
+4080df20: 0x00000000 0x00000000 0x00000000 0x00000001 0x00000000 0x42025060 0x4080dfdc 0x00000001
+4080df40: 0x42025000 0x00000013 0x42025054 0x408094ba 0x00000000 0x00000000 0x42025054 0x4201a5f6
+4080df60: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+4080df80: 0x00000000 0x4080e090 0x600c2000 0x00000001 0x42025000 0x00000013 0x4080e830 0x408093fe
+4080dfa0: 0xffffffff 0x00000029 0x0000000a 0x42025060 0xffffffff 0x00000029 0x0000000a 0x4080dfdc
+4080dfc0: 0xffffffff 0x00000029 0xfffffffd 0x4200bb68 0x00000000 0x00000000 0x00000000 0x00000988
+4080dfe0: 0x42025054 0x00000104 0xa0000000 0x0000000a 0x00000000 0x00000000 0x00000000 0x00000000
+4080e000: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+4080e020: 0x00000000 0x00000000 0x600c2000 0x00000001 0x00000001 0x00000002 0x4080e830 0x40002f22
+4080e040: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x40804113
+4080e060: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x600c2000 0x00000001
+4080e080: 0x00000001 0x00000002 0x4080e830 0x4200b8f4 0x00004113 0x00000000 0x00000000 0x00000000
+4080e0a0: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+4080e0c0: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+4080e0e0: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+4080e100: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+4080e120: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+4080e140: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+4080e160: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+0x00000000
+4080e1a0: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000104 0x00000002 0x40808bfc
+4080e1c0: 0x00000000 0x00000988 0x42024f64 0x42019dea 0x00000001 0x00000002 0x00000002 0x40802954
+4080e1e0: 0x00001881 0x80000002 0x600c2000 0x00000001 0x00000001 0x00000002 0x00000002 0x4080827a
+4080e200: 0x00000000 0x4080e230 0x00000001 0x00000001 0x00001881 0x8000000a 0x00000008 0x408095bc
+4080e220: 0x00000000 0x00000000 0x00000000 0x4080026c 0x6000b000 0x40805d00 0x40805d0c 0x00000000
+
+
+
+ELF file SHA256: 58cd76ede
+
+Rebooting...
+ESP-ROM:esp32h2-eco5-20240613
+Build:Jun 13 2024
+rst:0xc (SW_CPU),boot:0x1c (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40003318
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x408460f0,len:0x1664
+load:0x4083c2d0,len:0xef8
+load:0x4083efd0,len:0x2fb0
+entry 0x4083c2da
+[0;32mI (22) boot: ESP-IDF v6.1-dev-6126-ge9da155a726 2nd stage bootloader[0m
+[0;32mI (23) boot: compile time Jul  8 2026 15:17:08[0m
+[0;32mI (25) boot: chip revision: v1.2[0m
+[0;32mI (26) boot: efuse block revision: v0.3[0m
+[0;32mI (28) boot.esp32h2: SPI Speed      : 64MHz[0m
+[0;32mI (31) boot.esp32h2: SPI Mode       : DIO[0m
+[0;32mI (35) boot.esp32h2: SPI Flash Size : 2MB[0m
+[0;32mI (39) boot: Enabling RNG early entropy source...[0m
+[0;32mI (44) boot: Partition Table:[0m
+[0;32mI (46) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (52) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (59) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (65) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (72) boot: End of partition table[0m
+[0;32mI (75) esp_image: segment 0: paddr=00010020 vaddr=42020020 size=09bb0h ( 39856) map[0m
+[0;32mI (100) esp_image: segment 1: paddr=00019bd8 vaddr=40800000 size=06440h ( 25664) load[0m
+[0;32mI (114) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=1a698h (108184) map[0m
+[0;32mI (161) esp_image: segment 3: paddr=0003a6c0 vaddr=40806440 size=07288h ( 29320) load[0m
+[0;32mI (183) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (184) boot: Disabling RNG early entropy source...[0m
+[0;32mI (194) cpu_start: Unicore app[0m
+[0;32mI (203) cpu_start: GPIO 23 and 24 are used as console UART I/O pins[0m
+[0;32mI (203) cpu_start: Pro cpu start user code[0m
+[0;32mI (204) cpu_start: cpu freq: 96000000 Hz[0m
+[0;32mI (205) app_init: Application information:[0m
+[0;32mI (209) app_init: Project name:     device[0m
+[0;32mI (213) app_init: App version:      526bfce-dirty[0m
+[0;32mI (217) app_init: Compile time:     Jul  8 2026 15:17:16[0m
+[0;32mI (222) app_init: ELF file SHA256:  58cd76ede...[0m
+[0;32mI (226) app_init: ESP-IDF:          v6.1-dev-6126-ge9da155a726[0m
+[0;32mI (232) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (236) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (240) efuse_init: Chip rev:         v1.2[0m
+[0;32mI (244) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (250) heap_init: At 4080F760 len 0003DC20 (247 KiB): RAM[0m
+[0;32mI (255) heap_init: At 4084D380 len 00002B60 (10 KiB): RAM[0m
+[0;32mI (260) heap_init: At 50000000 len 00000FE8 (3 KiB): RTCRAM[0m
+[0;32mI (267) spi_flash: detected chip: gd[0m
+[0;32mI (269) spi_flash: flash io: dio[0m
+[0;33mW (272) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (285) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (290) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (297) main_task: Started on CPU0[0m
+[0;32mI (297) main_task: Calling app_main()[0m
+[0;32mI (307) phy: phy_version: 324,5, 0d8cd71, Apr 10 2026, 13:58:46[0m
+[0;32mI (307) phy: libbtbb version: 8db04ea, Apr 10 2026, 13:58:59[0m
+[0;32mI (317) ieee802154: Ready, panId=0x6767, channel=12, myAddr=0xc9e6[0m
+[0;32mI (317) DEVICE: tx sfd done[0m
+[0;32mI (317) DEVICE: tx OK, sent 19 bytes, ack 0[0m
+[0;32mI (2967) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (2967) DEVICE: rx OK, received 19 bytes[0m
+
+abort() was called at PC 0x40801c4b on core 0
+Core  0 register dump:
+MEPC    : 0x408065a0  RA      : 0x4080655e  SP      : 0x4080de40  GP      : 0x4080b8b4  
+TP      : 0x40812f70  T0      : 0x37363534  T1      : 0x7271706f  T2      : 0x33323130  
+S0/FP   : 0x00000004  S1      : 0x4080dea4  A0      : 0x4080de6c  A1      : 0x4080dea2  
+A2      : 0x00000000  A3      : 0x4080de99  A4      : 0x00000001  A5      : 0x4080f000  
+A6      : 0x00000000  A7      : 0x76757473  S2      : 0xffffffff  S3      : 0x4080df0c  
+S4      : 0x600c2000  S5      : 0x4080e090  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x6e6d6c6b  T4      : 0x6a696867  T5      : 0x66656463  T6      : 0x62613938  
+MSTATUS : 0x00001881  MTVEC   : 0x40800001  MCAUSE  : 0x00000002  MTVAL   : 0x00000000  
+MHARTID : 0x00000000  
+
+Stack memory:
+4080de40: 0x00000000 0x00000000 0x4080dea0 0x40805d86 0x00000000 0x00000000 0x00000000 0x4080cba4
+4080de60: 0x4080dea4 0x4080cbc0 0x4080dea0 0x726f6261 0x20292874 0x20736177 0x6c6c6163 0x61206465
+4080de80: 0x43502074 0x34783020 0x31303830 0x20623463 0x63206e6f 0x2065726f 0x00000030 0x00000000
+4080dea0: 0x00000030 0x30383034 0x62346331 0x00000000 0x00000000 0x00000004 0x40813060 0x40801c4e
+4080dec0: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x42015826
+4080dee0: 0x4080b3c4 0x00000013 0x40813060 0x40801da8 0x00000000 0x00000000 0x40813008 0x40801e7e
+4080df00: 0x00000000 0x00000000 0x40813008 0x40813060 0x00000000 0x00000000 0x4080e830 0x42015c8c
+4080df20: 0x00000000 0x00000000 0x00000000 0x00000001 0x00000000 0x42025060 0x4080dfdc 0x00000002
+4080df40: 0x42025000 0x00000013 0x42025054 0x408094ba 0x00000000 0x00000000 0x42025054 0x4201a5f6
+4080df60: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+4080df80: 0x00000000 0x4080e090 0x600c2000 0x00000002 0x42025000 0x00000013 0x4080e830 0x408093fe
+4080dfa0: 0xffffffff 0x00000029 0x0000000a 0x42025060 0xffffffff 0x00000029 0x0000000a 0x4080dfdc
+4080dfc0: 0xffffffff 0x00000029 0xfffffffd 0x4200bb68 0x00000000 0x00000000 0x00000000 0x00000b97
+4080dfe0: 0x42025054 0x00000129 0xa0000000 0x0000000a 0x00000000 0x00000000 0x00000000 0x00000000
+4080e000: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+4080e020: 0x00000000 0x00000000 0x600c2000 0x00000002 0x00000002 0x00000002 0x4080e830 0x40002f22
+4080e040: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x40804113
+4080e060: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x600c2000 0x00000002
+4080e080: 0x00000002 0x00000002 0x4080e830 0x4200b8f4 0x00004113 0x00000000 0x00000000 0x00000000
+4080e0a0: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+4080e0c0: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+4080e0e0: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+4080e100: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+4080e120: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+4080e140: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+4080e160: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+4080e180: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+4080e1a0: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000129 0x00000002 0x40808bfc
+4080e1c0: 0x00000000 0x00000b97 0x42024f64 0x42019dea 0x00000002 0x00000002 0x00000002 0x40802954
+4080e1e0: 0x00001881 0x80000002 0x600c2000 0x00000002 0x00000002 0x00000002 0x00000002 0x4080827a
+0x00000008 0x408095bc
+4080e220: 0x00000000 0x00000000 0x00000000 0x4080026c 0x6000b000 0x40805d00 0x40805d0c 0x00000000
+
+
+
+ELF file SHA256: 58cd76ede
+
+Rebooting...
+ESP-ROM:esp32h2-eco5-20240613
+Build:Jun 13 2024
+rst:0xc (SW_CPU),boot:0x1c (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40003318
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x408460f0,len:0x1664
+load:0x4083c2d0,len:0xef8
+load:0x4083efd0,len:0x2fb0
+entry 0x4083c2da
+[0;32mI (22) boot: ESP-IDF v6.1-dev-6126-ge9da155a726 2nd stage bootloader[0m
+[0;32mI (23) boot: compile time Jul  8 2026 15:17:08[0m
+[0;32mI (25) boot: chip revision: v1.2[0m
+[0;32mI (26) boot: efuse block revision: v0.3[0m
+[0;32mI (28) boot.esp32h2: SPI Speed      : 64MHz[0m
+[0;32mI (31) boot.esp32h2: SPI Mode       : DIO[0m
+[0;32mI (35) boot.esp32h2: SPI Flash Size : 2MB[0m
+[0;32mI (39) boot: Enabling RNG early entropy source...[0m
+[0;32mI (44) boot: Partition Table:[0m
+[0;32mI (46) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (52) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (59) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (65) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (72) boot: End of partition table[0m
+[0;32mI (75) esp_image: segment 0: paddr=00010020 vaddr=42020020 size=09bb0h ( 39856) map[0m
+[0;32mI (100) esp_image: segment 1: paddr=00019bd8 vaddr=40800000 size=06440h ( 25664) load[0m
+[0;32mI (114) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=1a698h (108184) map[0m
+[0;32mI (160) esp_image: segment 3: paddr=0003a6c0 vaddr=40806440 size=07288h ( 29320) load[0m
+[0;32mI (183) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (184) boot: Disabling RNG early entropy source...[0m
+[0;32mI (193) cpu_start: Unicore app[0m
+[0;32mI (202) cpu_start: GPIO 23 and 24 are used as console UART I/O pins[0m
+[0;32mI (203) cpu_start: Pro cpu start user code[0m
+[0;32mI (204) cpu_start: cpu freq: 96000000 Hz[0m
+[0;32mI (204) app_init: Application information:[0m
+[0;32mI (208) app_init: Project name:     device[0m
+[0;32mI (212) app_init: App version:      526bfce-dirty[0m
+[0;32mI (217) app_init: Compile time:     Jul  8 2026 15:17:16[0m
+[0;32mI (222) app_init: ELF file SHA256:  58cd76ede...[0m
+[0;32mI (226) app_init: ESP-IDF:          v6.1-dev-6126-ge9da155a726[0m
+[0;32mI (231) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (235) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (239) efuse_init: Chip rev:         v1.2[0m
+[0;32mI (243) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (249) heap_init: At 4080F760 len 0003DC20 (247 KiB): RAM[0m
+[0;32mI (255) heap_init: At 4084D380 len 00002B60 (10 KiB): RAM[0m
+[0;32mI (260) heap_init: At 50000000 len 00000FE8 (3 KiB): RTCRAM[0m
+[0;32mI (266) spi_flash: detected chip: gd[0m
+[0;32mI (268) spi_flash: flash io: dio[0m
+[0;33mW (271) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (284) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (290) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (297) main_task: Started on CPU0[0m
+[0;32mI (297) main_task: Calling app_main()[0m
+[0;32mI (307) phy: phy_version: 324,5, 0d8cd71, Apr 10 2026, 13:58:46[0m
+[0;32mI (317) phy: libbtbb version: 8db04ea, Apr 10 2026, 13:58:59[0m
+[0;32mI (317) ieee802154: Ready, panId=0x6767, channel=12, myAddr=0xc9e6[0m
+[0;32mI (317) DEVICE: tx sfd done[0m
+[0;32mI (317) DEVICE: tx OK, sent 19 bytes, ack 0[0m
+[0;32mI (49107) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (83617) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (107537) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (155607) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (232277) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (252257) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (296037) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (299897) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (307987) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (314537) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (348837) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (461277) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (483407) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (510847) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (521077) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (545627) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (634967) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (646837) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (719197) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (729577) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (747637) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (761047) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (819687) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (833407) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (845397) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (941637) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (1050657) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (1194067) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (1213527) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (1351767) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (1355817) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (1403687) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (1431137) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (1475267) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (1520677) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (1546737) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (1569797) DEVICE: rx sfd done, Radio state: 3[0m

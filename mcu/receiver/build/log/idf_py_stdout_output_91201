@@ -1,0 +1,228 @@
+Command: /home/finja/.espressif/python_env/idf6.2_py3.12_env/bin/python /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/tools/idf_monitor.py -p /dev/ttyACM2 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32h2 --revision 0 --decode-panic backtrace /home/finja/Documents/Diplomarbeit/EdgeAI/mcu/receiver/build/receiver.elf /home/finja/Documents/Diplomarbeit/EdgeAI/mcu/receiver/build/bootloader/bootloader.elf -m '/home/finja/.espressif/python_env/idf6.2_py3.12_env/bin/python' '/home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/tools/idf.py'
+[0;32mI (133) esp_image: segment 3: paddr=0003a33c vaddr=4080669c sizeI (486) DEVICE: rx sfd done, Radio state: 3[0m
+ESP-ROM:esp32h2-eco5-20240613
+Build:Jun 13 2024
+rst:0x15 (USB_UART_HPSYS),boot:0xc (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40804ac8
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x408460f0,len:0x1664
+load:0x4083c2d0,len:0xef8
+load:0x4083efd0,len:0x2fb0
+entry 0x4083c2da
+[0;32mI (23) boot: ESP-IDF v6.1-dev-6126-ge9da155a726 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Jul 10 2026 10:46:54[0m
+[0;32mI (26) boot: chip revision: v1.2[0m
+[0;32mI (26) boot: efuse block revision: v0.3[0m
+[0;32mI (29) boot.esp32h2: SPI Speed      : 64MHz[0m
+[0;32mI (32) boot.esp32h2: SPI Mode       : DIO[0m
+[0;32mI (36) boot.esp32h2: SPI Flash Size : 2MB[0m
+[0;32mI (40) boot: Enabling RNG early entropy source...[0m
+[0;32mI (44) boot: Partition Table:[0m
+[0;32mI (47) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (53) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (60) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (66) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (73) boot: End of partition table[0m
+[0;32mI (76) esp_image: segment 0: paddr=00010020 vaddr=42020020 size=09954h ( 39252) map[0m
+[0;32mI (94) esp_image: segment 1: paddr=0001997c vaddr=40800000 size=0669ch ( 26268) load[0m
+[0;32mI (103) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=1a314h (107284) map[0m
+[0;32mI (133) esp_image: segment 3: paddr=0003a33c vaddr=4080669c size=04be8h ( 19432) load[0m
+[0;32mI (140) esp_image: segment 4: paddr=0003ef2c vaddr=4080b290 size=025e4h (  9700) load[0m
+[0;32mI (147) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (148) boot: Disabling RNG early entropy source...[0m
+[0;32mI (158) cpu_start: Unicore app[0m
+[0;32mI (167) cpu_start: GPIO 23 and 24 are used as console UART I/O pins[0m
+[0;32mI (168) cpu_start: Pro cpu start user code[0m
+[0;32mI (168) cpu_start: cpu freq: 96000000 Hz[0m
+[0;32mI (169) app_init: Application information:[0m
+[0;32mI (173) app_init: Project name:     receiver[0m
+[0;32mI (177) app_init: App version:      526bfce-dirty[0m
+[0;32mI (181) app_init: Compile time:     Jul 10 2026 10:47:03[0m
+[0;32mI (186) app_init: ELF file SHA256:  098e8c3ea...[0m
+[0;32mI (191) app_init: ESP-IDF:          v6.1-dev-6126-ge9da155a726[0m
+[0;32mI (196) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (200) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (204) efuse_init: Chip rev:         v1.2[0m
+[0;32mI (208) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (214) heap_init: At 4080F920 len 0003DA60 (246 KiB): RAM[0m
+[0;32mI (219) heap_init: At 4084D380 len 00002B60 (10 KiB): RAM[0m
+[0;32mI (224) heap_init: At 50000000 len 00000FE8 (3 KiB): RTCRAM[0m
+[0;32mI (231) spi_flash: detected chip: gd[0m
+[0;32mI (233) spi_flash: flash io: dio[0m
+[0;33mW (236) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (249) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (254) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (262) main_task: Started on CPU0[0m
+[0;32mI (262) main_task: Calling app_main()[0m
+[0;32mI (282) phy: phy_version: 324,5, 0d8cd71, Apr 10 2026, 13:58:46[0m
+[0;32mI (282) phy: libbtbb version: 8db04ea, Apr 10 2026, 13:58:59[0m
+[0;32mI (292) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (302) DEVICE: X: 1646, Y: 1652[0m
+[0;32mI (312) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (322) DEVICE: X: 1642, Y: 1647[0m
+[0;32mI (332) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (342) DEVICE: X: 1641, Y: 1646[0m
+[0;32mI (352) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (362) DEVICE: X: 1639, Y: 1643[0m
+[0;32mI (372) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (382) DEVICE: X: 1646, Y: 1649[0m
+[0;32mI (392) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (402) DEVICE: X: 1664, Y: 1646[0m
+[0;32mI (412) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (422) DEVICE: X: 2316, Y: 1644[0m
+[0;32mI (432) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (442) DEVICE: X: 3295, Y: 1646[0m
+[0;32mI (452) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (462) DEVICE: X: 3303, Y: 1648[0m
+[0;32mI (472) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (482) DEVICE: X: 3297, Y: 1647[0m
+[0;32mI (492) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (502) DEVICE: X: 3295, Y: 1646[0m
+[0;32mI (512) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (522) DEVICE: X: 3294, Y: 1645[0m
+[0;32mI (532) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (542) DEVICE: X: 3300, Y: 1649[0m
+[0;32mI (552) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (562) DEVICE: X: 3296, Y: 1646[0m
+[0;32mI (572) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (582) DEVICE: X: 3297, Y: 1649[0m
+[0;32mI (592) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (602) DEVICE: X: 3235, Y: 1643[0m
+[0;32mI (612) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (622) DEVICE: X: 1646, Y: 1646[0m
+[0;32mI (632) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (642) DEVICE: X: 1638, Y: 1645[0m
+[0;32mI (652) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (662) DEVICE: X: 1639, Y: 1643[0m
+[0;32mI (672) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (682) DEVICE: X: 1641, Y: 1645[0m
+[0;32mI (692) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (712) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (732) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (752) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (772) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (792) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (812) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (832) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (852) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (872) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (892) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (912) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (932) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (952) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (972) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (992) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (1012) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (1032) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (1052) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (1072) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (1092) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (1112) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (1132) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (1152) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (1172) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (1192) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (1212) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (1232) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (1252) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (1272) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (1292) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (1312) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (1332) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (1352) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (1372) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (1392) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (1412) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (1432) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (1452) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (1472) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (1492) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (1512) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (1532) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (1552) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (1572) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (1592) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (1612) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (1632) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (1652) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (1672) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (1692) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (1712) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (1732) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (1752) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (1772) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (1792) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (1812) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (1832) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (1852) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (1872) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (1892) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (1912) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (1932) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (1952) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (1972) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (1992) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (2012) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (2032) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (2052) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (2072) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (2092) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (2112) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (2132) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (2152) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (2172) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (2192) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (2212) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (2232) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (2252) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (2272) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (2292) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (2312) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (2332) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (2352) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (2372) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (2392) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (2412) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (2432) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (2452) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (2472) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (2492) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (2512) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (2532) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (2552) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (2572) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (2592) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (2612) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (2632) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (2652) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (2672) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (2692) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (2712) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (2732) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (2752) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (2772) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (2792) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (2812) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (2832) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (2852) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (2872) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (2892) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (2912) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (2932) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (2952) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (2972) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (2992) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (3012) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (3032) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (3052) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (3072) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (3092) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (3112) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (3132) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (3152) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (3172) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (3192) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (3212) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (3232) DEVICE: rx sfd done, Radio state: 3[0m
+[0;32mI (3252) DEVICE: rx sfd done, Radio state: 3[0m

@@ -1,0 +1,20 @@
+Command: ninja all
+[1/9] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/device.c.obj
+[2/9] Performing build step for 'bootloader'
+[1/1] cd /home/finja/Documents/Diplomarbeit/EdgeAI/mcu/device/build/bootloader && /home/finja/.espressif/python_env/idf6.2_py3.12_env/bin/python /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /home/finja/Documents/Diplomarbeit/EdgeAI/mcu/device/build/bootloader/bootloader.bin
+Bootloader binary size 0x5560 bytes. 0x2aa0 bytes (33%) free.
+[3/9] No install step for 'bootloader'
+[4/9] Linking C static library esp-idf/main/libmain.a
+[5/9] Completed 'bootloader'
+[6/9] Generating esp-idf/esp_system/ld/sections.ld
+Skipping linker script generation, section names unchanged
+[7/9] Linking CXX executable device.elf
+[8/9] Generating binary image from built executable
+esptool v5.3.1
+Creating ESP32-H2 image...
+Merged 4 ELF sections.
+Successfully created ESP32-H2 image.
+Generated /home/finja/Documents/Diplomarbeit/EdgeAI/mcu/device/build/device.bin
+[9/9] cd /home/finja/Documents/Diplomarbeit/EdgeAI/mcu/device/build && /home/finja/.espressif/python_env/idf6.2_py3.12_env/bin/python /home/finja/Documents/Diplomarbeit/EdgeAI/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/finja/Documents/Diplomarbeit/EdgeAI/mcu/device/build/partition_table/partition-table.bin /home/finja/Documents/Diplomarbeit/EdgeAI/mcu/device/build/device.bin
+device.bin binary size 0x31970 bytes. Smallest app partition is 0x100000 bytes. 
+0xce690 bytes (81%) free.
